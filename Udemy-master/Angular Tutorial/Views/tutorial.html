@@ -1,0 +1,14 @@
+<p>Number: {{2+2}}</p>
+<p>String: {{tutorialobject.firstName + " "+tutorialobject.lastName | uppercase}}</p>	
+<p> Binding {{tutorialobject.bindoutput | currency:"#":"4"}}</p>
+<label>First Name</label>
+<input ng-model="tutorialobject.firstName" type="text" name="name" placeholder="Enter Name">
+</br></br>
+<label>Last Name</label>
+<input ng-model="tutorialobject.lastName" type="text" name="name" placeholder="Enter Name">
+</br>
+</br>
+<button ng-click="timesTwo()">Multiply</button>
+</br>
+</br>
+<a href="#/tutorialSecond">Tutorial Second Page</a>
