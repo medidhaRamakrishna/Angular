@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Logo Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+  
+    </style>
+
+</head>
+
+<body ng-controller="COntrollerOne as cn">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top nav-sprite-v1 nav-bluebeacon" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src=" https://logos.keycdn.com/keycdn-logo.png" alt="Image" height="50px" width="50px">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" >About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                    <a href="#">Products</a>
+                    </li>
+                    <li>
+                  
+                    
+                    </li>
+                </ul>
+                             <div style="position:fixed;top:2em;right:3em;color:skyblue" class="jambotron">
+                      <span class="glyphicon glyphicon-user" >
+                          <span>{{cn.name | uppercase }}<br><span class="container" style="width: auto;overflow: hidden;white-space: nowrap;">{{cn.Uesrdate|date }}</span></span> 
+                            </span>
+            </div>
+                  <div class="input-group" style="position:fixed;top:2em;right:18em">
+                        <input type="text" class="nav-input">
+                        <button type="button"><span class="glyphicon glyphicon-search"></span>
+                         
+                        </div>
+            
+                </div>
+            <!-- /.navbar-collapse -->
+        </div>
+
+            <!-- /.container -->
+            
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-2">
+                <h1>Body Data here</h1>
+                <p>Note: You may need to adjust some CSS based on the size of your logo. The default logo size is 150x50 pixels.</p>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <footer class="jumbotron ">
+    <diV>
+<a href="#" class="fa fa-facebook"></a> 
+<a href="#" class="fa fa-twitter"></a>        
+        </diV>
+        <!-- contact us form -->
+
+</div>
+        </footer>
+        <div class="contactForm">
+    <div class="contactForm">
+        <div class="head">Contact Us</div>
+        <img class="close" src="images/close.png" ng-click="closeForm()" />
+        <form ng-submit="save()" class="contactForm" name="form" ng-hide="loaded">
+            <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
+            <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
+            <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
+            <button class="btn green">send message</button>
+        </form>
+        <!-- contact us form response messages -->
+        <div ng-show="process" style="text-align:center">
+            <img class="loader" src="images/loader.png" />
+        </div>
+        <div ng-show="success"><p>Your message has been sent, thank you.</p></div>
+    </div>
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/lib/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/APP/APP.js"></script>
+
+</body>
+
+</html>
