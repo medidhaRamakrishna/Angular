@@ -1,0 +1,2699 @@
+<html class=" ext-strict"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAPA - MetricStream M7</title>
+    <link href="/ui/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/ui/css/msi.css?q=bc2004ea-8e23-4bde-b65c-2444444cfedf" rel="stylesheet">
+    <meta name="version" content="bc2004ea-8e23-4bde-b65c-2444444cfedf">
+    <link rel="icon" type="image/png" href="/ui/images/favicon-32x32.png">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="/ui/js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="i18n" src="/ui/js/src/i18n.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ux-core" src="/ui/js/src/ux-core.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nls/globalLabels" src="/ui/js/src/nls/globalLabels.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/ui/js/src/dateTimePicker/en-us-date.js" src="/ui/js/src/dateTimePicker/en-us-date.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="databrowser.min" src="/ui/js/src/packages/databrowser/controllers/databrowserController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="infocenter.min" src="/ui/js/src/packages/infocenter/controllers/infocenterController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tasks.min" src="/ui/js/src/packages/tasks/controllers/tasksController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="upgrade.min" src="/ui/js/src/packages/upgrade/controllers/appController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="formDesigner.min" src="/ui/js/src/packages/formDesigner/controllers/formDesignerController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="report.min" src="/ui/js/src/packages/report/controller/reportController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dashboard.min" src="/ui/js/src/packages/dashboard/controller/dashboardController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fusioncharts" src="/ui/js/src/../libs/fusioncharts/fusioncharts.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fusionwidgets" src="/ui/js/src/../libs/fusioncharts/fusioncharts.widgets.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><style id="raphael-stylesheet-143" type="text/css" title="fusioncharts-raphael-stylesheet"></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="forms/controllers/formController" src="/ui/js/src/packages/forms/controllers/formController.js?q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/ui/js/src/modules/CAP/forms/MS_CAP_MANAGE_CAPA.js?v=c83e6524-db00-410a-ae10-7c15b56eb22c" src="/ui/js/src/modules/CAP/forms/MS_CAP_MANAGE_CAPA.js?v=c83e6524-db00-410a-ae10-7c15b56eb22c&amp;q=bc2004ea-8e23-4bde-b65c-2444444cfedf"></script></head>
+<body class="background-dark         ext-webkit ext-chrome           pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <div id="nav-header" class="container-fluid"><div><div class="sidebar-nav">
+    <nav id="top-navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluidx">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#sidebar-wrapper">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand  msLogo" href="/"><img src="/ui/images/logo.gif"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse width" id="bs-example-navbar-collapse-1">
+                <ul id="navbar-nav-header" class="nav navbar-nav"><li class="dropdown home-menu" id="dropdownOpened">
+    <a href="#" data-target="#" class="dropdown-toggle home-menu arrowCurrentMenu" data-bypass="true" id="dropdownOpener">
+    <i class="icn icn-home clickHome"></i>
+    <b class="caret"></b></a>
+    <span></span>
+</li>
+
+    
+        <li class="sample hidden-md hidden-lg">
+         <a id="100031" info-id="NCC-Overview" data-name="NC and CAPA" class="currentMenuItem" parentid="" href="/ui/infocenter/NCC-Overview" data-tour="Non Conformance and CAPA">Non Conformance and CAPA</a><span></span>
+         </li>
+    
+
+    
+
+    
+
+    
+
+    
+        
+             <li class="sample hidden-md hidden-lg"><a data-name="Overview" info-id="NCC-Overview" parentid="" id="100033" href="/ui/infocenter/NCC-Overview" data-tour="Overview">Overview</a><span class=""></span></li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+                <li class="sample hidden-md hidden-lg"><a data-name="NC" info-id="NCC-NC" parentid="" id="100032" href="/ui/infocenter/NCC-NC" data-tour="NC">NC</a><span></span></li> 
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+                <li class="sample hidden-md hidden-lg"><a data-name="CAR" info-id="NCC-CAR" parentid="" id="100030" href="/ui/infocenter/NCC-CAR" data-tour="CAR">CAR</a><span></span></li> 
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+                <li class="sample hidden-md hidden-lg"><a data-name="SCAR" info-id="NCC-SCAR" parentid="" id="100035" href="/ui/infocenter/NCC-SCAR" data-tour="SCAR">SCAR</a><span></span></li> 
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+                <li class="sample hidden-md hidden-lg"><a data-name="PAR" info-id="NCC-PAR" parentid="" id="100034" href="/ui/infocenter/NCC-PAR" data-tour="PAR">PAR</a><span></span></li> 
+            
+        
+    
+
+    
+
+    
+
+    
+        
+            
+                <li class="sample hidden-md hidden-lg"><a data-name="SetUp" info-id="NCC-SetUp" parentid="" id="100036" href="/ui/infocenter/NCC-SetUp" data-tour="SetUp">SetUp</a><span class="activeMenu"></span></li><li class="sample hidden-md hidden-lg">
+                                     <a data-name="Status" parentid="" info-id="NCC-Status" id="100044" data-tour="Status" href="/ui/infocenter/NCC-Status">Status</a><span></span>
+                                    </li> 
+            
+        
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+        
+             <li class="sample nav_dropdownList" style="display: block;">
+                <div class="btn-group more-options">
+                     <a href="#" class="sample" data-bypass="true" data-placement="bottom" data-toggle="dropdown" id="displayMore">... </a>
+                        <ul class="dropdown-menu nav_dropdown global-nav-dropdown" role="menu">
+                
+                    
+
+                         
+                
+                    
+
+                         
+                
+                    
+                        
+                            
+                                <li class="sample"><a data-name="NC" info-id="NCC-NC" parentid="" id="100032" href="/ui/infocenter/NCC-NC" data-tour="NC">NC</a><span></span></li> 
+                             
+                        
+                     
+
+                         
+                
+                    
+                        
+                            
+                                <li class="sample"><a data-name="CAR" info-id="NCC-CAR" parentid="" id="100030" href="/ui/infocenter/NCC-CAR" data-tour="CAR">CAR</a><span></span></li> 
+                             
+                        
+                     
+
+                         
+                
+                    
+                        
+                            
+                                <li class="sample"><a data-name="SCAR" info-id="NCC-SCAR" parentid="" id="100035" href="/ui/infocenter/NCC-SCAR" data-tour="SCAR">SCAR</a><span></span></li> 
+                             
+                        
+                     
+
+                         
+                
+                    
+                        
+                            
+                                <li class="sample"><a data-name="PAR" info-id="NCC-PAR" parentid="" id="100034" href="/ui/infocenter/NCC-PAR" data-tour="PAR">PAR</a><span></span></li> 
+                             
+                        
+                     
+
+                         
+                
+                    
+                        
+                            
+                                <li class="sample"><a data-name="SetUp" info-id="NCC-SetUp" parentid="" id="100036" href="/ui/infocenter/NCC-SetUp" data-tour="SetUp">SetUp</a><span class="activeMenu"></span></li> 
+                             
+                        
+                     
+
+                         
+                
+                    
+                        
+                     
+
+                         
+                            
+                                 <li class="sample">
+                                     <a data-name="Status" parentid="" info-id="NCC-Status" id="100044" data-tour="Status" href="/ui/infocenter/NCC-Status">Status</a><span></span>
+                                    </li>
+                             
+                            
+                
+            </ul>
+        </div>
+    </li>
+    
+
+      
+
+</ul><ul class="nav navbar-nav navbar-right globalRight">
+                    <li class="tour-search">
+                        <a href="javascript:void(0);" class="search-keydown" style="" id="global-search-box" data-bypass="1">
+                            <div id="custom-search-form" class="form-search form-horizontal pull-right msi-tooltip" data-title="Search" data-placement="bottom" data-original-title="" title="">
+                                <div class="input-append span12" style="position:relative">
+                                    <i class="icn icon_index icn-magnifier icon_color" style="position:relative;"></i>
+                                    <i class="icn icon_index icn-cross" style="display:none;color:black;position:relative;"></i>
+                                    <input type="text" autofocus="" class="search-query mac-style" style="display:none" placeholder="Search" id="searchtxt">
+                                    <!--button type="submit" class="btn" id="universalsearch">
+                                    <i class=" universalsearch" ></i></button-->
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdowntest admin-menu" id="settings" style="height: 51px; background-color: transparent;">
+                        <a href="javascript:void(0);" data-bypass="1">
+                            <div class="notification-icon status-icon msi-tooltip" data-title="Settings" data-placement="bottom" data-original-title="" title="">
+                                <span class="icn icn-tools" style="color: rgb(255, 255, 255);"></span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu admin" style="display: none;"><div><div class="tabbable tabs-left">
+ 
+   <ul class="nav nav-tabs tabHeight">
+  <div class="admin-menu-tab-bg icn icn-tools settingIconStyle" style="color: rgb(255, 255, 255);"></div>
+    
+       
+    <li class="active"><a href="#Setup" data-bypass="1" data-toggle="tab" aria-expanded="true">Setup</a></li>
+    
+    
+       
+    <li><a href="#Configurations" data-bypass="1" data-toggle="tab">Configuration</a></li>
+    
+    
+       
+    <li><a href="#Administration" data-bypass="1" data-toggle="tab">Administration</a></li>
+    
+    
+  </ul>
+  <div class="tab-content">
+    
+      <div class="tab-pane admin-menu-content setupPageScroll active" id="Setup" page="0" isreordered="0">
+	    
+
+         
+            <ul class="wrapContent" style="display:block">
+               <b class="admin-item admin-item-group">SYSTEM</b>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/admin/calendars" info-id="" title="Workday Calendars" id="" parentid="" childinfocenterid="">Workday Calendars</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/admin/organizations" info-id="" title="Organizations" id="" parentid="" childinfocenterid="">Organizations</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/admin/orgRolePair" info-id="" title="Organization &amp; Role Associations" id="" parentid="" childinfocenterid="">Organization &amp; Role Associations</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/admin/users" info-id="" title="Users" id="" parentid="" childinfocenterid="">Users</a></li>
+                
+            </ul>
+    
+        
+            <ul class="wrapContent" style="display:block">
+               <b class="admin-item admin-item-group">APPS</b>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/infocenter/GRC-Setup GRC Libraries" info-id="GRC-Setup GRC Libraries" title="GRC Libraries" id="" parentid="100016" childinfocenterid="100019">GRC Libraries</a></li>
+                
+            </ul>
+    
+        
+
+
+        
+	 </div>
+	
+    
+      <div class="tab-pane admin-menu-content setupPageScroll" id="Configurations" page="0" isreordered="0">
+	     
+	     
+          
+            <ul class="wrapContent" style="display:block">
+              
+               <b class="admin-item admin-item-group">PACKAGES</b>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/upgrade" info-id="" title="Installed Packages" id="" parentid="" childinfocenterid="">Installed Packages</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/iup" info-id="" title="Import/Export" id="" parentid="" childinfocenterid="">Import/Export</a></li>
+                
+             
+		
+        
+             
+               <b class="admin-item admin-item-group">DATA</b>
+                
+    				<li class="admin-item tab-menu-item"><a href="../../../ui/report/AppStudio-Data Objects" info-id="" title="Data Objects" id="" parentid="" childinfocenterid="">Data Objects</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/datatables" info-id="" title="Data Tables" id="" parentid="" childinfocenterid="">Data Tables</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/infolets" info-id="" title="Infolets" id="" parentid="" childinfocenterid="">Infolets</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/lovs" info-id="" title="List of Values" id="" parentid="" childinfocenterid="">List of Values</a></li>
+                
+             
+		
+        
+             
+               <b class="admin-item admin-item-group">ACCESS CONTROL</b>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/activities" info-id="" title="Activities" id="" parentid="" childinfocenterid="">Activities</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/infoletGroups" info-id="" title="Infolet Groups" id="" parentid="" childinfocenterid="">Infolet Groups</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/roles" info-id="" title="Roles" id="" parentid="" childinfocenterid="">Roles</a></li>
+                
+           
+            </ul>
+             
+		
+        
+          
+            <ul class="wrapContent" style="display:block">
+              
+               <b class="admin-item admin-item-group">FORMS &amp; WORKFLOWS</b>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/upgrade/forms" info-id="" title="Forms" id="" parentid="" childinfocenterid="">Forms</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="../../../ui/report/AppStudio-Workflows" info-id="" title="Blueprints &amp; Workflows" id="" parentid="" childinfocenterid="">Blueprints &amp; Workflows</a></li>
+                
+             
+		
+        
+             
+               <b class="admin-item admin-item-group">VISUALIZATIONS</b>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/reports" info-id="" title="Reports" id="" parentid="" childinfocenterid="">Reports</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/charts" info-id="" title="Charts" id="" parentid="" childinfocenterid="">Charts</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/dashboards" info-id="" title="Dashboards" id="" parentid="" childinfocenterid="">Dashboards</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/dataNodes" info-id="" title="Data Nodes" id="" parentid="" childinfocenterid="">Data Nodes</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/dataBrowsers" info-id="" title="Data Browsers" id="" parentid="" childinfocenterid="">Data Browsers</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/infocenters" info-id="" title="Infocenters" id="" parentid="" childinfocenterid="">Infocenters</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/visualizationCalendar" info-id="" title="Calendars" id="" parentid="" childinfocenterid="">Calendars</a></li>
+                
+           
+            </ul>
+             
+		
+        
+          
+            <ul class="wrapContent" style="display:block">
+              
+               <b class="admin-item admin-item-group">NOTIFICATIONS</b>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/alerts" info-id="" title="Alerts" id="" parentid="" childinfocenterid="">Alerts</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/upgrade/emailtemplate" info-id="" title="Email Templates" id="" parentid="" childinfocenterid="">Email Templates</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/upgrade/emails" info-id="" title="Email Configurations" id="" parentid="" childinfocenterid="">Email Configurations</a></li>
+                
+             
+		
+        
+             
+               <b class="admin-item admin-item-group">OTHERS</b>
+                
+    				<li class="admin-item tab-menu-item"><a href="/ui/admin/configparams" info-id="" title="Parameter Categories" id="" parentid="" childinfocenterid="">Parameter Categories</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="../../../ui/report/AppStudio-Bulk%20Re-assignment%20Profiles" info-id="" title="Bulk Reassignment Profiles" id="" parentid="" childinfocenterid="">Bulk Reassignment Profiles</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="../../../ui/report/AppStudio-App Ids" info-id="" title="App Ids" id="" parentid="" childinfocenterid="">App Ids</a></li>
+                
+    				<li class="admin-item tab-menu-item"><a href="../../../ui/report/SYS-Import &amp; Export Profiles" info-id="" title="Data Import &amp; Export Profiles" id="" parentid="" childinfocenterid="">Data Import &amp; Export Profiles</a></li>
+                
+           
+            </ul>
+             
+		
+        
+        
+        
+	 </div>
+	
+    
+      <div class="tab-pane admin-menu-content setupPageScroll" id="Administration" page="0" isreordered="0">
+	    
+
+         
+            <ul class="wrapContent" style="display:block">
+               <b class="admin-item admin-item-group">ENTERPRISE SETTINGS</b>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/enterprises/datasources" info-id="" title="Data Sources" id="" parentid="" childinfocenterid="">Data Sources</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/admin/locales" info-id="" title="Locales" id="" parentid="" childinfocenterid="">Locales</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/enterprises/mailhost" info-id="" title="Mail Host" id="" parentid="" childinfocenterid="">Mail Host</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/enterprises/security" info-id="" title="Security" id="" parentid="" childinfocenterid="">Security</a></li>
+                
+            </ul>
+    
+        
+            <ul class="wrapContent" style="display:block">
+               <b class="admin-item admin-item-group">TOOLS &amp; UTILITIES</b>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/auditTables" info-id="" title="Audit Tables" id="" parentid="" childinfocenterid="">Audit Tables</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/cacheMonitor" info-id="" title="Cache Management" id="" parentid="" childinfocenterid="">Cache Management</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/emailNotifications" info-id="" title="Email Opt-in/Opt-out" id="" parentid="" childinfocenterid="">Email Opt-in/Opt-out</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/LogViewer" info-id="" title="Log Viewer" id="" parentid="" childinfocenterid="">Log Viewer</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/assignments" info-id="" title="Tasks" id="" parentid="" childinfocenterid="">Tasks</a></li>
+                
+            <li class="admin-item tab-menu-item"><a href="/ui/searchadmin" info-id="" title="Search" id="" parentid="" childinfocenterid="">Search</a></li>
+                
+            </ul>
+    
+        
+
+
+        
+	 </div>
+	
+    
+	  <div id="prevConfig" class=" slick-prev slick-left" data-direction="-1" data-bypass="true" style="display:none">&lt;&lt;</div>
+	 <div id="nextConfig" class=" slick-next slick-right" data-direction="1" data-bypass="true" style="display:none">&gt;&gt;</div>
+  </div>
+
+	
+    
+</div></div></ul>
+                    </li>
+                    <li id="metricstream-calendar" class="dropdown calendar metricstream-calendar-tour">
+                        <a href="/ui/calendar">
+                            <div class="icn icn-calendar msi-tooltip" data-title="Calendar" data-placement="bottom" data-original-title="" title=""></div>
+                        </a>
+                    </li>
+                    <li class="dropdown tasks-menu" style="height: 52px; background-color: transparent;">
+                        <a href="javascript:void(0);" data-bypass="1" class="my-tasks-menu">
+                            <div class="notification-icon status-icon msi-tooltip" data-title="Tasks" data-placement="bottom" data-original-title="" title="">
+                                <span class="icn icn-tasks" style="color: rgb(255, 255, 255);"></span>
+                                <span class="badge-count" style="display: inline;">2</span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu tasks" style="display: none;"><div>
+<section class="tasks-header">
+    <h4 class="tasks-title"><a href="/tasks"> My Tasks</a></h4>
+    <div class="tasks-summary">
+    	<span class="tasks-count total">26 All</span>
+        <span class="tasks-count overdue"> | 0 Overdue</span>
+        <span class="tasks-count new"> | 2 New</span>
+    </div>
+</section>
+ 
+
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto;"><ul class="tasks-list" style="overflow: hidden; width: auto;">
+
+<div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-102164-6067-100000" title="CAP" class="tasksTitle" data-nav="" href="/ui/form/T-102164-6067-100000/referrer=taskInbox">CAP</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-100464-6046-100000" title="Data Object" class="tasksTitle" data-nav="" href="/ui/form/T-100464-6046-100000/referrer=taskInbox">Data Object</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-100464-6037-100000" title="Data Object" class="tasksTitle" data-nav="" href="/ui/form/T-100464-6037-100000/referrer=taskInbox">Data Object</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-100464-6008-100000" title="Data Object" class="tasksTitle" data-nav="" href="/ui/form/T-100464-6008-100000/referrer=taskInbox">Data Object</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-102040-5879-100000" title="Execute Identify Team step for SCAR : SCAR - 100580" class="tasksTitle" data-nav="" href="/ui/form/T-102040-5879-100000/referrer=taskInbox">Execute Identify Team step for SCAR : SCAR - 100580</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-102075-3380-100000" title="F.ACTION_RESPONSE Approval Pending: SCAR - 100267" class="tasksTitle" data-nav="" href="/ui/form/T-102075-3380-100000/referrer=taskInbox">F.ACTION_RESPONSE Approval Pending: SCAR - 100267</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-100464-5791-100000" title="Data Object" class="tasksTitle" data-nav="" href="/ui/form/T-100464-5791-100000/referrer=taskInbox">Data Object</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-100464-5562-100000" title="Data Object" class="tasksTitle" data-nav="" href="/ui/form/T-100464-5562-100000/referrer=taskInbox">Data Object</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-100464-5342-100000" title="Data Object" class="tasksTitle" data-nav="" href="/ui/form/T-100464-5342-100000/referrer=taskInbox">Data Object</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div><div> 
+ 
+   
+<div class="media">
+    
+    
+        <i class="icn icn-task  tasks-Type-Icon pull-left"></i>
+        
+    <div class="media-body">
+        <div class="taskTitleDetails">
+            
+                <div class="task-common" title=""></div>
+            
+            <a data-id="T-100464-5336-100000" title="Data Object" class="tasksTitle" data-nav="" href="/ui/form/T-100464-5336-100000/referrer=taskInbox">Data Object</a>
+        </div>
+        <div class="task-time">
+                   
+            
+        </div>
+    </div>
+</div>
+ 
+
+</div></ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; border-radius: 7px; z-index: 99; right: 1px; display: block;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+<section class="tasks-footer">
+    <a href="/tasks" class="tasks-showall">Show All</a>
+</section></div></ul>
+                    </li>
+                    
+                    <li class="dropdown users-menu ">
+                        <a href="javascript:void(0);" data-bypass="1">
+                            <!--  <div class="users-icon">
+                            <span class="icn icn-user"></span></div> -->
+                            <div class="notification-icon status-icon msi-tooltip" data-title="Profile" data-placement="bottom" data-original-title="" title="">
+                                <div class="users-icon" style="background-image: url(&quot;/metricstream/api/7.0/users/SYSTEMI/profilepicture?random=1496739803765&quot;); border-radius: 50%;"></div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu users">
+                            <li>
+                                <a data-myprofile="" class="user-name" href="">MetricStream Administrator</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="locale-menu">
+                                <a href="#" enabled-locales="">Language  English</a>
+                                <ul class="dropdown-menu locale-dropdown-menu-left hidden" id="enabled-locale-list">
+                                </ul>
+                            </li>
+                            <li class="guide dropdown-submenu"> <a href="#">Help</a>
+                                <ul class="dropdown-menu help-dropdown-menu-left">
+                                
+                                    
+                                        
+                                                <li>
+                                                    <a class="specificHelpGuide" data-action="/MS_CAP/MS_CAPA_UserGuide_Volume2(SCAR).pdf" title="SCAR User Guide" href="#">SCAR User Guide</a>
+                                                </li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                                <li>
+                                                    <a class="specificHelpGuide" data-action="/MS_CAP/MS_CAPA_UserGuide_Volume1(CAR).pdf" title="CAR User Guide" href="#">CAR User Guide</a>
+                                                </li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                                <li>
+                                                    <a class="specificHelpGuide" data-action="MS_GRCI_UserGuide.pdf" title="GRCI User Guide" href="#">GRCI User Guide</a>
+                                                </li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                                <li>
+                                                    <a class="specificHelpGuide" data-action="MS_GRCF_UserGuide.pdf" title="GRC Foundation User Guide" href="#">GRC Foundation User Guide</a>
+                                                </li>
+                                        
+                                    
+                                
+                                    
+                                        
+                                            <li class="platform"><a class="specificHelpGuide" data-action="MS_Platform_User_Guide.pdf" title="Platform User Guide" href="#">Platform User Guide</a>
+                                                <ul>
+                                                    <li class="divider"></li>
+                                                </ul>
+                                            </li>                                                
+                                        
+                                    
+                                
+                                </ul>
+                            </li>
+                            <li class="about"><a href="#">About</a></li>
+                            <li id="startour" style="cursor: pointer;"><a class="tour-start" data-bypass="true">Take the Tour</a></li>
+                            <li class="divider"></li>
+                            <li><a data-bypass="true" data-logout="" href="javascript:void(0)"> Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+</div></div>
+     
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="collapse">
+        <ul class="sidebar-nav r-sidebar"><li class="sidebar-item home">
+    <a data-home="" href="javascript:void(0);" data-bypass="true" class=""><i class="icn icn-home"></i>Home</a>
+</li>
+<div class="nav-divider"></div>
+
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="GRC-GRC Libraries" class="">GRC Libraries</a>
+</li>
+<div class="nav-divider"></div>
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="RGA-GRCi" class="">GRCIntelligence</a>
+</li>
+<div class="nav-divider"></div>
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="SMC-SMC" class="">System Monitoring</a>
+</li>
+<div class="nav-divider"></div>
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="SYS-App Administration" class="">App Administration</a>
+</li>
+<div class="nav-divider"></div>
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="SYS-AppStudio" class="">AppStudio</a>
+</li>
+<div class="nav-divider"></div>
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="NCC-NC and CAPA" class="">Non Conformance and CAPA</a>
+</li>
+<div class="nav-divider"></div>
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="CAP-MS_CAP_SCAR" class="">SCAR</a>
+</li>
+<div class="nav-divider"></div>
+
+<li class="sidebar-item" data-id="">
+  
+  <i class="icn icn-angle-right pull-right"></i>
+  
+    <a href="javascript:void(0);" data-bypass="true" data-name="GRC-MS_GRC_APP_MY_TASKS" class="">My Tasks</a>
+</li>
+<div class="nav-divider"></div>
+
+
+<li class="sidebar-item">
+    <a href="/ui/tasks" data-task=""><i class="icn icn-tasks"></i>Tasks </a>
+</li>
+<div class="nav-divider"></div>
+ <li id="metricstream-calendar" class="dropdown calendar">
+     <a href="/ui/calendar"><i class="icn icn-calendar">Calendar</i>
+</a></li><a href="/ui/calendar">
+<div class="nav-divider"></div>
+</a><li class="sidebar-item hidden-xs hidden-sm"><a href="/ui/calendar">
+    </a><a href="javascript:void(0);" data-notifications="" data-bypass="true"><i class="icn icn-bell"></i>Notifications </a>
+</li>
+<li class="sidebar-item">
+    <a href="javascript:void(0);" data-logout="" data-bypass="true"><i class="icn icn-lock"></i>Logout </a>
+</li>
+<div class="nav-divider"></div>
+<li class="sidebar-item hidden-xs hidden-sm">
+    <a href="" data-profile="" data-config=""><div class="icn icn-tools"></div> Configuration </a>
+</li>
+</ul>
+    </div>
+    <div class="content-wrapper container-fluid">
+        <div id="databrowser-panel"><div class="databrowser-container"><div id="databrowser-list" class="sidebar-dbrowser"><ul class="text-center databrowser-tree-btns"><li class="databrowser-btn msi-tooltip dataexplorer-btn" title="" id="deLauncher" data-original-title="Data Explorer">
+    <span class="icn icn-dexplorer"></span>
+</li>
+
+<li class="databrowser-btn msi-tooltip databrowser-expand" id="dbOverflow" title="" data-original-title="Expand">
+	<span class="icn icn-ellipsis"></span>
+</li>
+</ul></div>
+<div id="tree" class="databrowser-content"></div>
+<div id="databrowser-list-full" class="databrowser-list-full"><div class="db-full-container"><div class="panel-header">
+	<i class="icn icn-circle-cross close"></i>
+	<i class="icn icn-circle-help help-icon" data-help="DataBrowserPanel"></i>
+	<span class="panel-header__title">Data Browsers</span>
+</div>
+<ul class="db-full" style="height: 658px;">
+    
+</ul>
+</div></div>
+</div></div>
+        <div id="content" page-title="CAPA" page-type="form-runtime">
+
+
+
+
+
+<div id="MS_CAP_MANAGE_CAPA">
+<section id="banner"></section>
+
+<div class="form-runtime-container">
+<section class="expanded-header">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="page-title-section">
+            <div class="headerLogical">
+                <div class="form-object-title" title="CAPA">CAPA</div>
+                <div class="form-stage">
+                    <span class="form-stage-step"></span>
+                </div>   
+                </div>             
+                <div class="page-subtitle subtitle-large" id="expanded-subtitle"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4 class="form-summary-fields expanded-summary-fields">
+	<!--<div class="summary_CAR_STATUS col-md-6 header-summary-field" id = "summary_CAR_STATUS">-->
+		<div class="summary_CAR_STATUS col-md-4 header-summary-field" id="summary_CAR_STATUS">
+		<h4 class="control-label" title="CAR Status">CAR Status</h4>
+		
+			<p class="control-label header-summary-field-value" summaryemptystate="false" data-text="-" title=""></p>
+		
+	</div>
+
+<span class="icn icn-circle-angle-up expand-header msi-tooltip" data-placement="bottom" data-original-title="Collapse"></span></h4>
+        </div>
+    </div>
+</section>
+<section class="module-header form-header">
+    <div class="row">
+        <div class="page-title-section page-description secondarytitleWidth">
+        <div class="formLogical">
+            <div class="page-title form-title-tour" id="form-title" title="CAPA">CAPA</div>
+            <div class="form-stage">
+                <span class="form-stage-step"></span>
+            </div>
+            </div>
+            <div class="page-subtitle subtitle-small page-subtitle-tour" id="secondary-title"></div>            
+        </div>
+        <div class="page-meta form-pop-summary hidden-sm">
+            <div class="form-meta">
+	<!--<div class="summary-field summary_CAR_STATUS col-md-6">-->
+		<div class="summary-field summary_CAR_STATUS col-md-12">
+		<label class="control-label" title="CAR Status">CAR Status</label>
+		
+			<label class="control-label control-label-value" title="" summaryemptystate="false" data-text="-"></label>
+		
+	</div>
+
+<span class="icn icn-circle-angle-down expand-header msi-tooltip" data-placement="bottom" data-original-title="Expand"></span></div>
+        </div>
+        <div class="page-actions">
+        
+        	<!-- Online form actions -->
+            <div class="form-actions header-controls bootstro">
+             <button class="btn btn-default hide-button" id="btn-bProgress" data-bypass="" style="display: none;">
+                </button>
+                <button class="btn btn-default form-action msi-tooltip fullscreen" id="btn-fullscreen" data-action="fullscreen" data-placement="bottom" data-bypass="" data-title="Fullscreen" data-original-title="" title="">
+                    <i class="icn icn-enlarge"></i>
+                </button> 
+                  <button class="btn btn-default form-action msi-tooltip hide-button exitfullscreen" id="btn-exitFullscreen" data-action="exitFullscreen" data-placement="bottom" data-bypass="" data-title="Exit Fullscreen" data-original-title="" title="">
+                    <i class="icn icn-reduce"></i>
+                </button>
+                <button class="form-action form-action-help btn btn-default help msi-tooltip hidden" data-placement="bottom" data-title="Show Help" data-help="" data-original-title="" title="" style="display: inline-block;">
+                      <i class="icn icn-help"></i>
+                </button> 
+                <div class="btn-group report" style="display: none;">
+                    <button class="btn btn-default form-action msi-tooltip" data-action="report" data-placement="bottom" data-bypass="" data-original-title="Related Reports" data-toggle="dropdown" id="btn-report">
+                        <i class="icn icn-files"></i>
+                        <span class="icn icn-caret-down"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        
+                    </ul>
+                </div> 
+
+            </div>
+            <div class="form-actions header-actions bootstro" data-bootstro-title="Toolbar" data-bootstro-content="All form actions have been consolidated at the top" data-bootstro-placement="bottom">
+                
+                <button class="btn btn-default form-action msi-tooltip hide-button btn btn-primary" id="btn-edit" data-action="edit" data-placement="bottom" data-bypass="" data-original-title="" title="">Edit
+                   
+                </button>
+                
+                
+                <button class="btn btn-secondary form-action msi-tooltip" data-action="save" id="btn-save" data-placement="bottom" data-bypass="" data-original-title="" title="">Save</button>
+                <div class="btn-group">
+                    
+                    <button class="btn btn-primary msi-tooltip" id="btn-submit" data-placement="bottom" data-bypass="" data-original-title="Submit" title="" data-toggle="dropdown">Submit<span class="caret"></span></button><ul class="dropdown-menu" role="menu" id="btn-submit-multiaction"><li><a class="form-action" data-bypass="" data-value="1" data-action="submit">Submit</a></li><li><a class="form-action" data-bypass="" data-value="15" data-action="submit">Force Close</a></li><li><a class="form-action" data-bypass="" data-value="16" data-action="submit">Force Cancel</a></li></ul>
+                    
+                </div>
+                
+                <button class="btn btn-alternative form-action msi-tooltip" id="btn-cancel" data-action="cancel" data-placement="bottom" data-original-title="" title="">Close
+                </button>
+                <button class="btn btn-default form-action msi-tooltip hide-button" id="btn-popout" data-action="popout" data-placement="bottom" data-title="Popout" data-original-title="" title=""><span class="icn icn-link-ext"></span>
+                </button>
+            </div>
+           
+            
+            
+        </div>
+    </div>
+</section>
+<section class="module-body cardless" data-spy="scroll" data-target=".panel" style="opacity: 1; height: 627px;">
+    <div class="fastform-container">
+        <nav id="sidebar" class="sidebar nav-collapse collapse bootstro" data-bootstro-title="Navbar" data-bootstro-content="The form is now divided into sections for easier navigation" data-bootstro-placement="right" data-bootstro-showbg="true"><div class="form-sidebar"><ul id="side-nav" class="side-nav" style="height: 508px;">
+    
+    <li class="panel active" data-id="General">
+        
+        <a data-parent="#side-nav" class="scroll-sc-a" href="#section_General" data-bypass="true">
+            <span class="error-icon-position error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+            <span class="name" data-id="General">General </span>
+        </a>
+         
+    </li>
+    
+    <li class="panel" data-id="MSAI_5">
+        
+        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#side-nav" href="#MSAI_5" data-bypass="true">
+            <span class="error-icon-position error-icon error-icon-hidden">
+            <i class="icn icn-circle-error fw text-danger"></i>
+        </span>
+            <span class="name" data-id="MSAI_5">Ownership &amp; Due Dates </span></a>
+         
+        <ul id="MSAI_5" class="panel-collapse collapse nav">
+            
+            <li class="scroll-sc error-icon-subsection-state">
+                <span class="error-icon-position error-icon-position-subsection error-icon error-icon-hidden">
+                    <i class="icn icn-circle-error fw text-danger"></i>
+                </span>
+                <a data-id="MSAI_38" class="scroll-sc-a isSubSection error-icon-subsection-margin" data-bypass="true" href="#section_MSAI_38">Ownership &amp; Assignment</a>
+            </li>
+            
+            <li class="scroll-sc error-icon-subsection-state">
+                <span class="error-icon-position error-icon-position-subsection error-icon error-icon-hidden">
+                    <i class="icn icn-circle-error fw text-danger"></i>
+                </span>
+                <a data-id="MSAI_44" class="scroll-sc-a isSubSection error-icon-subsection-margin" data-bypass="true" href="#section_MSAI_44">Other Information</a>
+            </li>
+            
+        </ul>
+        
+    </li>
+    
+    <li class="panel" data-id="MSAI_6" style="display: none;">
+        
+        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#side-nav" href="#MSAI_6" data-bypass="true">
+            <span class="error-icon-position error-icon error-icon-hidden">
+            <i class="icn icn-circle-error fw text-danger"></i>
+        </span>
+            <span class="name" data-id="MSAI_6" style="display: none;">Scheduled Follow up Task </span></a>
+         
+        <ul id="MSAI_6" class="panel-collapse collapse nav">
+            
+            <li class="scroll-sc error-icon-subsection-state">
+                <span class="error-icon-position error-icon-position-subsection error-icon error-icon-hidden">
+                    <i class="icn icn-circle-error fw text-danger"></i>
+                </span>
+                <a data-id="MSAI_54" class="scroll-sc-a isSubSection error-icon-subsection-margin" data-bypass="true" href="#section_MSAI_54">Scheduled Follow up Task</a>
+            </li>
+            
+            <li class="scroll-sc error-icon-subsection-state">
+                <span class="error-icon-position error-icon-position-subsection error-icon error-icon-hidden">
+                    <i class="icn icn-circle-error fw text-danger"></i>
+                </span>
+                <a data-id="MSAI_85" class="scroll-sc-a isSubSection error-icon-subsection-margin" data-bypass="true" href="#section_MSAI_85">Preview Follow up Tasks</a>
+            </li>
+            
+        </ul>
+        
+    </li>
+    
+</ul>
+<div class="col-md-12 side-nav status-completion">
+    <div class="pie" data-percentage="50" style="float: left; background: linear-gradient(90deg, rgb(217, 217, 217) 50%, transparent 50%), linear-gradient(270deg, rgb(87, 183, 92) 50%, rgb(217, 217, 217) 50%); margin-left: 15px;" data-original-title="" title="">0%</div>
+    <div class="div-text hide" style="float: right;width: 52%;">
+        <span class="progress-complete progress-complete-hidden" style="color: #929292; text-transform: uppercase;
+            font-weight: 600;     font-size: 18px;margin-top: 14px; line-height: 1.0;">Complete
+        </span>
+        <span style="color: #727272;
+            padding-top: 4px;
+            font-size: 12px;
+        display: none;">No Error</span>
+    </div>
+</div>
+</div></nav>
+        <div class="wrap">
+            <div class="content-container">
+                <div class="form-container"><section class=" form-section " data-section="General" id="section_General">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class="section-legend  accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#sectionContainersection_General" data-target=".section_General-MS_CAP_MANAGE_CAPA" title="General"> General
+            
+            
+            </legend>
+            <div id="sectionContainersection_General" class="section_General-MS_CAP_MANAGE_CAPA collapse in">
+            
+            <fieldset id="fieldsetsection_General"><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Object Type
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="DD_OBJECT_TYPE" type="field-value" title="MS_CAP_MANAGE_CAPA">MS_CAP_MANAGE_CAPA</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Current User Name
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="DD_CURRENT_USER_NAME" type="field-value" title="SYSTEMI">SYSTEMI</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Event User Name
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="DD_EVENT_USER_NAME" type="field-value" title="SYSTEMI">SYSTEMI</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Enterprise Info
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="DD_ENTERPRISE_INFO" type="field-value" title="MetricStream">MetricStream</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Current Stage
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="DD_CURRENT_STAGE" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle mandatoryLabel">Process Code
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control mandatory" value="" data-id="DD_PROCESS_CODE" data-collab="true" spellcheck="true" placeholder="Process Code" maxlength="1000">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12">
+<label class="control-label col-sm-3  mandatoryLabel  handle">Source Type
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+    <div class="field-label col-xs-12 col-sm-6 col-md-6">
+        
+        <div class="select2-container form-control mandatory" id="s2id_SOURCE_TYPE" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span class="select2-chosen">SCAR</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen766"></div><select class="form-control mandatory select2-offscreen" id="SOURCE_TYPE" data-collab="true" data-id="SOURCE_TYPE" tabindex="-1" data-open="false">
+            <option></option>
+            
+            
+            <option value="1">CAR</option>
+            
+            <option value="2">SCAR</option>
+            
+            <option value="3">PAR</option>
+            
+        </select>
+        
+    </div>
+     <div id="select2-drop-mask" class="select2-drop-mask" style="display: none;"></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="display: none; left: 15px; width: 345px; top: 32px; bottom: auto;">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results"></ul></div></div></div><div class="form-group col-md-12 col-xs-12">
+<label class="control-label col-sm-3  mandatoryLabel  handle">Source
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+    <div class="field-label col-xs-12 col-sm-6 col-md-6">
+        
+        <div class="select2-container form-control mandatory" id="s2id_CAR_SOURCE" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Source</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b class="pick icon-format icn icn-list-search"></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen767"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control mandatory select2-offscreen" id="CAR_SOURCE" data-collab="true" data-id="CAR_SOURCE" tabindex="-1">
+            <option></option>
+            
+            
+        </select>
+        
+    </div>
+     </div></div><div class="form-group col-md-12 col-xs-12 hide">
+<label class="control-label col-sm-3  handle ">Responsible Department
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+    <div class="field-label col-xs-12 col-sm-6 col-md-6">
+        
+        <div class="select2-container form-control" id="s2id_RESPONSIBLE_DEPT" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Responsible Department</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b class="pick icon-format icn icn-list-search"></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen768"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control  select2-offscreen" id="RESPONSIBLE_DEPT" data-collab="true" data-id="RESPONSIBLE_DEPT" tabindex="-1">
+            <option></option>
+            
+            
+            <option value="">Select One</option>
+            
+            
+            
+        </select>
+        
+    </div>
+     </div></div><div class="form-group col-md-12 col-xs-12 read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">CAR Status
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="CAR_STATUS" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+<label class="control-label col-sm-3  handle ">Priority
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+    <div class="field-label col-xs-12 col-sm-6 col-md-6">
+        
+        <div class="select2-container form-control" id="s2id_PRIORITY" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Priority</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b class="pick icon-format icn icn-list-search"></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen756"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control  select2-offscreen" id="PRIORITY" data-collab="true" data-id="PRIORITY" tabindex="-1">
+            <option></option>
+            
+            
+            <option value="">Select One</option>
+            
+            
+            
+        </select>
+        
+    </div>
+     </div></div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Hidden Initial PID
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="HIDDEN_INITIAL_PID" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">Responsible Dept TSK
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="RESP_DEPT_TSK" data-collab="true" spellcheck="true" placeholder="Responsible Dept TSK" maxlength="255">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">Hidden Responsible Dept
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="HID_RESP_DEPT" data-collab="true" spellcheck="true" placeholder="Hidden Responsible Dept" maxlength="255">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">Action
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="DD_ACTION" data-collab="true" spellcheck="true" placeholder="Action" maxlength="100">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">Status
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="DD_CURRENT_STATUS" data-collab="true" spellcheck="true" placeholder="Status" maxlength="100">
+		   
+		
+	</div>
+</div>
+
+</div></fieldset>
+            </div>
+        </form>
+        </div>
+</section>
+<section class=" form-section " data-section="Ownership &amp; Due Dates" id="section_MSAI_5">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class="section-legend  accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" href="#sectionContainersection_MSAI_5" data-target=".section_MSAI_5-MS_CAP_MANAGE_CAPA" title="Ownership &amp; Due Dates"> Ownership &amp; Due Dates
+            
+            
+            </legend>
+            <div id="sectionContainersection_MSAI_5" class="section_MSAI_5-MS_CAP_MANAGE_CAPA collapse" aria-expanded="false">
+            
+            <fieldset id="fieldsetsection_MSAI_5"><section class="form-subsection " data-section="Ownership &amp; Assignment" id="section_MSAI_38">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class=" subsection-legend " title="Ownership &amp; Assignment"> Ownership &amp; Assignment
+            
+            
+            </legend>
+            <div id="sectionContainersection_MSAI_38" class="section_MSAI_38-MS_CAP_MANAGE_CAPA">
+            
+            <fieldset id="fieldsetsection_MSAI_38"><div class="form-group col-md-12 col-xs-12 read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">CAR Manager
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="CAR_MANAGER" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12">
+
+<label class="control-label col-sm-3 handle ">CAR Due Date
+  <span class="error-icon error-icon-hidden">
+    <i></i>
+  </span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+  
+  
+    <div class="input-group date">
+    <input type="text" data-id="CAR_DUE_DATE" class="form-control " value="" placeholder="CAR Due Date">
+    <span class="input-group-btn">
+      <a href="javascript:void(0);" data-bypass="true" id="btn-select-calendar" class="btn btn-default" data-date-format="mm/dd/yyyy">
+        <i class="icn icn-calendar"></i>
+      </a>
+    </span>
+
+  </div>
+  
+</div>
+</div>
+
+
+</div><div class="form-group col-md-12 col-xs-12 read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">CAR Owner
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="CAR_OWNER" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="cartirdge-grid-container"><div class="cartridge-grid col-md-12">
+	<div class="multirowFullName">Process Steps</div>
+     
+    <div class="cartridge-grid-header btn-toolbar grid-toolbar">
+		<span class="grid-errorCount errorCountVisibility" data-toggle="tooltip" title="Total errors found"></span>
+	     
+        <div class="btn-group col-md-6">
+            
+        </div>
+	    <ul class="list-griditems pull-right">
+            <li class="btn-fullscreen"><a href="javascript:void(0);" data-bypass="true" title="" menu_item_name="FullScreen" data-action="fullscreen" class="msi-tooltip hideElement fullScreen grid-fullscreen" data-placement="bottom" data-original-title="Fullscreen"><i class="icn icn-enlarge gridgeFullscreen "></i></a></li>
+            <li class="vertical-spacer"></li>
+            
+        </ul>
+</div>
+     
+    <div class="grid-container"><table id="STP" class="backgrid"><thead><tr><th tabindex="0" class="editable renderable STEPS text-wrap" data-toggle="tooltip" title="Process Step" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-0"></span>
+			<span class="dropdown-field-label" id="label-group-string-0">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Process Step</th><th tabindex="0" class="editable renderable STEP_OWNER text-wrap" data-toggle="tooltip" title="Process Step Owner" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-1"></span>
+			<span class="dropdown-field-label" id="label-group-string-1">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Process Step Owner</th><th tabindex="0" class="editable renderable L1_APPROVER text-wrap" data-toggle="tooltip" title="L1 Approver" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-2"></span>
+			<span class="dropdown-field-label" id="label-group-string-2">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+L1 Approver</th><th tabindex="0" class="editable renderable L2_APPROVER text-wrap" data-toggle="tooltip" title="L2 Approver" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-3"></span>
+			<span class="dropdown-field-label" id="label-group-string-3">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+L2 Approver</th><th tabindex="0" class="editable renderable DUE_DATE text-wrap" data-toggle="tooltip" title="Due Date" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-4"></span>
+			<span class="dropdown-field-label" id="label-group-string-4">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Due Date</th><th tabindex="0" class="editable STP_CAR_SOURCE text-wrap" data-toggle="tooltip" title="STP Source Hidden" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-5"></span>
+			<span class="dropdown-field-label" id="label-group-string-5">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+STP Source Hidden</th><th tabindex="0" class="editable STEP_ID text-wrap" data-toggle="tooltip" title="Step ID" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-6"></span>
+			<span class="dropdown-field-label" id="label-group-string-6">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Step ID</th><th tabindex="0" class="editable STEP_STATUS text-wrap" data-toggle="tooltip" title="Step Status" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-7"></span>
+			<span class="dropdown-field-label" id="label-group-string-7">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Step Status</th><th tabindex="0" class="STEP_DATE text-wrap" data-toggle="tooltip" title="STEP_DATE" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-8"></span>
+			<span class="dropdown-field-label" id="label-group-string-8">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+STEP_DATE</th><th tabindex="0" class="editable STP_DUE_DATE_HELPER text-wrap" data-toggle="tooltip" title="STP_DUE_DATE_HELPER" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-9"></span>
+			<span class="dropdown-field-label" id="label-group-string-9">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+STP_DUE_DATE_HELPER</th><th tabindex="0" class="editable STEP_VAR text-wrap" data-toggle="tooltip" title="STEP_VAR" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-10"></span>
+			<span class="dropdown-field-label" id="label-group-string-10">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+STEP_VAR</th></tr></thead><tbody><tr class="empty"><td colspan="11" class="gridEmptyState">
+
+            
+            <div class="state-wrap">
+                <div class="state-title"><i class="icn icn-info state-title_icon "></i></div>
+                    <div class="state-body">
+                     <div class="state-body_title">No items added</div>
+                     <div class="state-body_subtitle  hide  "></div>
+                     <div class="state-body_body  hide "></div>             
+                </div> 
+            </div>
+            </td></tr></tbody></table></div>
+    <div class="cartridge-grid-footer">
+        <div class="pull-left summary"><span class="notice"></span></div>
+    </div>
+</div>
+</div><div id="fg-GROUPFIELD_96" class="form-group grouped-elements col-md-12 col-xs-12">
+    <label class="control-label col-sm-3 ">Final Approval</label>
+    <div id="fg-sub-GROUPFIELD_96" class="col-sm-8"><div class="col-xs-12 col-sm-4 col-md-4">
+
+
+<div class="field-container float-label">
+    <div class="field-label select-float">
+        <label class="control-label col-sm-3  handle " style="display: none;">Organization
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+
+         <div class="select2-container form-control" id="s2id_FINAL_APPROVERS_ORG" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Organization</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b class="pick icon-format icn icn-list-search"></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen757"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control  select2-offscreen" id="FINAL_APPROVERS_ORG" data-collab="true" data-id="FINAL_APPROVERS_ORG" tabindex="-1">
+            <option></option>
+            
+            
+            <option value="">Select One</option>
+            
+            
+            
+            <option value="100003">CAPA Org 2 3</option>
+            
+            <option value="100000">CAPA Org 1</option>
+            
+         </select>
+    </div>
+</div>
+
+
+</div><div class="col-xs-12 col-sm-4 col-md-4">
+
+
+<div class="field-container float-label">
+    <div class="field-label select-float">
+        <label class="control-label col-sm-3  handle " style="display: none;">Approver
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+
+         <div class="select2-container form-control" id="s2id_FINAL_APPROVER" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Approver</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b class="pick icon-format icn icn-list-search"></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen758"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control  select2-offscreen" id="FINAL_APPROVER" data-collab="true" data-id="FINAL_APPROVER" tabindex="-1">
+            <option></option>
+            
+            
+            <option value="">Select One</option>
+            
+            
+            
+         </select>
+    </div>
+</div>
+
+
+</div><div class="col-xs-12 col-sm-4 col-md-4 read-only-field read-only-field-CALENDAR">
+
+
+<div class="field-container readonly-field">
+  <label class="float-label-readonly">Date</label>
+  <label data-id="FINAL_APPROVAL_DATE" class="readonly-field-label selected-date-value" title="">-</label>
+</div>
+
+
+</div></div>
+</div>
+</fieldset>
+            </div>
+        </form>
+        </div>
+</section>
+<section class="form-subsection " data-section="Other Information" id="section_MSAI_44" style="display: none;">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class=" subsection-legend " title="Other Information"> Other Information
+            
+            
+            </legend>
+            <div id="sectionContainersection_MSAI_44" class="section_MSAI_44-MS_CAP_MANAGE_CAPA" style="display: none;">
+            
+            <fieldset id="fieldsetsection_MSAI_44"></fieldset>
+            </div>
+        </form>
+        </div>
+</section>
+<div class="form-group col-md-12 col-xs-12 hide">
+<label class="control-label col-sm-3  handle ">Repeat CAR
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+    <div class="field-label col-xs-12 col-sm-6 col-md-6">
+        
+        <div class="select2-container form-control" id="s2id_REPEAT_CAR" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Repeat CAR</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen759"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control  select2-offscreen" id="REPEAT_CAR" data-collab="true" data-id="REPEAT_CAR" tabindex="-1">
+            <option></option>
+            
+            
+        </select>
+        
+    </div>
+     </div></div><div class="form-group col-md-12 col-xs-12 hide">
+<label class="control-label col-sm-3  handle ">Related CARs
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+    <div class="field-label picklist-inline col-xs-12 col-sm-12 col-md-12">
+        
+        <div class="select2-container form-control" id="s2id_RELATED_CARS" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Related CARs</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen760"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control  select2-offscreen" id="RELATED_CARS" data-collab="true" data-id="RELATED_CARS" tabindex="-1">
+            <option></option>
+            
+            
+        </select>
+        
+    <button type="button" class="btn btn-default btn-multiselect picklist-button" onclick="this.blur();"><b class="external-icon icn icn-list-search"></b></button></div>
+     </div></div></fieldset>
+            </div>
+        </form>
+        </div>
+</section>
+<section class=" form-section " data-section="Scheduled Follow up Task" id="section_MSAI_6" style="display: none;">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class="section-legend  accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#sectionContainersection_MSAI_6" data-target=".section_MSAI_6-MS_CAP_MANAGE_CAPA" title="Scheduled Follow up Task"> Scheduled Follow up Task
+            
+            
+            </legend>
+            <div id="sectionContainersection_MSAI_6" class="section_MSAI_6-MS_CAP_MANAGE_CAPA collapse">
+            
+            <fieldset id="fieldsetsection_MSAI_6"><section class="form-subsection " data-section="Scheduled Follow up Task" id="section_MSAI_54">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class=" subsection-legend " title="Scheduled Follow up Task"> Scheduled Follow up Task
+            
+            
+            </legend>
+            <div id="sectionContainersection_MSAI_54" class="section_MSAI_54-MS_CAP_MANAGE_CAPA">
+            
+            <fieldset id="fieldsetsection_MSAI_54"><div class="cartirdge-grid-container"><div class="cartridge-grid col-md-12">
+	<div class="multirowFullName">Follow up Tasks</div>
+     
+    <div class="cartridge-grid-header btn-toolbar grid-toolbar">
+		<span class="grid-errorCount errorCountVisibility" data-toggle="tooltip" title="Total errors found"></span>
+	   
+	    <div class="btn-group add">
+            <button class="btn btn-default dropdown-toggle add-button" menu_item_name="Add" data-toggle="dropdown" title="Add" type="button"> Add  <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                
+                   
+                <li> <a href="javascript:void(0);" data-bypass="true" class="addEnd" menu_item_name="Add_END">&nbsp;&nbsp;End </a> </li>  
+            </ul>
+        </div>
+         
+        <div class="btn-group col-md-6">
+            
+            <button class="btn btn-default btn-small delete disabled btn-tooltip-disable" title="Delete" menu_item_name="Delete" type="button">Delete</button>
+            <button class="btn btn-default btn-small undo disabled btn-tooltip-disable" title="Undo" menu_item_name="Undo" data-multiple="true" type="button">Undo </button>
+			
+        </div>
+	    <ul class="list-griditems pull-right">
+            <li class="btn-fullscreen"><a href="javascript:void(0);" data-bypass="true" title="" menu_item_name="FullScreen" data-action="fullscreen" class="msi-tooltip hideElement fullScreen grid-fullscreen" data-placement="bottom" data-original-title="Fullscreen"><i class="icn icn-enlarge gridgeFullscreen "></i></a></li>
+            <li class="vertical-spacer"></li>
+            
+        </ul>
+</div>
+     
+    <div class="grid-container"><table id="TSK" class="backgrid"><thead><tr><th tabindex="0" class="select-all-header-cell renderable"><input tabindex="-1" type="checkbox"></th><th tabindex="0" class="editable renderable TASK_NO text-wrap" data-toggle="tooltip" title="Task No" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-1"></span>
+			<span class="dropdown-field-label" id="label-group-string-1">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Task No</th><th tabindex="0" class="editable renderable TASK_TITLE text-wrap" data-toggle="tooltip" title="Task Title" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-2"></span>
+			<span class="dropdown-field-label" id="label-group-string-2">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Task Title</th><th tabindex="0" class="editable renderable TASK_OWNER text-wrap" data-toggle="tooltip" title="Task Owner" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-3"></span>
+			<span class="dropdown-field-label" id="label-group-string-3">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Task Owner</th><th tabindex="0" class="editable renderable TASK_APPROVER text-wrap" data-toggle="tooltip" title="Task Approver" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-4"></span>
+			<span class="dropdown-field-label" id="label-group-string-4">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Task Approver</th><th tabindex="0" class="editable renderable SCHEDULED_DATE text-wrap" data-toggle="tooltip" title="Scheduled Date" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-5"></span>
+			<span class="dropdown-field-label" id="label-group-string-5">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Scheduled Date</th><th tabindex="0" class="editable renderable TASK_DUE_DATE text-wrap" data-toggle="tooltip" title="Due Date" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-6"></span>
+			<span class="dropdown-field-label" id="label-group-string-6">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Due Date</th><th tabindex="0" class="editable renderable DESC_OF_FOLLOWUP_TASK text-wrap" data-toggle="tooltip" title="Description of Follow up Task" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-7"></span>
+			<span class="dropdown-field-label" id="label-group-string-7">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Description of Follow up Task</th><th tabindex="0" class="editable TASK_ID text-wrap" data-toggle="tooltip" title="Task ID" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-8"></span>
+			<span class="dropdown-field-label" id="label-group-string-8">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Task ID</th><th tabindex="0" class="editable TASK_STATUS text-wrap" data-toggle="tooltip" title="Task Status" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-9"></span>
+			<span class="dropdown-field-label" id="label-group-string-9">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+Task Status</th><th tabindex="0" class="editable TSK_CAR_SOURCE text-wrap" data-toggle="tooltip" title="TSK Source Hidden" style="cursor: default;">
+<div class="dropdown column-filter-dropdown">
+	<span class="icon-header-menu icn icn-caret-down pull-right" data-toggle="dropdown"></span>
+	<ul class="dropdown-menu filter-dropdown">
+		
+		<li class="filter-input" data-action="filter">
+			<form>
+				<div class="input-group">
+					<input type="text" class="form-control" name="string" placeholder="Filter by Keywords" value="">
+					<span class="input-group-addon btn btn-default"><span class="icn icn-filter"></span></span>
+				</div>
+			</form>
+		</li>
+		
+		
+		
+		<li data-action="group">
+			<span class="icn icn-folder-open pull-right" id="icon-group-string-10"></span>
+			<span class="dropdown-field-label" id="label-group-string-10">Group by this column</span>
+		</li>
+		
+		
+		
+		
+	</ul>
+</div>
+
+TSK Source Hidden</th></tr></thead><tbody><tr class="empty"><td colspan="11" class="gridEmptyState">
+
+            
+            <div class="state-wrap">
+                <div class="state-title"><i class="icn icn-info state-title_icon "></i></div>
+                    <div class="state-body">
+                     <div class="state-body_title">No items added</div>
+                     <div class="state-body_subtitle  hide  "></div>
+                     <div class="state-body_body  hide "></div>             
+                </div> 
+            </div>
+            </td></tr></tbody></table></div>
+    <div class="cartridge-grid-footer">
+        <div class="pull-left summary"><span class="notice"></span></div>
+    <div class="backgrid-paginator pull-right" style="display: none;"><ul><li class="disabled"><a href="#" title="First">《</a></li><li class="disabled"><a href="#" title="Previous">〈</a></li><li class="active"><a href="#" title="Page 1">1</a></li><li class="disabled"><a href="#" title="Next">〉</a></li><li class="disabled"><a href="#" title="Last">》</a></li></ul></div></div>
+</div>
+</div></fieldset>
+            </div>
+        </form>
+        </div>
+</section>
+<section class="form-subsection " data-section="Preview Follow up Tasks" id="section_MSAI_85">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class=" subsection-legend " title="Preview Follow up Tasks"> Preview Follow up Tasks
+            
+            
+            </legend>
+            <div id="sectionContainersection_MSAI_85" class="section_MSAI_85-MS_CAP_MANAGE_CAPA">
+            
+            <fieldset id="fieldsetsection_MSAI_85"><div><div class="col-md-12">
+     <!-- a class="inline">Follow Up Tasks</a -->
+<div class="lazy-load"> 
+        <!--<div>
+        <span id="reportSpinner" class="icn icn-spinner"></span>        
+       </div>-->
+     </div> 
+    <div class="inline-report" data-id="INLINEREPORT_32">
+    </div>
+</div>
+</div></fieldset>
+            </div>
+        </form>
+        </div>
+</section>
+</fieldset>
+            </div>
+        </form>
+        </div>
+</section>
+<section class=" form-section " data-section="Action" id="section_MSAI_92" style="display: none;">
+    <div class="form-title"></div>
+    <div class="form-body">
+        <form class="form-horizontal" role="form">
+            <legend class="section-legend  accordion-toggle" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#sectionContainersection_MSAI_92" data-target=".section_MSAI_92-MS_CAP_MANAGE_CAPA" title="Action"> Action
+            
+            
+            </legend>
+            <div id="sectionContainersection_MSAI_92" class="section_MSAI_92-MS_CAP_MANAGE_CAPA collapse in">
+            
+            
+            </div>
+        </form>
+        </div>
+</section>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade" id="savedForm" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Form Save</h4>
+            </div>
+            <div class="modal-body">
+                <p>Form has been saved successfully</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-alternative" data-dismiss="modal" aria-hidden="true">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal ms-modal fade" id="submitForms" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Form Submit</h4>
+            </div>
+            <div class="modal-body"><fieldset id="fieldsetsection_MSAI_92"><div class="form-group col-md-12 col-xs-12 hide">
+<label class="control-label col-sm-3  handle ">Action
+            <span class="error-icon error-icon-hidden">
+                <i class="icn icn-circle-error fw text-danger"></i>
+            </span>
+        </label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+    <div class="field-label col-xs-12 col-sm-6 col-md-6">
+        
+        <div class="select2-container form-control" id="s2id_USER_ACTION" style="width: 100%;"><a href="javascript:void(0)" onclick="return false;" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen">Action</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow"><b></b></span></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen764"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="form-control  select2-offscreen" id="USER_ACTION" data-collab="true" data-id="USER_ACTION" tabindex="-1">
+            <option></option>
+            
+            
+            <option value="">Select One</option>
+            
+            
+            
+            <option value="1">Submit</option>
+            
+            <option value="15">Force Close</option>
+            
+            <option value="16">Force Cancel</option>
+            
+        </select>
+        
+    </div>
+     </div></div><div class="form-group col-md-12 col-xs-12"><label class="control-label col-sm-3 handle mandatoryLabel">Comments
+<span class="error-icon error-icon-hidden">
+    <i class="icn icn-circle-error fw text-danger"></i>
+</span>
+</label>
+
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+
+
+
+
+<div class="col-sm-12">
+    
+        
+         <textarea data-id="USER_COMMENTS" class="lightRTF inline-edit-area title form-control mandatory" data-button-class="all" data-text="Comments" spellcheck="true" data-category="textarea" contenteditable="true" onclick="$(this).focus();"></textarea>
+        
+    <p>(<span class="currentLimit">0</span>/<span class="maxLimit">4000</span>)</p>
+    
+</div>
+
+
+
+
+</div>
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">OwnerShip Details
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="HID_OWN_TAB" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">FollowUp Task Information
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="HID_FOLLOW_UP" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">Hidden Source
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="HID_SOURCE" data-collab="true" spellcheck="true" placeholder="Hidden Source" maxlength="100">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Hid_Final_Appprover
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="HID_FINAL_APPROVER" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">HID_METRIC_ID
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="HID_METRIC_ID" data-collab="true" spellcheck="true" placeholder="HID_METRIC_ID" maxlength="255">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">HID_PID
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="HID_PID" data-collab="true" spellcheck="true" placeholder="HID_PID" maxlength="255">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">curr_step
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="CURR_STEP" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">Status Inclusion
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+			  <label data-id="STATUS_INCLUSION" type="field-value" title=";">;</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">Hidden Flag
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="HID_FLAG" data-collab="true" spellcheck="true" placeholder="Hidden Flag" maxlength="255">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">HID_CAP_ID
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="HID_CAP_ID" data-collab="true" spellcheck="true" placeholder="HID_CAP_ID" maxlength="255">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide">
+
+<label class="control-label col-sm-3 handle ">Responsible Dept STP
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+			
+				<input type="text" class="form-control " value="" data-id="RESP_DEPT_STP" data-collab="true" spellcheck="true" placeholder="Responsible Dept STP" maxlength="255">
+		   
+		
+	</div>
+</div>
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-CALENDAR">
+
+<label class="control-label col-sm-3 handle ">HDN_DATE
+  <span class="error-icon error-icon-hidden">
+    <i></i>
+  </span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">
+<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+  
+  <div class="field-container readonly-field">
+    <label data-id="HDN_DATE" class="readonly-align" title="">-</label>
+  </div>
+  
+</div>
+</div>
+
+
+</div><div class="form-group col-md-12 col-xs-12 hide read-only-field read-only-field-TEXTFIELD">
+
+<label class="control-label col-sm-3 handle ">HDN_VAR
+	<span class="error-icon error-icon-hidden">
+		<i></i>
+	</span>
+</label>
+<div class="field-container col-xs-12 col-sm-8 col-md-8">	
+	<div class="field-label field-container col-xs-12 col-sm-6 col-md-6">
+		
+		<div class="readonly-field">
+			
+               <label data-id="HDN_VAR" type="field-value" title="">-</label>
+			
+		</div>		
+		
+	</div>
+</div>
+
+</div></fieldset></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="submit" data-dismiss-parent="no" aria-hidden="true">Submit</button>
+                <button type="button" class="btn btn-alternative" id="cancelSubmit" data-dismiss="modal" data-dismiss-parent="no" aria-hidden="true">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="closeForms" class="modal ms-modal ms-modal--dialog fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">
+                    Close Form                    
+                </span>
+            </div>
+            <div class="modal-body">This form has unsaved changes. What would you like to do?</div>
+            <div class="modal-footer">
+                 
+                	<p class="hide-button">&gt;<input type="checkbox" id="release-lock" checked="">Release Access</p>
+                  
+                <button type="button" class="btn btn-primary saveAndClose">Save and Close</button>
+                <button type="button" class="btn btn-alternative closeWithoutSave">Don't Save</button>
+                <button type="button" class="btn btn-default closeModal" data-dismiss="modal" data-dismiss-parent="no">Cancel</button>
+
+                <button type="button" class="btn btn-alternative discard">Discard &amp; Leave</button>
+                <button type="button" class="btn btn-default stayOnThePage" data-dismiss="modal" data-dismiss-parent="no">Stay on this page</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal ms-modal ms-modal--dialog fade" id="confirmationSubmit" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Error</h4>
+            </div>
+            <div class="modal-body">
+                <p>Please fill the mandatory fields to proceed</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-alternative" data-dismiss="modal" data-dismiss-parent="no" aria-hidden="true">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</div></div>
+    </div>
+    
+
+    <section id="msiContextualPane" class="msi fade hide" style="display: none;">
+        <i class="spa close ctxPane-close msi-tooltip" title="Close" data-action="close">×</i>
+		<div class="ctxPane-content"></div>
+    </section>
+    <section id="msiModal">
+
+    <div id="footer"></div>
+    <script src="/ui/js/locale.js" type="text/javascript"></script>
+    <script data-main="/ui/js/main" src="/ui/js/libs/require/require.js" type="text/javascript"></script>
+
+
+</section><div id="ext-gen15" class=" x-unselectable x-splitbar-proxy x-splitbar-proxy-h"></div><div id="ext-gen33" class=" x-unselectable x-splitbar-proxy x-splitbar-proxy-v"></div><div id="ext-gen57" class="x-dd-drag-proxy x-dd-drop-nodrop x-grid3-col-dd" style="position: absolute; z-index: 15000; visibility: hidden; left: -10000px; top: -10000px;"><div class="x-dd-drop-icon"></div><div class="x-dd-drag-ghost" id="ext-gen58"></div></div><div class="col-move-top" id="ext-gen59">&nbsp;</div><div class="col-move-bottom" id="ext-gen60">&nbsp;</div><div id="ext-gen82" class="x-dd-drag-proxy x-dd-drop-nodrop x-grid3-col-dd" style="position: absolute; z-index: 15000; visibility: hidden; left: -10000px; top: -10000px;"><div class="x-dd-drop-icon"></div><div class="x-dd-drag-ghost" id="ext-gen83"></div></div><div class="col-move-top" id="ext-gen84">&nbsp;</div><div class="col-move-bottom" id="ext-gen85">&nbsp;</div><!-- /.modal --><!-- /.modal --><!-- /.modal --><span id="fusioncharts-tooltip-element" style="display: block; position: absolute; text-align: left; margin: 0px; z-index: 99999; pointer-events: none;"><span style="overflow: hidden; display: block;"></span></span></body></html>

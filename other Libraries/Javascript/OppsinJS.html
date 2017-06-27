@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>JavaScript Object Oriented Programming(OOPs) Tutorial
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //Write your code here.....
+	  function Person(name,age) {
+    //Properties
+    this.name = name;
+    this.age = age;
+    //functions
+    this.sayHi = function() {
+        return this.name + " Says Hi";
+    }
+	this.sayBye=function(){
+	return "name-"+this.name+" and age-"+this.age+" saying Bye";
+	}
+}
+//Creating person instance
+function callfun(){
+var p = new Person('Jimmy',24);
+alert(p.sayBye());
+}
+    </script>
+	<button type='button' onclick='javascript:callfun()'>click</button>
+  </body>
+</html>

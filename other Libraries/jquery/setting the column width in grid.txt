@@ -1,0 +1,8 @@
+$('#msai_multirow_datagrid_'+F.QST.getID()).find('thead').find('tr:eq(0)').find('th:eq(1)').attr('width','20px')
+
+MSAI_42
+
+F.getTab("MSAI_42").onClick(function(tabNumber) 
+{  alert(tabNumber);
+return true; 
+} );

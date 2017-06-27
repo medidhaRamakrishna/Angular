@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+    <style>
+        audio{
+            border-radius: 80px;
+            background-color: aqua;
+            height: 180px;
+            width:180px;
+            
+        }
+        p{
+            border-radius:80px 10px 10px 100px;
+            background-color: coral;
+            
+        }
+        
+        </style>
+    <title>HTML5 Features</title>
+    </head>
+    
+<body>
+    <p>Progress</p>
+    <progress max="100" value="10" id='p1'></progress>
+    <progress max="100" value="10"></progress>
+    <button onclick="progress()">Click me</button>
+    <p>Audio </p>
+    <audio controls id="audio">
+    <source src="C:/Users/Public/Music/Sample Music/a.mp3" type="audio/mp3">
+        
+    </audio>
+    <p>Bi directional</p>
+    <bd>   TEST for BDI</bdi>
+    
+    </body>
+    
+    <script>
+        var i=1;
+    function progress(){
+        
+        time=setInterval(function(){
+        document.getElementById('p1').setAttribute('value',i++);    
+            if(i==100){
+                clearInterval(time);
+            }
+        },10);        
+        
+        
+    }
+    
+    </script>
+</html>

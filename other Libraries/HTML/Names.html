@@ -1,0 +1,120 @@
+<html>
+<head> 
+ <script>
+array = [];
+//onclick of button it will be called
+function emp1() {
+
+	var names = document.getElementById('t1').value;
+	var e1 = new Emp(names);
+	if (array.length != 0) {
+		var a = array.indexOf(e1.getName()); 
+		if(a!=-1){
+			alert(e1.getName() + ' already Exist in system');
+			return;}
+		}
+	
+	e1.insertInTable();
+	e1.getDuplicates();
+	e1.employeeLoginCreation('Ramakrishna',22,'AEG',2,10,6);
+}
+function Emp(name) {
+	this.name = name;
+
+}
+Emp.prototype.insertInTable = function () {
+	var n = this.getName();
+	if (n != '') {
+		var table = document.getElementById('tbl1');
+		var row = table.insertRow(1);
+		var cell2 = row.insertCell(0);
+		var cell1 = row.insertCell(1);
+		cell1.innerHTML = this.getlength();
+		cell2.innerHTML = this.getName();
+	}
+}
+
+Emp.prototype.getName = function () {
+	return this.name;
+}
+Emp.prototype.getlength = function () {
+	return this.name.length;
+}
+Emp.prototype.getDuplicates = function () {
+
+	var table = document.getElementById('tbl1');
+	var length = table.rows.length;
+	for (var i = 1; i < length; i++) {
+		var cel1 = table.rows[i].cells[0].innerHTML;
+		var cel2 = table.rows[i].cells[1].innerHTML;
+		array.push(cel1, cel1);
+	}
+
+}
+Emp.prototype.employeeLoginCreation=function (name, age, Dept, Exp, login, logout) {
+
+	//var this = {};
+	this.name = name;
+	this.age = age;
+	this.Dept=Dept;
+	this.Exp=Exp;
+	this.login=login;
+	this.logout=logout;
+  alert('this.name'+this.name);
+ // return this;
+
+}
+
+</script>
+</head> 
+<body>
+   <table>
+   <tr>
+      <td>
+         Name:
+      </td>
+      <td><input type='text' id='t1'></td>
+   </tr>
+   <tr>
+      <td>
+         Age:
+      </td>
+      <td><input type='text' id='t2'></td>
+   </tr>
+   <tr>
+      <td>
+         Dept:
+      </td>
+      <td><input type='text' id='t3'></td>
+   </tr>
+   <tr>
+      <td>
+         Exp:
+      </td>
+      <td><input type='text' id='t4'></td>
+   </tr>
+   <tr>
+      <td>
+         Login:
+      </td>
+      <td><input type='text' id='t5'></td>
+   </tr>
+   <tr>
+      <td>
+         Logout:
+      </td>
+      <td><input type='text' id='t5'></td>
+   </tr><tr>
+   <td><button id='id1' onclick='javascript:emp1()'>test</button></td>
+   <td>Capture</td>
+   </tr>
+   
+   
+   <table id='tbl1'  border="1" cellpadding="0" cellspacing="0" width="200px">
+      <tr>
+         <td name='e1'>Employee Name</td>
+         <td name='l1'>Length</td>
+      </tr>
+   </table>
+</body>
+</html>
