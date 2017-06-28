@@ -1,0 +1,890 @@
+<?xml version='1.0' encoding='UTF-8'?><FORM_SPEC><APPSTUDIO_DETAILS><APPSTUDIO_VERSION>700</APPSTUDIO_VERSION></APPSTUDIO_DETAILS><DEPENDENT_LIST/><DATA><DATA_FORM><![CDATA[&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;form&gt;
+    &lt;meta&gt;
+        &lt;primary-title&gt;
+            &lt;type&gt;static&lt;/type&gt;
+            &lt;source&gt;GRID ADD ROW&lt;/source&gt;
+        &lt;/primary-title&gt;
+        &lt;secondary-title&gt;
+            &lt;type&gt;field&lt;/type&gt;
+        &lt;/secondary-title&gt;
+        &lt;name&gt;GRID_ADD_ROW&lt;/name&gt;
+        &lt;module&gt;AT1&lt;/module&gt;
+        &lt;pushform-name&gt;MS_AT1_GRID_ADD_ROW&lt;/pushform-name&gt;
+        &lt;log-number&gt;7483&lt;/log-number&gt;
+        &lt;security-access-infolet&gt;None&lt;/security-access-infolet&gt;
+        &lt;created-by&gt;100000&lt;/created-by&gt;
+        &lt;creation-date&gt;2016-03-07+05:30&lt;/creation-date&gt;
+        &lt;updated-by&gt;100000&lt;/updated-by&gt;
+        &lt;updation-date&gt;2016-03-07+05:30&lt;/updation-date&gt;
+        &lt;version&gt;1&lt;/version&gt;
+        &lt;deployed&gt;Y&lt;/deployed&gt;
+        &lt;dview-name&gt;MS_AT1_GRID_ADD_ROW_DV&lt;/dview-name&gt;
+        &lt;view-name&gt;MS_AT1_GRID_ADD_ROW_V&lt;/view-name&gt;
+        &lt;deployed-on&gt;2016-03-07+05:30&lt;/deployed-on&gt;
+        &lt;unique-id&gt;4497&lt;/unique-id&gt;
+        &lt;appstudio-version&gt;700&lt;/appstudio-version&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;enabled-lock&gt;N&lt;/enabled-lock&gt;
+        &lt;lock-duration-type&gt;System Default_Time&lt;/lock-duration-type&gt;
+        &lt;du-deployed&gt;N&lt;/du-deployed&gt;
+        &lt;error-flag&gt;N&lt;/error-flag&gt;
+        &lt;enable-default-workflow&gt;N&lt;/enable-default-workflow&gt;
+        &lt;autosave-enable&gt;N&lt;/autosave-enable&gt;
+        &lt;enable-ws&gt;N&lt;/enable-ws&gt;
+        &lt;briefcase-enable&gt;N&lt;/briefcase-enable&gt;
+        &lt;briefcase-data-backup-retrieval&gt;N&lt;/briefcase-data-backup-retrieval&gt;
+        &lt;briefcase-intermediate-sync&gt;N&lt;/briefcase-intermediate-sync&gt;
+        &lt;enable-electronic-sign&gt;N&lt;/enable-electronic-sign&gt;
+        &lt;enable-lazy-lov&gt;Y&lt;/enable-lazy-lov&gt;
+        &lt;enable-snapshot&gt;Y&lt;/enable-snapshot&gt;
+        &lt;normalize-flag&gt;N&lt;/normalize-flag&gt;
+        &lt;last-id&gt;57&lt;/last-id&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/meta&gt;
+    &lt;actions&gt;
+        &lt;action-type&gt;submit&lt;/action-type&gt;
+        &lt;target-type&gt;default&lt;/target-type&gt;
+    &lt;/actions&gt;
+    &lt;layout&gt;
+        &lt;id&gt;General&lt;/id&gt;
+        &lt;layout&gt;
+            &lt;id&gt;CID&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;COLLEGE_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;GR6&lt;/id&gt;
+            &lt;layout&gt;
+                &lt;id&gt;DEPT_ID&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;DEPT_NAME&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;DEPT_HOD&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;GR6_CID&lt;/id&gt;
+            &lt;/layout&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_OBJECT_TYPE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_USER_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_EVENT_USER_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_ENTERPRISE_INFO&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_STAGE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_PROCESS_CODE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_ACTION&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_STATUS&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;GR13&lt;/id&gt;
+            &lt;layout&gt;
+                &lt;id&gt;COURSE_ID&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;COURSE_NAME&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;COURSE_DURATION_LOV&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;GR13_DEPT_ID&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;GR13_CID&lt;/id&gt;
+            &lt;/layout&gt;
+        &lt;/layout&gt;
+    &lt;/layout&gt;
+    &lt;layout&gt;
+        &lt;id&gt;section_10&lt;/id&gt;
+        &lt;layout&gt;
+            &lt;id&gt;GROUPFIELD_20&lt;/id&gt;
+            &lt;layout&gt;
+                &lt;id&gt;LEVEL_1_APPROVER&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;LEVEL_2_APPROVER&lt;/id&gt;
+            &lt;/layout&gt;
+        &lt;/layout&gt;
+    &lt;/layout&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;CID&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;NUMBER&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;CID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;10&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;CID&lt;/unique-name&gt;
+        &lt;primary-key&gt;Y&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;College Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;COLLEGE_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;250&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;COLLEGE_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Dept Id&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;NUMBER&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DEPT_ID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;10&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;DEP&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;DEP&lt;/region-name&gt;
+        &lt;unique-name&gt;DEPT_ID&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Dept Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DEPT_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;DEP&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;DEP&lt;/region-name&gt;
+        &lt;unique-name&gt;DEPT_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Dept HOD&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DEPT_HOD&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;DEP&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;DEP&lt;/region-name&gt;
+        &lt;unique-name&gt;DEPT_HOD&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;DEP CID Hidden&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;GR6_CID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;F&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;DEP&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;DEP&lt;/region-name&gt;
+        &lt;unique-name&gt;GR6_CID&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Object Type&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_OBJECT_TYPE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;5&lt;/type&gt;
+            &lt;value&gt;MS_AT1_GRID_ADD_ROW&lt;/value&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_OBJECT_TYPE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current User Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_USER_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;value&gt;USER_NAME&lt;/value&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_USER_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Event User Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_EVENT_USER_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;value&gt;USER_NAME&lt;/value&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_EVENT_USER_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Enterprise Info&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_ENTERPRISE_INFO&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;value&gt;ENTERPRISE&lt;/value&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_ENTERPRISE_INFO&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current Stage&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_STAGE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_STAGE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Process Code&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;Y&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_PROCESS_CODE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_PROCESS_CODE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Action&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_ACTION&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_ACTION&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current Status&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_STATUS&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_STATUS&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Course ID&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;NUMBER&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;COURSE_ID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;10&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;CRS&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR13&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;parent-region&gt;DEP&lt;/parent-region&gt;
+        &lt;region-name&gt;CRS&lt;/region-name&gt;
+        &lt;unique-name&gt;COURSE_ID&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Course Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;COURSE_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;CRS&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR13&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;parent-region&gt;DEP&lt;/parent-region&gt;
+        &lt;region-name&gt;CRS&lt;/region-name&gt;
+        &lt;unique-name&gt;COURSE_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Course Duration Lov&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;COURSE_DURATION_LOV&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;CRS&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR13&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;parent-region&gt;DEP&lt;/parent-region&gt;
+        &lt;region-name&gt;CRS&lt;/region-name&gt;
+        &lt;unique-name&gt;COURSE_DURATION_LOV&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;CRS Dept Id Hidden&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;GR13_DEPT_ID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;F&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;CRS&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR13&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;parent-region&gt;DEP&lt;/parent-region&gt;
+        &lt;region-name&gt;CRS&lt;/region-name&gt;
+        &lt;unique-name&gt;GR13_DEPT_ID&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;CRS CID Hidden&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;GR13_CID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;F&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;CRS&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR13&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;CRS&lt;/region-name&gt;
+        &lt;unique-name&gt;GR13_CID&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;LEVEL 1 APPROVER&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;LEVEL_1_APPROVER&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;LEVEL_1_APPROVER&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;LEVEL 2 APPROVER&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;LEVEL_2_APPROVER&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;LEVEL_2_APPROVER&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;RELATEDREPORT&lt;/type&gt;
+        &lt;label&gt;API REPORT_NO PARAM&lt;/label&gt;
+        &lt;name&gt;API REPORT_NO PARAM&lt;/name&gt;
+        &lt;field-type&gt;REPORT&lt;/field-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;unique-name&gt;report_54&lt;/unique-name&gt;
+        &lt;render&gt;LINK&lt;/render&gt;
+        &lt;report-id&gt;101760&lt;/report-id&gt;
+        &lt;package-name&gt;AT1&lt;/package-name&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;SECTION&lt;/type&gt;
+        &lt;label&gt;General&lt;/label&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;unique-name&gt;General&lt;/unique-name&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;SECTION&lt;/type&gt;
+        &lt;label&gt;section 10&lt;/label&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;unique-name&gt;section_10&lt;/unique-name&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;GROUPFIELD&lt;/type&gt;
+        &lt;label&gt;Group 1&lt;/label&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;unique-name&gt;GROUPFIELD_20&lt;/unique-name&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;MULTIROW&lt;/type&gt;
+        &lt;name&gt;GR6&lt;/name&gt;
+        &lt;visualization&gt;GRID&lt;/visualization&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;region-name&gt;DEP&lt;/region-name&gt;
+        &lt;unique-name&gt;GR6&lt;/unique-name&gt;
+        &lt;show-add-item&gt;Y&lt;/show-add-item&gt;
+        &lt;show-header&gt;Y&lt;/show-header&gt;
+        &lt;add-item-location&gt;Beginning&lt;/add-item-location&gt;
+        &lt;add-item-location&gt;End&lt;/add-item-location&gt;
+        &lt;add-item-location&gt;Above&lt;/add-item-location&gt;
+        &lt;add-item-location&gt;Below&lt;/add-item-location&gt;
+        &lt;show-duplicate-item&gt;Y&lt;/show-duplicate-item&gt;
+        &lt;show-delete-item&gt;Y&lt;/show-delete-item&gt;
+        &lt;show-bulk-action&gt;Y&lt;/show-bulk-action&gt;
+        &lt;show-duplicate-location&gt;Above&lt;/show-duplicate-location&gt;
+        &lt;show-search&gt;Y&lt;/show-search&gt;
+        &lt;show-sort&gt;Y&lt;/show-sort&gt;
+        &lt;show-pagination&gt;Y&lt;/show-pagination&gt;
+        &lt;number-of-items-per-page&gt;10&lt;/number-of-items-per-page&gt;
+        &lt;item-label&gt;GR6&lt;/item-label&gt;
+        &lt;editable&gt;Y&lt;/editable&gt;
+        &lt;show-filter&gt;Y&lt;/show-filter&gt;
+        &lt;sort-persistence&gt;N&lt;/sort-persistence&gt;
+        &lt;visible&gt;Y&lt;/visible&gt;
+        &lt;behavior&gt;MANUAL_ENTRY&lt;/behavior&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;MULTIROW&lt;/type&gt;
+        &lt;name&gt;GR13&lt;/name&gt;
+        &lt;visualization&gt;GRID&lt;/visualization&gt;
+        &lt;seq-no&gt;4140&lt;/seq-no&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;region-name&gt;CRS&lt;/region-name&gt;
+        &lt;unique-name&gt;GR13&lt;/unique-name&gt;
+        &lt;render&gt;LINKS&lt;/render&gt;
+        &lt;show-add-item&gt;Y&lt;/show-add-item&gt;
+        &lt;show-header&gt;Y&lt;/show-header&gt;
+        &lt;add-item-location&gt;Beginning&lt;/add-item-location&gt;
+        &lt;add-item-location&gt;End&lt;/add-item-location&gt;
+        &lt;add-item-location&gt;Above&lt;/add-item-location&gt;
+        &lt;add-item-location&gt;Below&lt;/add-item-location&gt;
+        &lt;show-duplicate-item&gt;Y&lt;/show-duplicate-item&gt;
+        &lt;show-delete-item&gt;Y&lt;/show-delete-item&gt;
+        &lt;show-bulk-action&gt;Y&lt;/show-bulk-action&gt;
+        &lt;show-duplicate-location&gt;Above&lt;/show-duplicate-location&gt;
+        &lt;show-search&gt;Y&lt;/show-search&gt;
+        &lt;show-sort&gt;Y&lt;/show-sort&gt;
+        &lt;show-pagination&gt;Y&lt;/show-pagination&gt;
+        &lt;number-of-items-per-page&gt;10&lt;/number-of-items-per-page&gt;
+        &lt;item-label&gt;GR13&lt;/item-label&gt;
+        &lt;editable&gt;Y&lt;/editable&gt;
+        &lt;show-filter&gt;Y&lt;/show-filter&gt;
+        &lt;sort-persistence&gt;N&lt;/sort-persistence&gt;
+        &lt;visible&gt;Y&lt;/visible&gt;
+        &lt;behavior&gt;IMPORT&lt;/behavior&gt;
+        &lt;items-display-column&gt;COURSE_ID&lt;/items-display-column&gt;
+        &lt;items&gt;Test&lt;/items&gt;
+        &lt;import-source&gt;
+            &lt;item-type&gt;Test&lt;/item-type&gt;
+            &lt;data-source-type&gt;REPORT&lt;/data-source-type&gt;
+            &lt;data-source-value&gt;MS_CIM_CASE_USER_DETAILS_RPT&lt;/data-source-value&gt;
+            &lt;package-name&gt;CIM&lt;/package-name&gt;
+            &lt;columns&gt;
+                &lt;name&gt;FULL_NAME&lt;/name&gt;
+                &lt;field&gt;COURSE_DURATION_LOV&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;RADIO&lt;/name&gt;
+                &lt;field&gt;GR13_DEPT_ID&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;USER_NAME&lt;/name&gt;
+                &lt;field&gt;COURSE_NAME&lt;/field&gt;
+            &lt;/columns&gt;
+        &lt;/import-source&gt;
+    &lt;/elements&gt;
+    &lt;header&gt;
+        &lt;reports&gt;
+            &lt;id&gt;report_54&lt;/id&gt;
+        &lt;/reports&gt;
+    &lt;/header&gt;
+    &lt;data-object-relationships&gt;
+        &lt;entity-name&gt;MS_AT1_COLLEGE_NEW&lt;/entity-name&gt;
+        &lt;enabled-flag&gt;Y&lt;/enabled-flag&gt;
+        &lt;reportable-flag&gt;Yes&lt;/reportable-flag&gt;
+    &lt;/data-object-relationships&gt;
+&lt;/form&gt;
+]]></DATA_FORM><DATA_FORM_TEMPLATES><customJs><![CDATA[F.onLoad(function(){
+F.getHeader().showEditButton();
+});
+
+F.CID.onChange(function(){
+checkGridAPI_0();
+});
+
+function checkGridAPI_0(){
+var var1,row;
+var1=F.CID.read();
+
+if (var1.length==1){
+Ext.Msg.alert('alert', "Level 1 and level 2 Approver field in Group 1 of Section 10 is hidden");
+F.LEVEL_1_APPROVER.hide();
+F.LEVEL_2_APPROVER.hide();
+}
+
+if (var1.length==2){
+Ext.Msg.alert('alert', "Level 1 and level 2 Approver field in Group 1 of Section 10 is shown");
+F.LEVEL_1_APPROVER.show();
+F.LEVEL_2_APPROVER.show();
+}
+
+if (var1.length==3){
+F.GR6.addRow(true,true);
+}
+
+if (var1.length==4){
+var count = F.GR6.getRowCount();
+Ext.Msg.alert('alert', "The row count of the grid is : " +count);
+}
+
+/*if (var1.length==5){
+Ext.Msg.alert('alert', "The dept id field of the grid will be sorted in ascending order");
+F.GR6.sort(F.DEPT_ID,'asc');
+}*/
+
+if (var1.length==6){
+Ext.Msg.alert('alert', "The grid rows will be made empty");
+F.GR6.makeEmpty(); 
+}
+}
+
+F.onLoad(function() 
+{ 
+//var myArray = [10,56];
+//F.GR4.populateFromArray(F.STAFF_ID,myArray); 
+F.DEPT_NAME.makeRequired();
+F.DD_PROCESS_CODE.write("WF_Grid_Add_Row");
+});
+
+F.GR6.onAddRow(function() 													//onAddRow() API has been called
+{ 
+Ext.Msg.alert('alert',"onAddRow() API is called. Row is added");
+return true;
+});
+
+
+F.GR6.onMarkRow(function(row) 												//onMarkRow() API is called
+{ 
+Ext.Msg.alert('alert', "onMarkRow() API is called. Row " + row + " is marked");
+return true;
+});
+
+F.GR6.afterAddRow(function() 													//afterAddRow() API has been called
+{ 
+Ext.Msg.alert('alert',"addRow() and afterAddRow() APIs has been called. Row has been added.");
+});
+
+F.GR6.afterEmpty(function() 													//afterEmpty() API is called
+{ 
+Ext.Msg.alert('alert',"makeEmpty() and afterEmpty() APIs called. All rows in Grid are deleted");
+});
+
+F.GR6.onDeleteRow(function(row) 												//onDeleteRow() API is called
+{ 
+console.log("Row Deleted");
+F.COLLEGE_NAME.write("Row deleted");
+Ext.Msg.alert('alert', "Row " + row + " is deleted");
+return true;
+});
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+F.LEVEL_1_APPROVER.onChange(function(){                                                           //onChange() API called
+checkFormHeader();
+});
+
+function checkFormHeader(){
+var var2;
+var2=F.LEVEL_1_APPROVER.read();
+
+if (var2.length==1){
+Ext.Msg.alert('alert',"Save button on the header will be disabled");                                                       //disableSaveButton() API called
+F.getHeader().disableSaveButton();
+}
+if (var2.length==2){
+Ext.Msg.alert('alert',"Save button on the header will be enabled");                                                       //enableSaveButton() API called
+F.getHeader().enableSaveButton();
+}
+if (var2.length==3){
+Ext.Msg.alert('alert',"Save button on the header will be hidden");                                                       //hideSaveButton() API called
+F.getHeader().hideSaveButton();
+}
+if (var2.length==4){
+Ext.Msg.alert('alert',"Save button on the header will be seen");                                                       //showSaveButton() API called
+F.getHeader().showSaveButton();
+}
+if (var2.length==5){
+Ext.Msg.alert('alert',"Edit button on the header will be disabled");                                                       //disableEditButton() API called
+F.getHeader().disableEditButton();
+}
+if (var2.length==6){
+Ext.Msg.alert('alert',"Edit button on the header will be enabled");                                                       //enableEditButton() API called
+F.getHeader().enableEditButton();
+}
+if (var2.length==7){
+Ext.Msg.alert('alert',"Edit button on the header will be hidden");                                                       //hideEditButton() API called
+F.getHeader().hideEditButton();
+}
+if (var2.length==8){
+Ext.Msg.alert('alert',"Edit button on the header will be seen");                                                       //showEditButton() API called
+F.getHeader().showEditButton();
+}
+if (var2.length==9){
+Ext.Msg.alert('alert',"Close button on the header will be disabled");                                                       //disableCloseButton() API called
+F.getHeader().disableCloseButton();
+}
+if (var2.length==10){
+Ext.Msg.alert('alert',"Close button on the header will be enabled");                                                       //enableCloseButton() API called
+F.getHeader().enableCloseButton();
+}
+if (var2.length==11){
+Ext.Msg.alert('alert',"Close button on the header will be hidden");                                                       //hideCloseButton() API called
+F.getHeader().hideCloseButton();
+}
+if (var2.length==12){
+Ext.Msg.alert('alert',"Close button on the header will be seen");                                                       //showCloseButton() API called
+F.getHeader().showCloseButton();
+}
+if (var2.length==13){
+Ext.Msg.alert('alert',"Report button on the header will be disabled");                                                       //disableReportButton() API called
+F.getHeader().disableReportButton();
+}
+if (var2.length==14){
+Ext.Msg.alert('alert',"Report button on the header will be enabled");                                                       //enableReportButton() API called
+F.getHeader().enableReportButton();
+}
+if (var2.length==15){
+Ext.Msg.alert('alert',"Report button on the header will be hidden");                                                       //hideReportButton() API called
+F.getHeader().hideReportButton();
+}
+if (var2.length==16){
+Ext.Msg.alert('alert',"Report button on the header will be seen");                                                       //showReportButton() API called
+F.getHeader().showReportButton();
+}
+if (var2.length==17){
+Ext.Msg.alert('alert',"The 'API REPORT' report will be added to Related Reports dropdown");                                                       //showReport() API called
+F.addReport("API","API REPORT",{"parameters" :[
+{"name":"USERNAME","value":"TEST_USER"}
+]});
+}
+if (var2.length==18){
+Ext.Msg.alert('alert',"The report will be hidden");                                                       //hideReport() API called
+F.getHeader().hideReport('API REPORT_NO PARAM');
+}
+if (var2.length==19){
+Ext.Msg.alert('alert',"The report will be seen");                                                       //showReport() API called
+F.getHeader().showReport('API REPORT_NO PARAM');
+}
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+]]></customJs><changeHistory><![CDATA[[]]]></changeHistory></DATA_FORM_TEMPLATES></DATA></FORM_SPEC>

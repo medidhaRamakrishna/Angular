@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8'?><FORM_SPEC><APPSTUDIO_DETAILS><APPSTUDIO_VERSION>700</APPSTUDIO_VERSION></APPSTUDIO_DETAILS><DEPENDENT_LIST/><DATA><DATA_FORM><![CDATA[&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;form&gt;
+    &lt;meta&gt;
+        &lt;primary-title&gt;
+            &lt;type&gt;static&lt;/type&gt;
+            &lt;source&gt;Field Label&lt;/source&gt;
+        &lt;/primary-title&gt;
+        &lt;secondary-title&gt;
+            &lt;type&gt;static&lt;/type&gt;
+            &lt;source&gt;Secondary Field Label&lt;/source&gt;
+        &lt;/secondary-title&gt;
+        &lt;name&gt;FIELD_LABEL&lt;/name&gt;
+        &lt;module&gt;AT1&lt;/module&gt;
+        &lt;pushform-name&gt;MS_AT1_FIELD_LABEL&lt;/pushform-name&gt;
+        &lt;log-number&gt;7043&lt;/log-number&gt;
+        &lt;security-access-infolet&gt;None&lt;/security-access-infolet&gt;
+        &lt;created-by&gt;100000&lt;/created-by&gt;
+        &lt;creation-date&gt;2016-02-25+05:30&lt;/creation-date&gt;
+        &lt;updated-by&gt;100000&lt;/updated-by&gt;
+        &lt;updation-date&gt;2016-02-25+05:30&lt;/updation-date&gt;
+        &lt;version&gt;1&lt;/version&gt;
+        &lt;deployed&gt;Y&lt;/deployed&gt;
+        &lt;dview-name&gt;MS_AT1_FIELD_LABEL_DV&lt;/dview-name&gt;
+        &lt;view-name&gt;MS_AT1_FIELD_LABEL_V&lt;/view-name&gt;
+        &lt;deployed-on&gt;2016-02-25+05:30&lt;/deployed-on&gt;
+        &lt;unique-id&gt;4499&lt;/unique-id&gt;
+        &lt;appstudio-version&gt;700&lt;/appstudio-version&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;enabled-lock&gt;N&lt;/enabled-lock&gt;
+        &lt;lock-duration-type&gt;System Default_Time&lt;/lock-duration-type&gt;
+        &lt;du-deployed&gt;N&lt;/du-deployed&gt;
+        &lt;error-flag&gt;N&lt;/error-flag&gt;
+        &lt;enable-default-workflow&gt;N&lt;/enable-default-workflow&gt;
+        &lt;autosave-enable&gt;N&lt;/autosave-enable&gt;
+        &lt;enable-ws&gt;N&lt;/enable-ws&gt;
+        &lt;briefcase-enable&gt;N&lt;/briefcase-enable&gt;
+        &lt;briefcase-data-backup-retrieval&gt;N&lt;/briefcase-data-backup-retrieval&gt;
+        &lt;briefcase-intermediate-sync&gt;N&lt;/briefcase-intermediate-sync&gt;
+        &lt;enable-electronic-sign&gt;N&lt;/enable-electronic-sign&gt;
+        &lt;enable-lazy-lov&gt;Y&lt;/enable-lazy-lov&gt;
+        &lt;enable-snapshot&gt;Y&lt;/enable-snapshot&gt;
+        &lt;normalize-flag&gt;N&lt;/normalize-flag&gt;
+        &lt;last-id&gt;41&lt;/last-id&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/meta&gt;
+    &lt;layout&gt;
+        &lt;id&gt;General&lt;/id&gt;
+        &lt;layout&gt;
+            &lt;id&gt;ORGANIZATION_ID&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;ORGANIZATION_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;ORGANIZATION_HISTORY_TEXTAREA&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;ORGANIZATION_STARTDATE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_OBJECT_TYPE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_USER_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_EVENT_USER_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_ENTERPRISE_INFO&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_STAGE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_PROCESS_CODE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_ACTION&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_STATUS&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;CHECK&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;INLINEREPORT_24&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;REPORT_25&lt;/id&gt;
+        &lt;/layout&gt;
+    &lt;/layout&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Organization Id&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;NUMBER&lt;/data-type&gt;
+        &lt;required&gt;Y&lt;/required&gt;
+        &lt;mapping-attribute&gt;ORGANIZATION_ID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;10&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_ORGANIZATION&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;ORGANIZATION_ID&lt;/unique-name&gt;
+        &lt;primary-key&gt;Y&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Organization Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;ORGANIZATION_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_ORGANIZATION&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;ORGANIZATION_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Organization History TextArea&lt;/label&gt;
+        &lt;field-type&gt;TEXTAREA&lt;/field-type&gt;
+        &lt;data-type&gt;CLOB&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;ORGANIZATION_HISTORY_TEXTAREA&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;height&gt;4&lt;/height&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Large&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_ORGANIZATION&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;ORGANIZATION_HISTORY_TEXTAREA&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-format&gt;N&lt;/enable-format&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Organization StartDate&lt;/label&gt;
+        &lt;field-type&gt;DATE&lt;/field-type&gt;
+        &lt;data-type&gt;DATE&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;ORGANIZATION_STARTDATE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_ORGANIZATION&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;ORGANIZATION_STARTDATE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Object Type&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_OBJECT_TYPE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;5&lt;/type&gt;
+            &lt;value&gt;MS_AT1_FIELD_LABEL&lt;/value&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_OBJECT_TYPE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current User Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_USER_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_USER_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Event User Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_EVENT_USER_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_EVENT_USER_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Enterprise Info&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_ENTERPRISE_INFO&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_ENTERPRISE_INFO&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current Stage&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_STAGE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_STAGE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Process Code&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;Y&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_PROCESS_CODE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_PROCESS_CODE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Action&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_ACTION&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_ACTION&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current Status&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_STATUS&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_STATUS&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;RELATEDREPORT&lt;/type&gt;
+        &lt;label&gt;Inline Report&lt;/label&gt;
+        &lt;name&gt;SMC Get User Details&lt;/name&gt;
+        &lt;field-type&gt;REPORT&lt;/field-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;unique-name&gt;INLINEREPORT_24&lt;/unique-name&gt;
+        &lt;render&gt;INLINE&lt;/render&gt;
+        &lt;report-id&gt;100239&lt;/report-id&gt;
+        &lt;package-name&gt;SMC&lt;/package-name&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;RELATEDREPORT&lt;/type&gt;
+        &lt;label&gt;Link Report&lt;/label&gt;
+        &lt;name&gt;Label_Changes_Report&lt;/name&gt;
+        &lt;field-type&gt;REPORT&lt;/field-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;unique-name&gt;REPORT_25&lt;/unique-name&gt;
+        &lt;render&gt;LINK&lt;/render&gt;
+        &lt;report-id&gt;101730&lt;/report-id&gt;
+        &lt;package-name&gt;appstudio-qa&lt;/package-name&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Check&lt;/label&gt;
+        &lt;field-type&gt;BUTTON&lt;/field-type&gt;
+        &lt;unique-name&gt;CHECK&lt;/unique-name&gt;
+        &lt;url&gt;www.metricstream.com&lt;/url&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;SECTION&lt;/type&gt;
+        &lt;label&gt;General&lt;/label&gt;
+        &lt;seq-no&gt;3073&lt;/seq-no&gt;
+        &lt;unique-name&gt;General&lt;/unique-name&gt;
+    &lt;/elements&gt;
+    &lt;data-object-relationships&gt;
+        &lt;entity-name&gt;MS_AT1_ORGANIZATION&lt;/entity-name&gt;
+        &lt;enabled-flag&gt;Y&lt;/enabled-flag&gt;
+        &lt;reportable-flag&gt;Yes&lt;/reportable-flag&gt;
+    &lt;/data-object-relationships&gt;
+&lt;/form&gt;
+]]></DATA_FORM><DATA_FORM_TEMPLATES><customJs><![CDATA[F.ORGANIZATION_ID.onChange(function(){                                                           //onChange() API called
+checkFormField();
+});
+
+function checkFormField(){
+var var1,user_id;
+var1=F.ORGANIZATION_ID.read();
+user_id=F.DD_CURRENT_USER_NAME.read()
+
+if (var1.length==1){
+Ext.Msg.alert('alert',"setPrimaryTitle() API called. The primary title of the form changed to 'Test Primary Title'");                                                       //setPrimaryTitle() API called
+F.setPrimaryTitle("Test_Primary_Title");
+}
+if (var1.length==2){
+Ext.Msg.alert('alert',"setSecondaryTitle() API called. The secondary title of the form changed to 'Test Secondary Title'");                                                //setSecondaryTitle() API called
+F.setSecondaryTitle("Test_Secondary_Title");
+}
+if (var1.length==3){
+Ext.Msg.alert('alert',"setActionBtnAttributes() API called. The button labels of 'Save', 'Submit' and 'Close' buttons changed");                  //setActionBtnAttributes() API called
+F.setActionBtnAttributes({save:{label:'Custom-save'},submit:{label:'Custom-submit'},close:{label:'Custom-close'}});
+}
+if (var1.length==4){
+Ext.Msg.alert('alert',"setActionBtnAttributes() API called. The button labels of 'Close' button changed");                                                //setActionBtnAttributes() API called
+F.setActionBtnAttributes({close:{label:"Cancel"}});
+}
+if (var1.length==5){
+Ext.Msg.alert('alert',"setActionBtnAttributes() API called. The 'Save' button is hidden");                                                                     //setActionBtnAttributes() API called
+F.setActionBtnAttributes({save:{hidden:true}});
+}
+if (var1.length==6){
+Ext.Msg.alert('alert',"setActionBtnAttributes() API called. The 'Save' button is unhidden");                                                             //setActionBtnAttributes() API called
+F.setActionBtnAttributes({save:{hidden:false}});
+}
+if (var1.length==7){
+Ext.Msg.alert('alert',"Inline report will be hidden");                                                             //API hides Inline report
+F.getObject("INLINEREPORT_24").hide();
+}
+if (var1.length==8){
+Ext.Msg.alert('alert',"Inline report will be shown to user");                                                             //API displays Inline report
+F.getObject("INLINEREPORT_24").show();
+}
+if (var1.length==9){
+Ext.Msg.alert('alert',"Link report will be hidden");                                                             //API hides Inline report
+F.getObject("REPORT_25").hide();
+}
+if (var1.length==10){
+Ext.Msg.alert('alert',"Link report will be shown to user");                                                             //API displays Inline report
+F.getObject("REPORT_25").show();
+}
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+F.onSave(function(){							//onSave() API called
+Ext.Msg.alert('alert',"Child form will be loaded");
+childFormLoad();
+});
+
+function childFormLoad(){
+F.loadForm(
+{"mid":108442,"pid":255160}
+);
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------]]></customJs><changeHistory><![CDATA[[]]]></changeHistory></DATA_FORM_TEMPLATES></DATA></FORM_SPEC>

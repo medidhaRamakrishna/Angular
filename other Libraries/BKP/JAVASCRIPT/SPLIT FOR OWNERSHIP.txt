@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the array values after the split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "How are you doing today?;rama krishna reddy?;How are you doing today?";
+    var res = str.split(";");
+
+ for(i=0;i<res.length;i++){
+
+var twoD=res[i].split(" ");
+alert(res[i]);
+
+
+ for(j=0;j<twoD.length;j++){
+
+alert(twoD[j]);
+}
+}
+}
+</script>
+
+</body>
+</html>
+
+
+F.onLoad(function(){
+    
+//This Function is to get The Details of Owner
+
+function getOwnerShipDetails() {
+    var str =HID_OWN_TAB.read();
+    
+    var str1 = str.split(";");
+
+ for(i=0;i<str1.length;i++){
+
+var str2=str1[i].split(" ");
+alert(str1[i]);
+
+
+ for(j=0;j<str2.length;j++){
+
+alert(str2[j]);
+}
+}
+}
+
+});

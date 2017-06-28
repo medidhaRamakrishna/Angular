@@ -1,0 +1,18 @@
+//Hiding the addrow button using jquery
+$("#msai_data_grid_container_100053").find('div:eq(0) div:eq(0)').hide()
+//making font bold
+ $("#STEP_OWNER_label__div").css('font-weight', 'bold');
+//size setting
+ $("#STEP_label__div").css("font-size", 10+"pt");
+
+$('.msai_hyperlink:eq(0)').hide();//define problem initiate action Items link
+$('.msai_hyperlink:eq(1)').hide();//containment action initiate action Items link
+
+
+1
+$( "li.item-ii" ).find( "li" ).css( "background-color", "red" );
+
+
+HIDING THE CHECK BOX:
+----------------------
+$('#msai_multirow_datagrid_' + F.ACT.getID()).find('tbody').find('tr:eq(1)').find('td:eq(0)').find('input').hide()
