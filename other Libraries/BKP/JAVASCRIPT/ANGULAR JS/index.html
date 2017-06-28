@@ -1,0 +1,25 @@
+<htm ng-app='myApp'><head>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+</head>
+<body >
+<div ng-controller='Controller as c1'>
+<div ng-repeat="l in c1.listofNames">
+{{l.name+"-age-"+l.age}}
+<form>
+<
+
+
+</div>
+<input type="text" ng-model="input1" style="background:{{input1}}" placeholder="enter your favourite colour">
+<script>
+angular.module('myApp',[]).
+controller('Controller',controllerfun);
+function controllerfun(){
+this.listofNames=[{name:'ramakrishna',age:24},
+{name:'arun',age:27}
+]
+}
+</script>
+</body>
+</html>

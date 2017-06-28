@@ -1,0 +1,61 @@
+F.field1.read()-- > read(seq)-- > readFromDOM(seq)-- >
+dispValArr--for infolet values
+var seq = F.RESP_DEPT.getSequence()
+	dispValArr[seq - 1]
+
+	labelArr-- > contains all the labels of the form
+	geFormInfoletId(); //to get the infolet id
+getTitle();
+-- > document.getElementById("custom_header").value
+getCurrentPage(F.RCA.getID());
+-- > to get the page number in MR
+
+F.disableAll()-- >
+for (var i = 1; i < allFields.length; i++) {
+	eval('F.' + allFields[i] + '.enable()');
+}
+
+for (var i = 1; i < allFields.length; i++) {
+	eval('F.' + allFields[i] + '.makeRequired()');
+}
+for (var i = 1; i < allFields.length; i++) {
+	eval('F.' + allFields[i] + '.makeNotRequired()');
+}
+
+console.time('t1');
+for (var i = 1; i < allFields.length; i++) {
+	eval('F.' + allFields[i] + '.disable()');
+}
+console.timeEnd('t1')
+
+console.time('t1');
+F.disableAll();
+console.timeEnd('t1');
+
+/*Grid related Platform code */
+nonmultiseqArr--non multi roe array
+nonmultiseqArr[i]
+var colSeq = getColSeq(seq);
+var rowSeq = getRowSeq(seq);
+if (requiredArr[seq - 1] && editableArr[seq - 1]) {
+	if (isMarkedForDeletion(seq, colSeq))
+
+		cleanupMultiAttach
+		mrIdArr.length
+		rows_per_page = getRef('mrrpid' + multiId).value
+			var page_num = regionObj.getCurrentPageNo();
+	var start_row = (page_num - 1) * rows_per_page + 1,
+	end_row = page_num * rows_per_page;
+
+	//For Date with and with out time stamp
+	var a = new Date();
+	a.toLocaleString()
+	"12/27/2016, 1:13:16 PM"
+	a.toLocaleDateString()
+	"12/27/2016"
+	//loaction in html5
+	navigator.appCodeName //to get the browsername
+	//====================M7
+//read and write from the parent form in child form
+F.getParentForm()['CMP_FORM_STATUS'].read();
+F.getParentForm()['CMP_FORM_STATUS'].write('tst');

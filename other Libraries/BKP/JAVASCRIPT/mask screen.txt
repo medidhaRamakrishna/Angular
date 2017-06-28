@@ -1,0 +1,2 @@
+window.parent.window.parent.Ext.get("MultipleWindow1").mask("Please Wait until page load");
+window.parent.window.parent.Ext.get("MultipleWindow1").unmask();

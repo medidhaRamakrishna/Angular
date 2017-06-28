@@ -1,0 +1,31 @@
+$("#msai_data_grid_container_100054").find('div:eq(0)').hide();//define problem
+$("#msai_data_grid_container_100056").find('div:eq(0)').hide()//CONTAINMENT ACTION
+
+
+
+
+F.SOURCE_SYSTEM_ID.onChange(function (){
+F.ORIGIN.write("");
+F.REQUESTED_FOR.write("");
+F.THRDPRTY_ORG_NME.writeValue('','');
+F.THRDPRTY_ORG_NME.hide();
+F.THIRDPARTY_LOC.hide();
+F.THIRDPARTY_LOC.writeValue('','');
+F.PRODUCT_ID.hide();
+F.PRODUCT_ID.writeValue('','');
+F.SRC_PROCESS_NAME.hide();
+F.SRC_PROCESS_NAME.writeValue('','');
+F.CUSTOMER_NAME.writeValue('','');
+F.CUSTOMER_NAME.hide();
+F.CUSTOMER_LOCATION.writeValue('','');
+F.CUSTOMER_LOCATION.hide();
+});
+
+F.ORIGIN.onChange(function(){
+F.THRDPRTY_ORG_NME.writeValue('','');
+F.THIRDPARTY_LOC.writeValue('','');
+F.CUSTOMER_NAME.writeValue('','');
+F.CUSTOMER_LOCATION.writeValue('','');
+});
+	$("#msai_data_grid_container_" + this.id + " .backgrid tbody tr:eq(" + e + ") td:eq(0)").find("input").prop("checked", false);
+				$("#msai_data_grid_container_" + this.id + " .backgrid tbody tr:eq(" + e + ") td:eq(0)").find("input").change();

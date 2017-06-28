@@ -1,0 +1,12 @@
+document.getElementsByClassName('toolbarContainer')[0].style.visibility='hidden'//IDENTIFY TEAM
+document.getElementsByClassName('toolbarContainer')[1].style.visibility='hidden';//DIFINE PROBLM
+document.getElementsByClassName('toolbarContainer')[2].style.visibility='hidden';//CNT ACTION
+
+
+ACTION_ITEM_TITLE
+ACTION_PRIORITY
+ACTION_OWNER
+ACTION_APPROVER"
+#dropdown-ACTION_ITEM_START_DATE
+ACTION_ITEM_DUE_DATE
+ACTION_DESC

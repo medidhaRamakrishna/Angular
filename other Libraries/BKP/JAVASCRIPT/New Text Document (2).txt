@@ -1,0 +1,82 @@
+function effectiveFromDtValidate()
+{
+     var fromDate = new Date(F.ACTION_ITEM_START_DATE.read());
+    fromDate = fromDate.format("m/d/Y");
+ //today = createDate();
+ if(validate_start_and_end_date(new Date() , new Date(F.ACTION_ITEM_START_DATE.read()))==-1  )
+ {
+  alert(jsAlertMessages["FROM_DATE_GT_CUR_DATE"]); 
+  F.ACTION_ITEM_START_DATE.write('');
+    } 
+
+    else if (validate_start_and_end_date(new Date(F.ACTION_ITEM_START_DATE.read()), new Date(F.EFFECTIVE_UNTIL.read())) == -1)
+ {
+  alert(jsAlertMessages["FROM_DATE_LT_END_DATE"]);
+  F.ACTION_ITEM_START_DATE.write('');
+    }
+ 
+}
+
+function effectiveTillDtValidate()
+{
+ var fromDate = new Date(F.ACTION_ITEM_START_DATE.read());
+ fromDate = fromDate.format("m/d/Y");
+ var toDate = new Date(F.ACTION_ITEM_DUE_DATE.read());
+ toDate = toDate.format("m/d/Y");
+  if (fromDate == '' && toDate != '')
+ {  
+  alert(jsAlertMessages["PLS_INP_FROM_DATE"]);
+  F.ACTION_ITEM_DUE_DATE.write('');
+  return false;
+ }
+ else if (validate_start_and_end_date(new Date(F.ACTION_ITEM_START_DATE.read()), new Date(F.ACTION_ITEM_DUE_DATE.read())) == -1) 
+ {
+  alert(jsAlertMessages["END_DATE_GT_FROM_DATE"]);
+  F.ACTION_ITEM_DUE_DATE.write('');
+    } 
+  else if(validate_start_and_end_date(new Date() , new Date(F.ACTION_ITEM_DUE_DATE.read()))==-1  )
+ {
+  alert(jsAlertMessages["END_DATE_GT_CUR_DATE"]);   
+  F.ACTION_ITEM_DUE_DATE.write(''); 
+ }
+ 
+}
+
+function validate_start_and_end_date(check_dt,cre_dt)
+{
+var ret_value='1';
+var my_chk_date=new Date(check_dt);
+var my_cre_date=new Date(cre_dt);
+var ed_month=my_chk_date.getMonth();
+var ed_date=my_chk_date.getDate();
+var ed_year=my_chk_date.getYear();
+var curr_month=my_cre_date.getMonth();
+var curr_date=my_cre_date.getDate();
+var curr_year=my_cre_date.getYear();
+    if(ed_year>curr_year)
+     {
+       ret_value='-1';
+     }
+    else
+     {
+    if(ed_year==curr_year)
+         {
+     if(ed_month>curr_month)
+             {
+      ret_value='-1';
+    }
+           else
+             {
+       if(ed_month==curr_month)
+                  {
+        if(ed_date>curr_date) 
+                      {
+         ret_value='-1';
+       }
+            
+      }
+    }
+  }
+ }
+return ret_value;
+}

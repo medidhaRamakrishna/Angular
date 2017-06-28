@@ -1,0 +1,1430 @@
+<?xml version='1.0' encoding='UTF-8'?><FORM_SPEC><APPSTUDIO_DETAILS><APPSTUDIO_VERSION>700</APPSTUDIO_VERSION></APPSTUDIO_DETAILS><DEPENDENT_LIST/><DATA><DATA_FORM><![CDATA[&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;form&gt;
+    &lt;meta&gt;
+        &lt;primary-title&gt;
+            &lt;type&gt;static&lt;/type&gt;
+            &lt;source&gt;College Grid&lt;/source&gt;
+        &lt;/primary-title&gt;
+        &lt;secondary-title&gt;
+            &lt;type&gt;field&lt;/type&gt;
+        &lt;/secondary-title&gt;
+        &lt;name&gt;COLLEGE_GRID&lt;/name&gt;
+        &lt;module&gt;AT1&lt;/module&gt;
+        &lt;pushform-name&gt;MS_AT1_COLLEGE_GRID&lt;/pushform-name&gt;
+        &lt;log-number&gt;7307&lt;/log-number&gt;
+        &lt;security-access-infolet&gt;None&lt;/security-access-infolet&gt;
+        &lt;created-by&gt;100000&lt;/created-by&gt;
+        &lt;creation-date&gt;2016-03-02+05:30&lt;/creation-date&gt;
+        &lt;updated-by&gt;100000&lt;/updated-by&gt;
+        &lt;updation-date&gt;2016-03-02+05:30&lt;/updation-date&gt;
+        &lt;version&gt;1&lt;/version&gt;
+        &lt;deployed&gt;Y&lt;/deployed&gt;
+        &lt;dview-name&gt;MS_AT1_COLLEGE_GRID_DV&lt;/dview-name&gt;
+        &lt;view-name&gt;MS_AT1_COLLEGE_GRID_V&lt;/view-name&gt;
+        &lt;deployed-on&gt;2016-03-02+05:30&lt;/deployed-on&gt;
+        &lt;unique-id&gt;3976&lt;/unique-id&gt;
+        &lt;appstudio-version&gt;700&lt;/appstudio-version&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;enabled-lock&gt;N&lt;/enabled-lock&gt;
+        &lt;lock-duration-type&gt;System Default_Time&lt;/lock-duration-type&gt;
+        &lt;du-deployed&gt;N&lt;/du-deployed&gt;
+        &lt;error-flag&gt;N&lt;/error-flag&gt;
+        &lt;enable-default-workflow&gt;N&lt;/enable-default-workflow&gt;
+        &lt;autosave-enable&gt;N&lt;/autosave-enable&gt;
+        &lt;enable-ws&gt;N&lt;/enable-ws&gt;
+        &lt;briefcase-enable&gt;N&lt;/briefcase-enable&gt;
+        &lt;briefcase-data-backup-retrieval&gt;N&lt;/briefcase-data-backup-retrieval&gt;
+        &lt;briefcase-intermediate-sync&gt;N&lt;/briefcase-intermediate-sync&gt;
+        &lt;enable-electronic-sign&gt;N&lt;/enable-electronic-sign&gt;
+        &lt;enable-lazy-lov&gt;Y&lt;/enable-lazy-lov&gt;
+        &lt;enable-snapshot&gt;Y&lt;/enable-snapshot&gt;
+        &lt;normalize-flag&gt;N&lt;/normalize-flag&gt;
+        &lt;last-id&gt;198&lt;/last-id&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/meta&gt;
+    &lt;actions&gt;
+        &lt;action-type&gt;submit&lt;/action-type&gt;
+        &lt;target-type&gt;default&lt;/target-type&gt;
+    &lt;/actions&gt;
+    &lt;layout&gt;
+        &lt;id&gt;General&lt;/id&gt;
+        &lt;layout&gt;
+            &lt;id&gt;CID&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;COLLEGE_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;GR6&lt;/id&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_ID&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_NAME&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_SPECIALITIES&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_GENDER&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_JOINDATE&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_ADDRESS_TEXTAREA&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_QUALIFICATION_LOV&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_DESIGNATION_DD&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_CATEGORY_CHECK&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;BIRTHPLACE&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;GR6_CID&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;STAFF_EMAIL&lt;/id&gt;
+            &lt;/layout&gt;
+            &lt;layout&gt;
+                &lt;id&gt;ATTACHMENT&lt;/id&gt;
+            &lt;/layout&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_OBJECT_TYPE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_USER_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_EVENT_USER_NAME&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_ENTERPRISE_INFO&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_STAGE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_PROCESS_CODE&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_ACTION&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;DD_CURRENT_STATUS&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;SHOW_GRID&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;HIDE_GRID&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;LEVEL_1_APPROVER&lt;/id&gt;
+        &lt;/layout&gt;
+        &lt;layout&gt;
+            &lt;id&gt;LEVEL_2_APPROVER&lt;/id&gt;
+        &lt;/layout&gt;
+    &lt;/layout&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;CID&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;NUMBER&lt;/data-type&gt;
+        &lt;required&gt;Y&lt;/required&gt;
+        &lt;mapping-attribute&gt;CID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;10&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;CID&lt;/unique-name&gt;
+        &lt;primary-key&gt;Y&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;College Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;COLLEGE_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;250&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;COLLEGE_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Id&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;NUMBER&lt;/data-type&gt;
+        &lt;required&gt;Y&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_ID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;10&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_ID&lt;/unique-name&gt;
+        &lt;primary-key&gt;Y&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Specialities&lt;/label&gt;
+        &lt;field-type&gt;RICHTEXT&lt;/field-type&gt;
+        &lt;data-type&gt;RICHTEXT&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_SPECIALITIES&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;height&gt;4&lt;/height&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Large&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_SPECIALITIES&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Gender&lt;/label&gt;
+        &lt;field-type&gt;RADIO&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_GENDER&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Large&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;primary&lt;/source-type&gt;
+            &lt;mlov-delimiter&gt;;&lt;/mlov-delimiter&gt;
+            &lt;type&gt;3&lt;/type&gt;
+            &lt;display-value&gt;USER_ID&lt;/display-value&gt;
+            &lt;execution-mode&gt;Y&lt;/execution-mode&gt;
+            &lt;stored-value&gt;USER_ID&lt;/stored-value&gt;
+            &lt;infolet-name&gt;MS_APPS_MAM_GET_USERS&lt;/infolet-name&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_GENDER&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff JoinDate&lt;/label&gt;
+        &lt;field-type&gt;DATE&lt;/field-type&gt;
+        &lt;data-type&gt;DATE&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_JOINDATE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_JOINDATE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Address Textarea&lt;/label&gt;
+        &lt;field-type&gt;TEXTAREA&lt;/field-type&gt;
+        &lt;data-type&gt;CLOB&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_ADDRESS_TEXTAREA&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;height&gt;4&lt;/height&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Large&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_ADDRESS_TEXTAREA&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-format&gt;N&lt;/enable-format&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Qualification LOV&lt;/label&gt;
+        &lt;field-type&gt;LOV&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_QUALIFICATION_LOV&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;primary&lt;/source-type&gt;
+            &lt;mlov-delimiter&gt;;&lt;/mlov-delimiter&gt;
+            &lt;type&gt;3&lt;/type&gt;
+            &lt;display-value&gt;MODULE_NAME&lt;/display-value&gt;
+            &lt;execution-mode&gt;N&lt;/execution-mode&gt;
+            &lt;stored-value&gt;MODULE_NAME&lt;/stored-value&gt;
+            &lt;infolet-name&gt;MS_APPS_ALL_MODULES&lt;/infolet-name&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_QUALIFICATION_LOV&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Designation DD&lt;/label&gt;
+        &lt;field-type&gt;DROPDOWN&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_DESIGNATION_DD&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;primary&lt;/source-type&gt;
+            &lt;mlov-delimiter&gt;;&lt;/mlov-delimiter&gt;
+            &lt;type&gt;3&lt;/type&gt;
+            &lt;display-value&gt;USER_NAME&lt;/display-value&gt;
+            &lt;execution-mode&gt;N&lt;/execution-mode&gt;
+            &lt;stored-value&gt;USER_ID&lt;/stored-value&gt;
+            &lt;infolet-name&gt;MS_APPS_MDF_GET_USERS&lt;/infolet-name&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_DESIGNATION_DD&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Category Check&lt;/label&gt;
+        &lt;field-type&gt;CHECKBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_CATEGORY_CHECK&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_CATEGORY_CHECK&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;BirthPlace&lt;/label&gt;
+        &lt;field-type&gt;MLOV&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;BIRTHPLACE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Large&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;primary&lt;/source-type&gt;
+            &lt;mlov-delimiter&gt;;&lt;/mlov-delimiter&gt;
+            &lt;type&gt;3&lt;/type&gt;
+            &lt;display-value&gt;MODULE_NAME&lt;/display-value&gt;
+            &lt;execution-mode&gt;N&lt;/execution-mode&gt;
+            &lt;stored-value&gt;MODULE_NAME&lt;/stored-value&gt;
+            &lt;infolet-name&gt;MS_APPS_ALL_MODULES&lt;/infolet-name&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;OGN&lt;/region-name&gt;
+        &lt;unique-name&gt;BIRTHPLACE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;STF CID Hidden&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;GR6_CID&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;F&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;GR6_CID&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Staff Email&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;STAFF_EMAIL&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;STAFF_EMAIL&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Attachment&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;ATTACHMENT&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;vea-region-name&gt;STF&lt;/vea-region-name&gt;
+        &lt;multirow-name&gt;GR6&lt;/multirow-name&gt;
+        &lt;multirow-flag&gt;Y&lt;/multirow-flag&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;ATTACHMENT&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Object Type&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_OBJECT_TYPE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;5&lt;/type&gt;
+            &lt;value&gt;MS_AT1_COLLEGE_GRID&lt;/value&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_OBJECT_TYPE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current User Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_USER_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_USER_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Event User Name&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_EVENT_USER_NAME&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_EVENT_USER_NAME&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Enterprise Info&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_ENTERPRISE_INFO&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;sources&gt;
+            &lt;source-type&gt;default&lt;/source-type&gt;
+            &lt;type&gt;4&lt;/type&gt;
+            &lt;t-filter-param-cnt&gt;0&lt;/t-filter-param-cnt&gt;
+            &lt;t-parameter-cnt&gt;0&lt;/t-parameter-cnt&gt;
+        &lt;/sources&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_ENTERPRISE_INFO&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current Stage&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_STAGE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_STAGE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Process Code&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;Y&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_PROCESS_CODE&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;30&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_PROCESS_CODE&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Action&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_ACTION&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_ACTION&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Current Status&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;DD_CURRENT_STATUS&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;Y&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;D&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;DD_CURRENT_STATUS&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;LEVEL 1 APPROVER&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;LEVEL_1_APPROVER&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;LEVEL_1_APPROVER&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;LEVEL 2 APPROVER&lt;/label&gt;
+        &lt;field-type&gt;TEXTBOX&lt;/field-type&gt;
+        &lt;data-type&gt;STRING&lt;/data-type&gt;
+        &lt;required&gt;N&lt;/required&gt;
+        &lt;mapping-attribute&gt;LEVEL_2_APPROVER&lt;/mapping-attribute&gt;
+        &lt;hidden&gt;N&lt;/hidden&gt;
+        &lt;read-only&gt;N&lt;/read-only&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;validate&gt;N&lt;/validate&gt;
+        &lt;config-type&gt;N&lt;/config-type&gt;
+        &lt;size&gt;Medium&lt;/size&gt;
+        &lt;maxlength&gt;255&lt;/maxlength&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;multirow-flag&gt;N&lt;/multirow-flag&gt;
+        &lt;unique-name&gt;LEVEL_2_APPROVER&lt;/unique-name&gt;
+        &lt;primary-key&gt;N&lt;/primary-key&gt;
+        &lt;enable-config-extensions&gt;Y&lt;/enable-config-extensions&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Show Grid&lt;/label&gt;
+        &lt;field-type&gt;BUTTON&lt;/field-type&gt;
+        &lt;unique-name&gt;SHOW_GRID&lt;/unique-name&gt;
+        &lt;url&gt;www.metricstream.com&lt;/url&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;FIELD&lt;/type&gt;
+        &lt;label&gt;Hide Grid&lt;/label&gt;
+        &lt;field-type&gt;BUTTON&lt;/field-type&gt;
+        &lt;unique-name&gt;HIDE_GRID&lt;/unique-name&gt;
+        &lt;url&gt;www.metricstream.com&lt;/url&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;SECTION&lt;/type&gt;
+        &lt;label&gt;General&lt;/label&gt;
+        &lt;state&gt;EXPANDED&lt;/state&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;unique-name&gt;General&lt;/unique-name&gt;
+    &lt;/elements&gt;
+    &lt;elements&gt;
+        &lt;type&gt;MULTIROW&lt;/type&gt;
+        &lt;name&gt;GR6&lt;/name&gt;
+        &lt;visualization&gt;GRID&lt;/visualization&gt;
+        &lt;seq-no&gt;3774&lt;/seq-no&gt;
+        &lt;data-object&gt;MS_AT1_COLLEGE_NEW&lt;/data-object&gt;
+        &lt;region-name&gt;STF&lt;/region-name&gt;
+        &lt;unique-name&gt;GR6&lt;/unique-name&gt;
+        &lt;render&gt;LINKS&lt;/render&gt;
+        &lt;show-add-item&gt;Y&lt;/show-add-item&gt;
+        &lt;show-header&gt;Y&lt;/show-header&gt;
+        &lt;add-item-location&gt;Beginning&lt;/add-item-location&gt;
+        &lt;show-duplicate-item&gt;Y&lt;/show-duplicate-item&gt;
+        &lt;show-delete-item&gt;Y&lt;/show-delete-item&gt;
+        &lt;show-bulk-action&gt;Y&lt;/show-bulk-action&gt;
+        &lt;show-duplicate-location&gt;Above&lt;/show-duplicate-location&gt;
+        &lt;show-search&gt;Y&lt;/show-search&gt;
+        &lt;show-sort&gt;Y&lt;/show-sort&gt;
+        &lt;show-pagination&gt;Y&lt;/show-pagination&gt;
+        &lt;number-of-items-per-page&gt;10&lt;/number-of-items-per-page&gt;
+        &lt;item-label&gt;GR6&lt;/item-label&gt;
+        &lt;editable&gt;Y&lt;/editable&gt;
+        &lt;show-filter&gt;Y&lt;/show-filter&gt;
+        &lt;sort-persistence&gt;N&lt;/sort-persistence&gt;
+        &lt;visible&gt;Y&lt;/visible&gt;
+        &lt;behavior&gt;IMPORT&lt;/behavior&gt;
+        &lt;items-display-column&gt;STAFF_ADDRESS_TEXTAREA&lt;/items-display-column&gt;
+        &lt;items&gt;College Form 1&lt;/items&gt;
+        &lt;items&gt;ORGANIZATION&lt;/items&gt;
+        &lt;import-source&gt;
+            &lt;item-type&gt;College Form 1&lt;/item-type&gt;
+            &lt;data-source-type&gt;REPORT&lt;/data-source-type&gt;
+            &lt;data-source-value&gt;test_1&lt;/data-source-value&gt;
+            &lt;package-name&gt;TRG&lt;/package-name&gt;
+            &lt;columns&gt;
+                &lt;name&gt;DISPLAY_VALUE&lt;/name&gt;
+                &lt;field&gt;STAFF_QUALIFICATION_LOV&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;LOCALE_ID&lt;/name&gt;
+                &lt;field&gt;STAFF_ID&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;DUMMY5&lt;/name&gt;
+                &lt;field&gt;STAFF_EMAIL&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;DUMMY3&lt;/name&gt;
+                &lt;field&gt;STAFF_CATEGORY_CHECK&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;DUMMY1&lt;/name&gt;
+                &lt;field&gt;STAFF_NAME&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;DUMMY2&lt;/name&gt;
+                &lt;field&gt;STAFF_SPECIALITIES&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;STORED_VALUE&lt;/name&gt;
+                &lt;field&gt;STAFF_DESIGNATION_DD&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;DUMMY4&lt;/name&gt;
+                &lt;field&gt;BIRTHPLACE&lt;/field&gt;
+            &lt;/columns&gt;
+        &lt;/import-source&gt;
+        &lt;import-source&gt;
+            &lt;item-type&gt;ORGANIZATION&lt;/item-type&gt;
+            &lt;data-source-type&gt;REPORT&lt;/data-source-type&gt;
+            &lt;data-source-value&gt;Test Report&lt;/data-source-value&gt;
+            &lt;package-name&gt;GRC&lt;/package-name&gt;
+            &lt;columns&gt;
+                &lt;name&gt;ACTIVITY_ID&lt;/name&gt;
+                &lt;field&gt;STAFF_CATEGORY_CHECK&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;USER_ROLE&lt;/name&gt;
+                &lt;field&gt;STAFF_DESIGNATION_DD&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;USER_ID&lt;/name&gt;
+                &lt;field&gt;STAFF_NAME&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;USER_NAME&lt;/name&gt;
+                &lt;field&gt;STAFF_GENDER&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;ACTIVITY_NAME&lt;/name&gt;
+                &lt;field&gt;STAFF_EMAIL&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;ACTIVITY_CODE&lt;/name&gt;
+                &lt;field&gt;BIRTHPLACE&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;USER_LOGIN_NAME&lt;/name&gt;
+                &lt;field&gt;STAFF_SPECIALITIES&lt;/field&gt;
+            &lt;/columns&gt;
+            &lt;columns&gt;
+                &lt;name&gt;ROLE_ID&lt;/name&gt;
+                &lt;field&gt;STAFF_QUALIFICATION_LOV&lt;/field&gt;
+            &lt;/columns&gt;
+        &lt;/import-source&gt;
+    &lt;/elements&gt;
+    &lt;data-object-relationships&gt;
+        &lt;entity-name&gt;MS_AT1_COLLEGE_NEW&lt;/entity-name&gt;
+        &lt;enabled-flag&gt;Y&lt;/enabled-flag&gt;
+        &lt;reportable-flag&gt;Yes&lt;/reportable-flag&gt;
+    &lt;/data-object-relationships&gt;
+&lt;/form&gt;
+]]></DATA_FORM><DATA_FORM_TEMPLATES><customJs><![CDATA[F.GR6.afterPageLoad (function(startRowNum,lastRowNum){
+Ext.Msg.alert('alert',"afterPageLoad() API called. The start row number of page is " + startRowNum + " and last row number of page is " + lastRowNum);
+});
+
+//*************************************************************************************************************************************
+
+F.CID.onChange(function(){
+checkGridAPI_0();
+});
+
+function checkGridAPI_0(){
+var var1,row;
+var1=F.CID.read();
+row=F.COLLEGE_NAME.read();
+
+/******Methods********/
+
+if (var1.length==1){
+F.GR6.addDuplicateRow(1);  																			
+Ext.Msg.alert('alert',"addDuplicateRow(row) API called. Duplicate row of the row1 has been added");                           //addDuplicateRow(row) API is called
+}
+
+if (var1.length==2){																				
+Ext.Msg.alert('alert',"getID(), getName(), getColumnCount() APIs called. ID: " + F.GR6.getID() + "\nName: " + F.GR6.getName() + "\n TOtal Columns: " + F.GR6.getColumnCount());      //getID(), getName(), getColumnCount() API s are called
+}
+
+if (var1.length==3){																				
+for(i=0; i<F.GR6.getRowCount(); i++) 				//getRowCount() API is called
+{ 
+F.GR6.disableRow(i); 							//disableRow() API is called
+} 
+}
+
+if (var1.length==4){
+for(i=0; i<F.GR6.getRowCount(); i++) 				//getRowCount() API is called
+{ 
+F.GR6.enableRow(i); 							//enableRow() API is called
+} 
+}
+
+if (var1.length==5){
+Ext.Msg.alert('alert',"getPageCount() API called. The total pages are: " + F.GR6.getPageCount());	//getPageCount() API called
+}
+
+if (var1.length==6){
+//F.GR6.markForDeletion(row)									//markForDeletion(row) API is called
+row=F.COLLEGE_NAME.read();
+if(F.GR6.isMarkedForDeletion(row)) 								//isMarkedForDeletion(row) API is called
+{ 
+Ext.Msg.alert('alert',"isMarkedForDeletion(row) API called. Row is marked for deletion. "); 
+} 
+else
+{
+Ext.Msg.alert('alert',"isMarkedForDeletion(row) API called. Row is not marked for deletion."); 
+}
+}
+
+if (var1.length==7){
+var page = F.GR6.findPage(row);								//findPage(row) API is called
+F.GR6.showPage(page);										//showPage(page) API is called
+Ext.Msg.alert('alert',"findPage() and showPage() APIs called. Showing the page with row " + row + "." );
+}
+
+if (var1.length==8){
+F.GR6.addRow(true,true);									//addRow() API is called
+}
+
+if (var1.length==9){
+F.GR6.showFirstPage();										//showFirstPage() API is called
+Ext.Msg.alert('alert',"showFirstPage() API called. Showing the first page.");
+}
+
+if (var1.length==10){
+F.GR6.showPageWithRow(row);								//showPageWithRow() API is called
+Ext.Msg.alert('alert',"showPageWithRow() API called. Showing the page with row " + row + ".");
+}
+
+if (var1.length==11){
+for(r in F.GR6.rows()) 										//F.MR.rows() API is called
+{ 
+F.STAFF_ID.disable(r);																				
+} 
+Ext.Msg.alert('alert',"F.MR.rows() API called. Staff ID of all row has been disabled");
+}
+
+if (var1.length==12){
+F.GR6.showLastPage();										//showLastPage() API called.
+Ext.Msg.alert('alert',"showLastPage() API called. Showing the last page.");
+}
+
+
+if (var1.length==13){
+F.STAFF_SPECIALITIES.hide();									//F.Field.hide() API called
+Ext.Msg.alert('alert',"F.Field.hide() API called. Staff Specialities field has been disabled");
+}
+
+if (var1.length==14){
+F.GR6.disableImportLink("College Form 1");                                                                //disableImportLink() API called. Import link is enabled
+Ext.Msg.alert('alert',"disableImportLink() API called. Import link is disabled");
+}
+
+if (var1.length==15){
+F.GR6.enableImportLink("College Form 1");                                                        //enableImportLink() API called. Import link is disabled
+Ext.Msg.alert('alert',"enableImportLink() API called. Import link is enabled");
+}
+
+if (var1.length==16){
+F.GR6.makeEmpty();										//makeEmpty() API is called
+}
+
+}
+
+
+/*********Events***********/
+F.onLoad(function() 
+{ 
+var myArray = [10,56,45,5,500,1,2,58,56,45];
+var myArray1 = ['Test','Name','abc','def','XYZ','ghi','jkl','MnO','XyZ','ABC'];
+F.GR6.populateFromArray(F.STAFF_ID,myArray); 									//populateFromArray() API is called.
+F.GR6.populateFromArray(F.STAFF_NAME,myArray1);
+
+F.GR6.sort(F.STAFF_ID,'desc');                                                                                                 //sort() API called
+Ext.Msg.alert('alert',"populateFromArray() and F.MR.sort() APIs called. Rows enabled");
+});
+
+
+F.GR6.afterRowEnabled(function() 												//afterRowEnabled() API is called
+{ 
+Ext.Msg.alert('alert',"enableRow() and afterRowEnabled() APIs called. Rows enabled");
+});
+
+F.GR6.afterRowDisabled(function() 												//afterRowDisabled() API is called
+{ 
+Ext.Msg.alert('alert',"getRowCount(), disableRow() and afterRowDisabled() APIs called. Rows disabled");
+});
+
+F.GR6.afterAddRow(function() 													//afterAddRow() API has been called
+{ 
+Ext.Msg.alert('alert',"addRow() and afterAddRow() APIs has been called. Row has been added.");
+});
+
+/*F.GR6.onAddRow(function() 													//onAddRow() API has been called
+{ 
+Ext.Msg.alert('alert',"onAddRow() API has been called.");
+return true;
+});*/
+
+F.GR6.afterEmpty(function() 													//afterEmpty() API is called
+{ 
+Ext.Msg.alert('alert',"makeEmpty() and afterEmpty() APIs called. All rows in Grid are deleted");
+});
+
+/*
+F.GR6.onMarkRow(function(row) 												//onMarkRow() API is called
+{ 
+Ext.Msg.alert('alert', "Row " + row + " is marked");
+return true;
+});
+*/ 
+
+F.getObject("SHOW_GRID").onClick(function(){
+F.GR6.show(); 															//show() API is called
+Ext.Msg.alert('alert',"show() API called. Grid is Shown");
+});
+
+F.getObject("HIDE_GRID").onClick(function(){
+F.GR6.hide();																//hide() API is called
+Ext.Msg.alert('alert',"hide() API called. Grid is hidden");
+});
+
+//---------------------------------------------------------------- GRID Field API start------------------------------------------------------------------------------------------------------------
+F.STAFF_EMAIL.onChange(function(){                                                                                          //onChange() API Grid field called
+F.triggerEvent("onChange",[F.STAFF_NAME.write("OnChange event triggered",2)]);                   //triggerEvent() API called
+checkGridField();
+});
+function checkGridField(){
+var fld1, page, row, page1, row1;
+fld1=F.STAFF_EMAIL.read();
+page=F.STAFF_ID.findPage(5);
+//page1=F.STAFF_NAME.findPageIgnoreCase("mno");
+row=F.STAFF_NAME.findRow("abc");
+row1=F.STAFF_NAME.findRowIgnoreCase("xyz");
+if (fld1.length==1){
+Ext.Msg.alert('alert',"onChange() for Grid field called");
+}
+if (fld1.length==2){
+if(!F.STAFF_ID.isUnique(2))                                                                       //isUnique() API called
+Ext.Msg.alert('alert',"Staff Id in row no. 2 exists in another row. Its not unique.");
+else
+Ext.Msg.alert('alert',"Staff Id in row no. 2 does not exist in another row. Its unique.");
+}
+if (fld1.length==3){
+Ext.Msg.alert('alert',"The 5th row of the 'Staff' grid present in page no. : "+page);
+}
+/*if (fld1.length==4){
+Ext.Msg.alert('alert',"The page number where staff name 'mno' exists is : "+page1);
+}*/
+if (fld1.length==5){
+Ext.Msg.alert('alert',"The Staff name 'abc' exists in the row no. : "+row);
+}
+if (fld1.length==6){
+Ext.Msg.alert('alert',"The Staff name 'xyz' exists in the row no. : "+row1);
+}
+}
+
+F.LEVEL_1_APPROVER.onChange(function(){                                                           //onChange() API called
+checkGridFieldAPI_0();
+});
+
+function checkGridFieldAPI_0(){
+var dum1;
+dum1=F.LEVEL_1_APPROVER.read();                                                                       //read() function called
+car_disp=F.STAFF_DESIGNATION_DD.readDisplayedValue(1);                                 //readDisplayedValue() API called
+car_stor=F.STAFF_DESIGNATION_DD.readStoredValue(1);                                    //readStoredValue() API called
+car_lov=F.STAFF_QUALIFICATION_LOV.readDisplayedValue(1);                           //readLov() API called deprecated. Used readDisplayedValue instead of it, as mentioned in Help document
+car_val=F.STAFF_QUALIFICATION_LOV.readValue(1);                                        //readValue() API called
+//car_id=F.STAFF_ID.getMultiRowId();                                                                         //getMultiRowId() function called
+//field=F.STAFF_EMAIL.isField();
+part=F.STAFF_NAME.partOf("Te");
+partIgnore=F.STAFF_NAME.partOfIgnoreCase("Ve,ER,fY")
+
+if (dum1.length==1){
+Ext.Msg.alert('alert',"getName() and getLabel() API called. The name of the Grid field is : "+F.STAFF_ID.getName() + "\n. Label of the field is : " + F.STAFF_ID.getLabel() + "\n. Multirow Id of the field is : " + F.STAFF_ID.getMultiRowId());                                                                       //getName(), getLabel() and getMultiRowId() called
+}
+
+if (dum1.length==2){
+Ext.Msg.alert('alert',"readDisplayedValue() API called. The displayed value of the STAFF_DESIGNATION_DD is : "+car_disp);            //readDisplayedValue() API called.
+F.STAFF_NAME.write(car_stor,1);                                                                                        //write() API called.
+F.STAFF_SPECIALITIES.write(car_lov,1);     
+F.STAFF_ADDRESS_TEXTAREA.writeValue(car_val,1);                                                                   //writeVal() API called                                                                                                             
+}
+if (dum1.length==3){
+var boolean1=F.STAFF_NAME.isRequired();                                                                                    //isRequired() called
+if(boolean1=="true"){
+Ext.Msg.alert('alert',"STAFF_NAME field is mandatory. The returned value for isRequired() function is : "+boolean1); 
+}
+else{
+Ext.Msg.alert('alert',"STAFF_NAME field is not mandatory. The returned value for isRequired() function is : "+boolean1); 
+}
+}
+if (dum1.length==4){
+Ext.Msg.alert('alert',"Staff Names are : "+F.STAFF_NAME.readAll(" ; "));                         //readAll() called
+var ename=F.STAFF_NAME.readAll(" ; ");
+F.STAFF_SPECIALITIES.writeAll(ename," ; ");                                                                         //writeAll() called
+F.STAFF_ADDRESS_TEXTAREA.writeAll("D_1000;D_1001;D_1002",";");
+}
+if (dum1.length==5){
+var testVal = F.STAFF_QUALIFICATION_LOV.read();
+var testArr = testVal.split(F.STAFF_QUALIFICATION_LOV.getMultiLOVDelimiter());             //getMultiLOVDelimiter() API works for LOV, but not for MLOV
+//var testArr = testVal.split(F.BIRTHPLACE.getMultiLOVDelimiter()); 
+for(j=0;j<testArr.length;j++) 
+Ext.Msg.alert('alert',"You selected the following staff qualifications : " +testArr[j]); 
+}
+if (dum1.length==6){
+F.STAFF_QUALIFICATION_LOV.showPopupLOV();          //showPopupLOV() API called
+}
+if (dum1.length==7){
+if(F.STAFF_QUALIFICATION_LOV.is("AppStudio"))                                                                              //is() called
+Ext.Msg.alert('alert',"You selected Appstudio");
+else
+Ext.Msg.alert('alert',"You selected value other than Appstudio");
+}
+if (dum1.length==8){
+if(F.STAFF_QUALIFICATION_LOV.isIgnoreCase("MocKuP"))                                                          //isIgnoreCase() called
+Ext.Msg.alert('alert',"You selected Mockup");
+else
+Ext.Msg.alert('alert',"You selected value other than Mockup");
+}
+/*if (dum1.length==9){
+var boolean2=F.STAFF_NAME.isField();                                                                                    //isRequired() called
+if(boolean2=="true"){
+Ext.Msg.alert('alert',"STAFF_NAME is a field. The returned value for isField() function is : "+boolean2); 
+}
+else{
+Ext.Msg.alert('alert',"STAFF_NAME  is not a field. The returned value for isField() function is : "+boolean2); 
+}}*/
+
+if (dum1.length==10){
+if(F.STAFF_NAME.contains("Test"))                                                          //contains() API called
+Ext.Msg.alert('alert',"The text in STAFF_NAME field contains 'Test'.");
+else
+Ext.Msg.alert('alert',"The text in STAFF_NAME field does not contain 'Test'.");
+}
+if (dum1.length==11){
+F.STAFF_ADDRESS_TEXTAREA.write(part);                                                                          //partOf() API called. Not working, as expected. Even if the text is part of entered text, it returns false.
+}
+if (dum1.length==12){
+if(F.STAFF_NAME.containsIgnoreCase("Verify"))                                     //containsIgnoreCase() API called
+Ext.Msg.alert('alert',"The text in STAFF_NAME field contains 'Verify'.");
+else
+Ext.Msg.alert('alert',"The text in STAFF_NAME field does not contain 'Verify'.");
+}
+if (dum1.length==13){
+F.STAFF_ADDRESS_TEXTAREA.write(partIgnore);       //partOfIgnoreCase() API called. Not working, as expected. Even if the text is part of entered text, it returns false.
+}
+if (dum1.length==14)
+{ 
+if(F.STAFF_EMAIL.isEmail())                              //isEmail() API called
+Ext.Msg.alert('alert',"The contents of field match standard email pattern.");
+else
+Ext.Msg.alert('alert',"The contents of field does not match any standard email pattern. Please confirm");
+}
+if (dum1.length==15)
+{ 
+if(F.ATTACHMENT.isEmpty())                              //isEmpty() API called
+Ext.Msg.alert('alert',"The attachment field is empty");
+else
+Ext.Msg.alert('alert',"The attachment field is not empty");
+}
+if (dum1.length==16){
+Ext.Msg.alert('alert',"disableAll() API called. The STAFF_NAME field in all rows of the cartridge will be disabled.");
+F.STAFF_NAME.disableAll();                             //disableAll() API called     
+}
+if (dum1.length==17){
+Ext.Msg.alert('alert',"enableAll() API called. The STAFF_NAME field in all rows of the cartridge will be enabled.");
+F.STAFF_NAME.enableAll();                           //enableAll() API called
+}
+if (dum1.length==18){
+Ext.Msg.alert('alert',"The sum of Staff Id is : "+F.STAFF_ID.sum());
+}
+if (dum1.length==19){
+Ext.Msg.alert('alert',"The average of Staff Id is : "+F.STAFF_ID.average());
+}
+if (dum1.length==20){
+Ext.Msg.alert('alert',"The maximum value of Staff Id is : "+F.STAFF_ID.maximum());
+}
+if (dum1.length==21){
+Ext.Msg.alert('alert',"The minimum value of Staff Id is : "+F.STAFF_ID.minimum());
+}
+if(dum1.length==22){
+F.STAFF_QUALIFICATION_LOV.writeLov('MBA'); 
+F.STAFF_QUALIFICATION_LOV.callInfolet(F.STAFF_SPECIALITIES.write('callInfolet() called',1)); 
+//var info=F.STAFF_QUALIFICATION_LOV.callInfolet();                             //callInfolet() API called
+Ext.Msg.alert('alert',"callInfolet() API is called");
+}
+if(dum1.length==23){
+Ext.Msg.alert('alert',"The STAFF_SPECIALITIES field will be made required.");
+F.STAFF_SPECIALITIES.makeRequired();                                                                                                              //makeRequired() API called
+F.STAFF_SPECIALITIES.onRequired(F.STAFF_ADDRESS_TEXTAREA.write("Made Required"));                          //onRequired() API called
+}  
+if(dum1.length==24){
+Ext.Msg.alert('alert',"The STAFF_SPECIALITIES field will be made not required.");
+F.STAFF_SPECIALITIES.makeNotRequired();                                                                                                    //makeNotRequired() API called
+F.STAFF_SPECIALITIES.onNotRequired(F.STAFF_ADDRESS_TEXTAREA.write("Made Not Required"));          //onNotRequired() API called
+}
+}
+//*******************************************************************************************************************************
+F.LEVEL_1_APPROVER.afterEmpty(function() 													//afterEmpty() API is called
+{
+F.callReport('API REPORT PARAM',[{name: "USERNAME", field: "LEVEL_2_APPROVER"},{name: "FIRSTNAME", field: "STAFF_NAME"}], callbackMethod1);
+Ext.Msg.alert('alert',"callReport() API called.");
+});
+ 
+function callbackMethod1(selectedValue){
+console.log(selectedValue,"report return value");
+Ext.Msg.alert('alert',"callReport() API called. The email id of the selected user is : "+selectedValue[0].EMAIL_ADDRESS);
+F.LEVEL_2_APPROVER.write(selectedValue[0].EMAIL_ADDRESS);  
+}
+
+//*******************************************************************************************************************************
+F.LEVEL_2_APPROVER.afterEmpty(function() 													//afterEmpty() API is called
+{
+F.callReport('API REPORT',[{name: "USERNAME", field: "LEVEL_1_APPROVER"}], callbackMethod);
+Ext.Msg.alert('alert',"callReport() API called. Report with parameter displayed");
+});
+ 
+function callbackMethod(selectedValue){
+console.log(selectedValue,"report return value");
+Ext.Msg.alert('alert',"callReport() API called. The first name of the selected user is : "+selectedValue[0].FIRST_NAME);
+F.LEVEL_2_APPROVER.write(selectedValue[0].FIRST_NAME);  
+}
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----Function to verify disable(), enable(), show(), hide(),  getColumnKind() and getColumnDataType() API works as expected, for all field type.-----
+
+F.LEVEL_2_APPROVER.onChange(function(){
+checkGridFieldAPI_1();
+});
+
+function checkGridFieldAPI_1(){
+var dum2;
+dum2=F.LEVEL_2_APPROVER.read();
+
+if (dum2.length==1){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_ID field will be disabled. The field data type is "+F.STAFF_ID.getColumnDataType());
+F.STAFF_ID.disable();
+F.STAFF_ID.onDisabled(F.STAFF_NAME.write("Disabled",1));                 //onDisabled() API called
+}
+if (dum2.length==2){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_ID field will be enabled. The field kind is "+F.STAFF_ID.getColumnKind());
+F.STAFF_ID.enable();
+F.STAFF_ID.onEnabled(F.STAFF_NAME.write("Enabled",1));                 //onEnabled() API called
+}
+if (dum2.length==3){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_ID field will be hidden.");
+F.STAFF_ID.hide();
+}
+if (dum2.length==4){
+Ext.Msg.alert('alert',"show() API called. The STAFF_ID field will be shown.");
+F.STAFF_ID.show();
+}
+if (dum2.length==5){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_NAME field will be disabled. The field data type is "+F.STAFF_NAME.getColumnDataType());
+F.STAFF_NAME.disable();
+}
+if (dum2.length==6){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_NAME field will be enabled. The field kind is "+F.STAFF_NAME.getColumnKind());
+F.STAFF_NAME.enable();
+}
+if (dum2.length==7){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_NAME field will be hidden.");
+F.STAFF_NAME.hide();
+}
+if (dum2.length==8){
+Ext.Msg.alert('alert',"show() API called. The STAFF_NAME field will be shown.");
+F.STAFF_NAME.show();
+}
+if (dum2.length==9){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_SPECIALITIES field will be disabled. The field data type is "+F.STAFF_SPECIALITIES.getColumnDataType());
+F.STAFF_SPECIALITIES.disable();
+}
+if (dum2.length==10){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_SPECIALITIES field will be enabled. The field kind is "+F.STAFF_SPECIALITIES.getColumnKind());
+F.STAFF_SPECIALITIES.enable();
+}
+if (dum2.length==11){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_SPECIALITIES field will be hidden.");
+F.STAFF_SPECIALITIES.hide();
+}
+if (dum2.length==12){
+Ext.Msg.alert('alert',"show() API called. The STAFF_SPECIALITIES field will be shown.");
+F.STAFF_SPECIALITIES.show();
+}
+if (dum2.length==13){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_ADDRESS_TEXTAREA field will be disabled. The field data type is "+F.STAFF_ADDRESS_TEXTAREA.getColumnDataType());
+F.STAFF_ADDRESS_TEXTAREA.disable();
+}
+if (dum2.length==14){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_ADDRESS_TEXTAREA field will be enabled. The field kind is "+F.STAFF_ADDRESS_TEXTAREA.getColumnKind());
+F.STAFF_ADDRESS_TEXTAREA.enable();
+}
+if (dum2.length==15){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_ADDRESS_TEXTAREA field will be hidden.");
+F.STAFF_ADDRESS_TEXTAREA.hide();
+}
+if (dum2.length==16){
+Ext.Msg.alert('alert',"show() API called. The STAFF_ADDRESS_TEXTAREA field will be shown.");
+F.STAFF_ADDRESS_TEXTAREA.show();
+}
+if (dum2.length==17){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_JOINDATE field will be disabled. The field data type is "+F.STAFF_JOINDATE.getColumnDataType());
+F.STAFF_JOINDATE.disable();
+}
+if (dum2.length==18){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_JOINDATE field will be enabled. The field kind is "+F.STAFF_JOINDATE.getColumnKind());
+F.STAFF_JOINDATE.enable();
+}
+if (dum2.length==19){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_JOINDATE field will be hidden.");
+F.STAFF_JOINDATE.hide();
+}
+if (dum2.length==20){
+Ext.Msg.alert('alert',"show() API called. The STAFF_JOINDATE field will be shown.");
+F.STAFF_JOINDATE.show();
+}
+if (dum2.length==21){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_GENDER field will be disabled. The field data type is "+F.STAFF_GENDER.getColumnDataType());
+F.STAFF_GENDER.disable();
+}
+if (dum2.length==22){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_GENDER field will be enabled. The field kind is "+F.STAFF_GENDER.getColumnKind());
+F.STAFF_GENDER.enable();
+}
+if (dum2.length==23){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_GENDER field will be hidden.");
+F.STAFF_GENDER.hide();
+}
+if (dum2.length==24){
+Ext.Msg.alert('alert',"show() API called. The STAFF_GENDER field will be shown.");
+F.STAFF_GENDER.show();
+}
+if (dum2.length==25){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_CATEGORY_CHECK field will be disabled. The field data type is "+F.STAFF_CATEGORY_CHECK.getColumnDataType());
+F.STAFF_CATEGORY_CHECK.disable();
+}
+if (dum2.length==26){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_CATEGORY_CHECK field will be enabled. The field kind is "+F.STAFF_CATEGORY_CHECK.getColumnKind());
+F.STAFF_CATEGORY_CHECK.enable();
+}
+if (dum2.length==27){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_CATEGORY_CHECK field will be hidden.");
+F.STAFF_CATEGORY_CHECK.hide();
+}
+if (dum2.length==28){
+Ext.Msg.alert('alert',"show() API called. The STAFF_CATEGORY_CHECK field will be shown.");
+F.STAFF_CATEGORY_CHECK.show();
+}
+if (dum2.length==29){
+Ext.Msg.alert('alert',"disable() API called. The EMPLOYEE_DOCUMENT_ATTACHMENT field will be disabled. The field data type is "+F.EMPLOYEE_DOCUMENT_ATTACHMENT.getColumnDataType());
+F.EMPLOYEE_DOCUMENT_ATTACHMENT.disable();
+}
+if (dum2.length==30){
+Ext.Msg.alert('alert',"enable() API called. The ATTACHMENT field will be enabled. The field kind is "+F.ATTACHMENT.getColumnKind());
+F.ATTACHMENT.enable();
+}
+if (dum2.length==31){
+Ext.Msg.alert('alert',"hide() API called. The ATTACHMENT field will be hidden.");
+F.ATTACHMENT.hide();
+}
+if (dum2.length==32){
+Ext.Msg.alert('alert',"show() API called. The ATTACHMENT field will be shown.");
+F.ATTACHMENT.show();
+}
+if (dum2.length==33){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_QUALIFICATION_LOV field will be disabled. The field data type is "+F.STAFF_QUALIFICATION_LOV.getColumnDataType());
+F.STAFF_QUALIFICATION_LOV.disable();
+}
+if (dum2.length==34){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_QUALIFICATION_LOV field will be enabled. The field kind is "+F.STAFF_QUALIFICATION_LOV.getColumnKind());
+F.STAFF_QUALIFICATION_LOV.enable();
+}
+if (dum2.length==35){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_QUALIFICATION_LOV field will be hidden.");
+F.STAFF_QUALIFICATION_LOV.hide();
+}
+if (dum2.length==36){
+Ext.Msg.alert('alert',"show() API called. The STAFF_QUALIFICATION_LOV field will be shown.");
+F.STAFF_QUALIFICATION_LOV.show();
+}
+if (dum2.length==37){
+Ext.Msg.alert('alert',"disable() API called. The STAFF_DESIGNATION_DD field will be disabled. The field data type is "+F.STAFF_DESIGNATION_DD.getColumnDataType());
+F.STAFF_DESIGNATION_DD.disable();
+}
+if (dum2.length==38){
+Ext.Msg.alert('alert',"enable() API called. The STAFF_DESIGNATION_DD field will be enabled. The field kind is "+F.STAFF_DESIGNATION_DD.getColumnKind());
+F.STAFF_DESIGNATION_DD.enable();
+}
+if (dum2.length==39){
+Ext.Msg.alert('alert',"hide() API called. The STAFF_DESIGNATION_DD field will be hidden.");
+F.STAFF_DESIGNATION_DD.hide();
+}
+if (dum2.length==40){
+Ext.Msg.alert('alert',"show() API called. The STAFF_DESIGNATION_DD field will be shown.");
+F.STAFF_DESIGNATION_DD.show();
+}
+if (dum2.length==41){
+Ext.Msg.alert('alert',"disable() API called. The BIRTHPLACE field will be disabled. The field data type is "+F.BIRTHPLACE.getColumnDataType());
+F.BIRTHPLACE.disable();
+}
+if (dum2.length==42){
+Ext.Msg.alert('alert',"enable() API called. The BIRTHPLACE field will be enabled. The field kind is "+F.BIRTHPLACE.getColumnKind());
+F.BIRTHPLACE.enable();
+}
+if (dum2.length==43){
+Ext.Msg.alert('alert',"hide() API called. The BIRTHPLACE field will be hidden.");
+F.BIRTHPLACE.hide();
+}
+if (dum2.length==44){
+Ext.Msg.alert('alert',"show() API called. The BIRTHPLACE field will be shown.");
+F.BIRTHPLACE.show();
+}
+}
+//---------------------------------------------Function() ends------------------------------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------Grid Field API ends---------------------------------------------------------------------------------------------------------------------------------------------------------]]></customJs><changeHistory><![CDATA[[]]]></changeHistory></DATA_FORM_TEMPLATES></DATA></FORM_SPEC>

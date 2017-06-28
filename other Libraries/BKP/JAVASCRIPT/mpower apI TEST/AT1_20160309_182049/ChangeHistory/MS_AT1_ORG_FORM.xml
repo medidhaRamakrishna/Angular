@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?><ASCI_SPEC><APPSTUDIO_DETAILS><APPSTUDIO_VERSION>616</APPSTUDIO_VERSION></APPSTUDIO_DETAILS><DEPENDENT_LIST/><DATA><ASCI><![CDATA[&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;ms_apps_id_container&gt;
+    &lt;auditable_id&gt;107473&lt;/auditable_id&gt;
+    &lt;pushform_name&gt;MS_AT1_ORG_FORM&lt;/pushform_name&gt;
+    &lt;ms_apps_auditables&gt;
+        &lt;auditable_id&gt;107473&lt;/auditable_id&gt;
+        &lt;audit_enabled&gt;Y&lt;/audit_enabled&gt;
+        &lt;audit_key_column&gt;0&lt;/audit_key_column&gt;
+        &lt;auditable_view&gt;MS_AT1_ORG_FORM_V&lt;/auditable_view&gt;
+        &lt;pid&gt;0&lt;/pid&gt;
+    &lt;/ms_apps_auditables&gt;
+&lt;/ms_apps_id_container&gt;
+]]></ASCI></DATA></ASCI_SPEC>

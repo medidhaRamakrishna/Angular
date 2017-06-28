@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Sample Web page</title>
+<script src="Objectcreation.js"></script>
+<script  language='javascript'>
+var i=1;
+function test(){
+
+var name=document.getElementById('ename').value;
+var eid=document.getElementById('eid').value;
+var gen=document.getElementById('gen').value;
+var a[i++]=new employeeLoginCreation(name, eid, gen, 1, '10AM','6PM' );
+alert('Name:'+a.name +'\n Employee ID:'+eid+'\n Gender:'+gen);
+
+}
+</script>
+
+</head>
+<body>
+<hr color='blue'>
+<center><h2><b>Employee Details</b></h2></center>
+<hr color='blue'>
+<center>
+<form name='emp'>
+<pre>
+Employee Name:<input type='text' id='ename'></input>
+Employee ID  :<input type='text' id='eid'></input>
+Gender	     :<input type='text' id='gen'></input>
+
+<input type='button' value='Create Entry' onclick='javascript:test();'>
+</pre>
+</form>
+</center>
+</body>
+</html>

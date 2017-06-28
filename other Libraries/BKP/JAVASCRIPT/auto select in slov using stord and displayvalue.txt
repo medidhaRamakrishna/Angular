@@ -1,0 +1,54 @@
+/*F.STEP_OWNER.writeValue = function(storedValue,displayedValue,row) {
+if(!row) row=1;
+
+if(arguments[3] != 'dataGrid')
+this.writeInDataGrid(displayedValue,row);
+
+if(editableArr[this.sequence-1] == false) {
+writeViewOnlyFieldValue(getSeq(this.sequence,row),storedValue,displayedValue);
+} else {
+write(getSeq(this.sequence,row),storedValue);
+write_lov(getSeq(this.sequence,row),displayedValue);
+}
+
+logger.log("[writeValue] Field : " + this.label + " [Row="+row+"] : Value changed to : " + displayedValue);
+return this;
+}
+*/
+/*
+F.STEP_L1_APPROVER.writeValue = function(storedValue,displayedValue,row) {
+if(!row) row=1;
+
+if(arguments[3] === 'dataGrid') {
+this.writeInDataGrid(displayedValue,row);
+return;
+}
+
+if(editableArr[this.sequence-1] == false) {
+writeViewOnlyFieldValue(getSeq(this.sequence,row),storedValue,displayedValue);
+} else {
+write(getSeq(this.sequence,row),storedValue);
+write_lov(getSeq(this.sequence,row),displayedValue);
+}
+
+logger.log("[writeValue] Field : " + this.label + " [Row="+row+"] : Value changed to : " + displayedValue);
+return this;
+}
+
+F.STEP_L2_APPROVER.writeValue = function(storedValue,displayedValue,row) {
+if(!row) row=1;
+
+if(arguments[3] != 'dataGrid')
+this.writeInDataGrid(displayedValue,row);
+
+if(editableArr[this.sequence-1] == false) {
+writeViewOnlyFieldValue(getSeq(this.sequence,row),storedValue,displayedValue);
+} else {
+write(getSeq(this.sequence,row),storedValue);
+write_lov(getSeq(this.sequence,row),displayedValue);
+}
+
+logger.log("[writeValue] Field : " + this.label + " [Row="+row+"] : Value changed to : " + displayedValue);
+return this;
+}
+ */
