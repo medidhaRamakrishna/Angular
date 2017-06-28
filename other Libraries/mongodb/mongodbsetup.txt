@@ -1,0 +1,84 @@
+G:\Learning\FULLStack\env\MongoDB\bin\mongod.exe --dbpath G:\Learning\FULLStack\env\data\db
+
+syntax:
+1)User creation
+db.createUser({
+user:"RK",
+pwd:"123",
+roles:["readWrite","dbAdmin"]
+});
+
+show users /*for seeing the users in the DB*/
+2)create collection
+db.createCollection('customers');
+show collections /*for seeing the collections*/
+
+3)inserting data into collection
+/*Single Record*/
+db.customers.insert({first_name:"Ramakrishna",last_name:"Medidha"});
+
+/*Multiple Records*/ db.customers.insert([{first_name:"manohar",last_name:"Thummala"},{first_name:"Suresh",last_name:"Chennoju"}]);
+
+4)show records in the collection
+db.customers.find()
+
+/*with formatted result*/
+db.customers.find().pretty() /*customers is collection*/
+
+5)update records in the collection
+
+db.customers.update({first_name:"suresh"},{first_name:"Suresh Burra",last_name:"Burra",gender:"Male"});
+
+/*here the first argument to find the record that should be unique other wise it will update for all the matching records.Second part is what to be updated(will be replace old data with the current 2nd attributes)*/
+
+/*update the existing data without losing old data*/
+db.customers.update({first_name:"suresh"},{$set:{gender:"Male"}});
+
+6)incrementing 
+ db.customers.update({first_name:"Suresh"},{$inc:{age:10}});
+ 
+ 
+ 7)remove attributes from collection
+ db.customers.update({first_name:"Suresh"},{$unset:{age:''}});
+ 
+ 8)if the searching element is not  found in the update operation then create it
+ 
+ db.customers.update({first_name:"JOHN"},{first_name:"JOHN",last_name:"CENA"},{upsert:true});
+ 
+ 9)Renaming the existing attributes
+ db.customers.update({first_name:"JOHN"},{$rename:{"gender":"sex"}});
+ 
+ 10)Removing 
+ db.customers.remove({first_name:"Suresh"});
+ 
+ 11)select operations
+ 
+ db.customers.find({first_name:"JOHN"});/*will returns all the informtion related to JOHN*/
+ 
+ 12)OR operator
+ db.customers.find({$or:[{first_name:"JOHN"},{first_name:"Suresh"}]});/*will returns all the informtion related to JOHN or Suresh*/
+ 
+ 
+ 13)AND operator
+ 
+ db.customers.find({$and:[{first_name:"JOHN"},{last_name:"Suresh"}]});/*will returns all the informtion related to JOHN and Suresh*/
+ 
+ 14)greater than and less than operation
+ db.customers.find({age:{$gt:24});
+
+15)sort
+
+db.customers.find().sort({last_name:1});
+/*1 for Asc and 2 for desc*/
+
+16)forEach
+
+db.customers.find().forEach(function(data){
+print("NAME"+data.first_name)
+})
+
+
+
+
+
+
