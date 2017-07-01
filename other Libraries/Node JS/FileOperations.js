@@ -48,5 +48,14 @@ fs.mkdir("MYDIR",function(error){
 //list all the files in the directory
 
 fs.readdir("G:\\",function(error,file){
-	console.log(file.toString());
-})
+	console.log(file);
+});
+
+//delete directory
+
+fs.rmdir("MYDIR",function(error){
+	if(error)
+	console.log(error.message);
+else
+	console.log("Deleted Dir");
+});
