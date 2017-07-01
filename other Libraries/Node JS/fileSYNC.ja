@@ -1,0 +1,5 @@
+var fs=require("fs");
+console.log("program starrted");
+var data=fs.readFileSync('a.txt');
+console.log(data.toString());
+console.log("Program Ended");

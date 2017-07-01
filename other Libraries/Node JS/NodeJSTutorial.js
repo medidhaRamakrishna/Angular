@@ -21,3 +21,30 @@ npm install moduleName(angular,exptress etc)
 npm outdated
 //5)toupdate all outdated modules
 npm update --save 
+//6)synchronous and asynchronous
+var fs=require("fs");
+console.log("program starrted");
+var data=fs.readFileSync('a.txt');
+console.log(data.toString());
+console.log("Program Ended");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
