@@ -2,7 +2,7 @@ var fs=require("fs");
 var net=require("net");
 var filename="Renamed.txt";
 var conn=net.createServer(function(connection){
-connection.end("Connected");
+console.log("Connected");
 connection.write(JSON.stringify({
 	type:"watching",
 file:filename})+"\n");
