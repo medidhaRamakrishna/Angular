@@ -1,0 +1,23 @@
+Using the quickstart
+https://github.com/angular/quickstart
+
+Angular-CLI Tool
+
+npm install -g angular-cli
+
+git clone https://github.com/angular/quickstart  my-proj
+
+install typescript
+npm install -g typescript
+
+install all the dependents
+npm install
+
+creating a component:
+1)create a file with componentname.ts
+2)import { Component } from '@angular/core';
+3)create the class and
+4)in the app.modules.ts import { TutorialComponent }  from './tutorial.component';
+5)in the declarations add your component
+ declarations: [ AppComponent ,TutorialComponent],
+ 6)
