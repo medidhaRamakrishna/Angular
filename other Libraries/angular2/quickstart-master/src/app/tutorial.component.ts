@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 //import { TutorialComponent } from './tutorial.component';
-import { PostsService } from  './services/posts.services';
+//import { PostsService } from  './services/posts.services';
 @Component({
   selector: ' my-tutorial',
   template: `<h1>Hello {{name}}</h1>
@@ -29,15 +29,16 @@ import { PostsService } from  './services/posts.services';
    <label>City:
    <input type="text" name="address.city" [(ngModel)]="address.city"></label><br />
  </form>
-             `,
-providers:[PostsService]
+             `
+//providers:[PostsService]
 })
 export class TutorialComponent  { 
 name:String ; 
 address:address;
 hobbies:string[];
 showHobbies:boolean;
-constructor(private postsService:PostsService){
+//private postsService:PostsService
+constructor(){
    // this.name="Medidha Ramakrishna Reddy";
   this.name = 'Ramakrishna Medidha';
    this.hobbies=["Movies","Listening to Music","Dancing","Singing"] ;
@@ -50,9 +51,9 @@ constructor(private postsService:PostsService){
 
 }
 this.showHobbies=false;
-this.postsService.getPosts().subscribe(posts=>{
+/*this.postsService.getPosts().subscribe(posts=>{
     console.log(posts);
-});
+});*/
 }
 toggleHobbies(){
     console.log("toggleHobbies");
