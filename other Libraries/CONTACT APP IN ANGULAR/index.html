@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body ng-app="myApp">
+
+<div ng-controller="contactController">
+    <button ng-click="showHide()">Add New Contact </button>
+ <div class="container">
+  <p>First Name : <input type="text" ng-model="firstName" placeholder="First Name"></p>
+  <p>Middle Name : <input type="text" ng-model="Middle_Name" placeholder="Middle Name"></p>
+  <p>Last Name : <input type="text" ng-model="lastName" placeholder="Last Name"></p>
+<p>Contact Number: <input type="text" ng-model="contactNumber" placeholder="Contact Number"></p>
+  <p>Contact Email : <input type="text" ng-model="Contact_Email" placeholder="Contact Email"></p>
+  
+</div>
+<div ><h1>Hello {{contact.firstName}}</h1></div>
+<input type="text" ng-model="search">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="contact in contactList  | filter :search " >
+        <td><input type="text" ng-model="contact.firstName" ng-if="!enabledEdit[{{$index}}]"><span >{{contact.firstName}}</span></td>
+        <td><input type="text" ng-model="contact.lastName" ng-if="!enabledEdit[{{$index}}]"><span >{{contact.lastName}}</span></td>
+        <td><input type="text" ng-model="contact.contactNumber" ng-if="!enabledEdit[{{$index}}]"><span >{{contact.contactNumber}}</span></td>
+        <td><input type="text" ng-model="contact.contactEmail" ng-if="!enabledEdit[{{$index}}]"><span>{{contact.contactEmail}}</span></td>
+        <td><button class="btn btn-primary" ng-click="editContact($index)">Edit</button></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
