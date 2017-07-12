@@ -8,17 +8,46 @@
 <body ng-app="myApp">
 
 <div ng-controller="contactController">
-    <button ng-click="showHide()">Add New Contact </button>
- <div class="container">
-  <p>First Name : <input type="text" ng-model="firstName" placeholder="First Name"></p>
-  <p>Middle Name : <input type="text" ng-model="Middle_Name" placeholder="Middle Name"></p>
-  <p>Last Name : <input type="text" ng-model="lastName" placeholder="Last Name"></p>
-<p>Contact Number: <input type="text" ng-model="contactNumber" placeholder="Contact Number"></p>
-  <p>Contact Email : <input type="text" ng-model="Contact_Email" placeholder="Contact Email"></p>
+ <div class="container-fluid">  
+         <div id="contacts" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <form name="contact">
+            <table>
+              <tr>
+  <td>First Name </td><td> <input type="text"  name="fname" ng-model="firstName" placeholder="First Name" ng-pattern="/^[a-zA-Z ]*$/">
+  <span class="error" ng-show="contact.fname.$error.pattern">
+            invalid First Name!
+        </span>
+  </td></tr>
+  <tr><td>Middle Name</td> <td><input type="text" name="mname" ng-model="Middle_Name" placeholder="Middle Name" ng-pattern="/^[a-zA-Z ]*$/" >
+   <span class="error" ng-show="contact.mname.$error.pattern">
+            invalid Middle Name!
+        </span>
+  </td></tr>
+  <tr><td>Last Name  </td><td><input type="text" name="lname" ng-model="lastName" placeholder="Last Name" ng-pattern="/^[a-zA-Z ]*$/" >
+    <span class="error" ng-show="contact.lname.$error.pattern">
+            invalid Last Name!
+        </span>
+  </td></tr>
+<tr><td>Contact Number</td><td> <input type="text" ng-model="contactNumber" onblur="" name="Number" placeholder="Contact Number" ng-pattern="/^[0-9]{10}$/" maxlength="10" >
+ <span class="error" ng-show="contact.Number.$error.pattern">
+            invalid Contact Number!
+        </span>
+</td>
+   <tr><td>Contact Email</td><td> <input type="text" name="email"  ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"   ng-model="Contact_Email" placeholder="Contact Email" >
+    <span class="error" ng-show="contact.email.$error.pattern">
+            invalid email!
+        </span></td></tr>
+   <table>
+  <center><button ng-click="AddContact()" class="btn btn-success">Add New Contact </button></center>
+  </form>
+            </div>  
+</div>   
+ 
+
   
-</div>
 <div ><h1>Hello {{contact.firstName}}</h1></div>
-<input type="text" ng-model="search">
+Search <input type="text" ng-model="search">
+<div class="table-responsive">
   <table class="table table-hover">
     <thead>
       <tr>
@@ -30,14 +59,16 @@
     </thead>
     <tbody>
       <tr ng-repeat="contact in contactList  | filter :search " >
-        <td><input type="text" ng-model="contact.firstName" ng-if="!enabledEdit[{{$index}}]"><span >{{contact.firstName}}</span></td>
-        <td><input type="text" ng-model="contact.lastName" ng-if="!enabledEdit[{{$index}}]"><span >{{contact.lastName}}</span></td>
-        <td><input type="text" ng-model="contact.contactNumber" ng-if="!enabledEdit[{{$index}}]"><span >{{contact.contactNumber}}</span></td>
-        <td><input type="text" ng-model="contact.contactEmail" ng-if="!enabledEdit[{{$index}}]"><span>{{contact.contactEmail}}</span></td>
-        <td><button class="btn btn-primary" ng-click="editContact($index)">Edit</button></td>
+        <td><input type="text" ng-model="contact.firstName" ng-show="enabledEdit[{{$index}}]"><span ng-show="!enabledEdit[{{$index}}]">{{contact.firstName}}</span></td>
+        <td><input type="text" ng-model="contact.lastName" ng-show="enabledEdit[{{$index}}]"><span ng-show="!enabledEdit[{{$index}}]">{{contact.lastName}}</span></td>
+        <td><input type="text" ng-model="contact.contactNumber" ng-show="enabledEdit[{{$index}}]"><span ng-show="!enabledEdit[{{$index}}]">{{contact.contactNumber}}</span></td>
+        <td><input type="text" ng-model="contact.contactEmail" ng-show="enabledEdit[{{$index}}]"><span ng-show="!enabledEdit[{{$index}}]">{{contact.contactEmail}}</span></td>
+        <td><button class="btn btn-primary" ng-click="editContact($index)" ng-show="!enabledEdit[{{$index}}]">Edit</button>
+        <button class="btn btn-primary" ng-click="editContact($index)" ng-show="enabledEdit[{{$index}}]">Done</button></td>
         </tr>
     </tbody>
   </table>
+</div>
 </div>
 </body>
 </html>
