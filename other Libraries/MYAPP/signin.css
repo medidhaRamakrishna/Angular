@@ -1,0 +1,2556 @@
+div#mainPanel {
+    max-height: 100%;
+    overflow: scroll;
+	background-color:#FFFFFF;
+	overflow-x:hidden;
+	-ms-overflow-x:hidden;
+}
+div#mainPanelChalAns {
+    max-height: 100%;
+    overflow: scroll;
+	background-color:#FFFFFF;
+	overflow-x:hidden;
+	-ms-overflow-x:hidden;
+}
+div#leftPanel {
+    min-height: 100%;
+	max-height: 109%;
+    height: 109%;
+}
+div#leftPanelChalAns {
+    min-height: 111%;
+}
+div#rightPanel{
+	padding-left: 0 !important;
+}
+div#rightPanelNeedHelp{
+	padding-left: 0 !important;
+}
+div#rightPanelChalAns{
+	padding-left: 0 !important;
+	max-height:100%;
+	height: 100%;
+}
+a:visited { 
+    color: #3979B4;
+}
+
+.signin-content{
+	padding-top:50px;
+	width:80%;
+	margin: 0 auto;
+}
+.signin-content-body{
+	font-size: 13px;
+}
+.signin-content-heading{
+	font-size: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+.signin-credential-text{
+	font-weight: bold;
+}
+.signin-page-left{
+	background-color: rgba(255, 255, 255, 0.6);
+	padding:60px !important;
+	height: 100%;	
+}
+
+.signin-error-msg-summary{
+	padding: 12px;
+	background-color: #FEFFEB;
+	border: solid 1px #F1F1F1;
+	margin-bottom: 20px;
+	margin-left: 2em;
+}
+.signin-msg-summary{
+	padding: 6px;
+	background-color: #FEFFEB;
+	border: solid 1px #F1F1F1;
+	margin-bottom: 20px;
+}
+.chlngQueAns-msg-summary{
+	height: 36px;
+	padding-bottom: 2px!important;
+	padding: 4px;
+	background-color: #FEFFEB;
+	border: solid 1px #F1F1F1;
+	margin-bottom: -4px;
+	margin-left:2em;
+	width:72%;
+}
+.chlngQueAns-error-heading{
+	padding-top:0.7em;
+	color:#AB2734;
+	font-weight:bold;
+	font-size:11px;
+}
+.signin-msg-summary-heading{
+	color:#AB2734;
+	font-weight:bold;
+	font-size:11px;
+}
+.signin-msg-summary-heading-recover-pass{
+	margin-left:1.8em;
+	padding-left:0px;
+}
+.signin-msg-summary-body{
+	color:#323232;
+	font-weight:normal;
+	padding-top:4px;
+}
+.sigin-msg-error{
+	color: #AB2734;
+	margin-top:-10px;
+	font-size: 0.9em;
+}
+.signInFormPanel{
+	padding-right:10px;
+	padding-bottom:270px;
+}
+
+.fieldError {
+  display: block;
+  width: 100%;
+  height: 32px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #676767;
+  background-color: #fff;
+  background-image: none;
+  border: 2px solid #F9868B;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-horizontal .form-group-xxx {
+  margin-top: -10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.signin-duallink-item {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #FFFFFF;
+  width:100%;
+  color:#FF9400;
+  border: 1px solid;
+  border-bottom: 0;
+  border-color: #B9B9B9;
+}
+.duallink-last-item-border {
+	border-bottom: 1px solid;
+	border-color: #B9B9B9;
+}
+
+.signin-duallink-item-text {
+	font-size:18px;
+	color:#FF9400;
+}
+
+@media screen and (max-width: 797px) {
+    .signin-duallink-item-text {
+		font-size:16px;
+    }
+}
+
+.signin-duallink-item a {
+  display: block;
+  padding: 16px;
+}
+
+.recoveryOptionLabel{
+	text-align:left;
+}
+.loginAsLabel{
+	margin-top:-5px;
+}
+
+
+.whiteColor{
+	color:#FFFFFF;
+}
+.seqNumber{
+	width:100%;
+	background-color:#FFFFFF;
+	padding-bottom: 0.5em;
+	padding-left: 1em !important;
+    padding-right: 0 !important;	
+}
+.seqNumberChlngQueAns{
+	width:80% !important;
+	background-color:#FFFFFF;
+	padding-bottom: 0em;
+	padding-left: 1em !important;
+    padding-right: 0 !important;	
+}
+.welcomeMsg{
+	color:#000000;
+	padding-bottom: 0.5em;
+	text-align:left;
+	padding-left:2.1em;
+	padding-top: 1em;
+	width:100%;	
+}
+
+.orangeColor{
+	color:#FF9400;
+}
+.blackColor{
+	color:#000000;
+}
+.globalIconBg{
+	color:#4896cc;
+	border:0;
+	background-color:#FFFFFF;
+	font-size:2em;
+	margin-top:0.2em;
+	padding-left: 0.35em;
+}
+.globalIconSmallDeviceDivBg{
+	height: 100%;
+	width: 70%;
+	padding-top: 1.1em;
+    background-color: #133F67;
+    padding-right: 0 !important;
+    padding-left: 2em !important;	
+	
+}
+
+.globalIconBtnSmallDeviceBg{
+	color:#FFFFFF;
+	border:0;
+	background-color:#133F67;
+	font-size:1.3em;
+}
+.globalIconSmallDeviceDivTabletBg{
+	height: 100%;
+	width: 70%;
+	padding-top: 1.5em;
+    background-color: #133F67;
+    padding-right: 0 !important;
+    padding-left: 2em !important;	
+}
+.globalIconBtnSmallDeviceTabletBg{
+	color:#FFFFFF;
+	border:0;
+	background-color:#133F67;
+	font-size:2.3em;
+}
+
+.openMenuIconBg{
+	font-size:2.5em;
+	height:97%;
+	padding-top: 0.6em;
+	color:#78A6CC;
+}
+.localeDropDown{
+	vertical-align: middle;
+	width: 12em;
+	margin-bottom: 1.5em;
+	border:0px;
+	outline:0px;
+}
+.localeDropDownDevice{
+	vertical-align: middle;
+	width: 100%;
+    background-color: #15517A;
+    color: #FFFFFF;	
+}
+.dualLoginForm{
+	width: 80%;
+    padding-left: 2.5em;
+    padding-top: 10em;
+    height: 100%;
+}
+@media screen and (max-width: 797px) {
+    .dualLoginForm {
+		padding-top: 0;
+		width:93%;
+    }
+}
+.dualFormItemArrow{
+	font-size: 2em;
+	//vertical-align: middle;
+    //padding-top: 0em;
+    //text-align: right;
+    color: #FF9400;
+}
+@media screen and (max-width: 797px) {
+    .dualFormItemArrow {
+		font-size: 1.5em;
+    }
+}
+.leftPanelBg{
+	background-color:#006DB7; 
+	min-height:100%;
+}
+
+.text-align-center{
+	text-align:center;
+}
+.lftPanelLogoBg{
+	text-align:center;
+	padding-bottom: 1em;
+}
+.lftPanelLogoImage{
+	width: 60%;
+}
+.lftPanelSmallDeviceLogoImage{
+    width: 200px;
+    padding: 7px 0 0 12px;
+}
+
+.lftPanelHeadingTxtBg{
+	font-size:20px; 
+	color:#87BADD;
+}
+.lftPanelBodyTxtBg{
+	font-size:14px; 
+	color:#87BADD
+}
+
+.localString{
+	vertical-align: middle;
+	padding-bottom: 1em;
+	text-decoration:none;
+}
+.rtPanelBg{
+	height:100%;  
+	padding:0 !important; 
+}
+
+.rgtPanelMenuHeaderBg{
+	background-color:#006DB7; 
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: center;
+	height:70px;
+}
+
+.rtPanelMenuBarBg{
+	font-size:2.5em;
+	height:97%;
+	padding-top: 0.6em;
+}
+.rtPanelMenuOpenBg{
+	background-color:#15517A;
+}
+.rgtPanelMenuItemsBg{
+	background-color:#15517A;
+}
+
+.rtPanelMenuEachItemBg{
+	border-bottom: 1px solid #3c688b;
+	color:#FFFFFF;
+}
+.rtPanelMenuLastItemBg{
+	color:#FFFFFF;
+}
+
+.rtPanelWelcomeHeading{
+	padding-top:1em;
+	font-size: 24px;
+	padding-bottom: 20px;
+	font-weight: bold;	
+}
+
+.rtPanelSignInHeading{
+	padding-left: 1.3em;
+	font-size: 20px;
+	padding-bottom: 10px;
+	font-weight: bold;	
+}
+.frgtPwdHeading{
+	padding-top:1em;
+	padding-left: 2.7em;
+	font-size: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;	
+}
+.frgtPwdHeadingAnsChalQN{
+	padding-top:1em;
+	padding-left: 2.2em;
+	font-size: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;	
+}
+
+.sucessHeading{
+	padding-top:5em;
+	padding-left: 1.1em;
+	font-size: 24px;
+	padding-bottom: 20px;
+	font-weight: bold;	
+}
+@media screen and (max-width: 797px) {
+    .sucessHeading {
+		padding-top:4em;
+    }
+}
+.successFormBody{
+	width: 100%;
+    margin-left: 2em;
+}
+
+.rtPanelSignInForm{
+    width: 65%;
+    padding-top: 25%;
+}
+@media screen and (max-width: 797px) {
+    .rtPanelSignInForm {
+		padding-top: 4em;
+		width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rtPanelSignInForm {
+		padding-top: 10em;
+		width: 90%;
+    }
+}
+
+.rtPanelHeading{
+	padding-top:0.5em;
+	padding-left: 1.1em;
+	font-size: 24px;
+	//padding-bottom: 20px;
+	font-weight: bold;	
+}
+.rtPanelHeadingChalAns{
+	padding-top:0em;
+	padding-left: 1.1em;
+	font-size: 24px;
+	//padding-bottom: 20px;
+	font-weight: bold;	
+}
+.rtPanelHeaderMenu{
+	padding-top:1em;
+	padding-left:2em;
+	line-height: 1.0;
+	display: inline-block;
+	font-size: 12px;
+}
+.rtPanelHeaderMenuSeperator{
+	padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.rtPanelBody{
+	padding-left: 2.1em;
+	color:#AB2734;
+	text-align:left;
+	width: 85%;
+	padding-bottom:0.5em;
+}
+.rtPanelForm{
+	width:100%; 
+	padding-left:2em;
+	max-height: 54%;
+}
+.rtEsignaturePanelForm{
+	max-height: 100%!important;
+	height:76%!important;
+	padding-top:4%!important;
+}
+
+.rtChallengeAnserPanelForm{
+	max-height: 100% !important;
+	position:absolute;
+}
+
+.rtPanelUN{
+	width:70%;
+	padding-left:1.9em; 
+	max-height:10%;
+}
+.rtPanelOTP{
+	width:70%;
+	max-height:10%;
+	margin-bottom:-26px!important;
+}
+.rtPanelUNTxtBoxBg{
+	width:100%;
+	font-size:16px;
+	display: block;
+	height: 5%;
+	margin-top: 2px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}
+
+.resetPwdTextBox{
+	width:100%;
+	font-size:16px;
+	display: block;
+	height: 38px;
+	margin-top: 1em;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}
+
+.rtPanelChngPwd1STTextBoxBg{
+	width:100%;
+	font-size:16px;
+	display: block;
+	height: 38px;
+	margin-top: 2px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+	margin-top:0em;
+}
+
+.rtPanelChngPwdTextBoxBg{
+	width:100%;
+	font-size:16px;
+	display: block;
+	height: 38px;
+	margin-top: 2px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+	margin-top:1.5em;
+}
+
+.rtPanelChngPwdErrorMsg{
+	color: #AB2734;
+	margin-top:-10px;
+	font-size: 0.9em;
+	padding-left:0;
+	padding-top:1em;
+	
+}
+
+.rtPanelPwd{
+	width:70%;
+	padding-left:1.9em; 
+	padding-bottom:1em;
+	padding-top:1em;
+	max-height:10%;
+}
+.rtPanelPwdTxtBoxBg{
+	width:100%;
+	font-size:16px;
+	display: block;
+	height: 38px;
+	margin-top: 2px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}
+
+.rtPanelChngSignTextBoxBg{
+	width:100%;
+	font-size:16px;
+	display: block;
+	height: 38px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}
+
+
+.rtPanelSubmitBtnBg{
+	width: 94%;
+	font-size: 16px; 
+	background: #FF9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+}
+
+.rtPanelSubmitBtnPosition{
+	padding-left:1.9em; 
+	padding-top:1em;
+	width:70%;
+}
+
+.frgtPwd{
+	padding-left:1.9em;
+}
+.frgtPwdDualLogin{
+	padding-top:1em
+}
+.copyRightSignIn{
+	position: fixed; 
+	bottom: 1em; 
+	margin: 0 0 1em 1.7em;
+}
+.copyRightDualLogin{
+	position: fixed; 
+	bottom: 0px; 
+	margin: 0 0 1em 0;
+}
+
+.copyRightSignInHelp{
+    position: fixed;
+    bottom: 0px;
+    margin: 0 0 1em 1.7em;
+}
+.copyRightTextBg{
+	color:#3E3F3F; 
+	font-size:10px;
+	width: 100%;
+}
+.copyRightForgotPassword{
+    position: relative;
+    bottom: -20%;
+    margin: 0 0 1em 1.7em;
+}
+.copyRightForgotUserName{
+    position: relative;
+    bottom: -22%;
+    margin: 0 0 1em 1.7em;
+}
+.copyRightAnsChlngQue{
+    position: relative;
+    bottom: -20%;
+    margin: 0 0 1em 1.7em;
+}
+.copyRightSuccess{
+    position: fixed;
+    bottom: 0px;
+    margin: 0 0 1em 1.7em;
+}
+.copyRightOTP{
+	position: relative;
+    bottom: -10em;
+    margin: 0 0 1em 1.9em;
+}
+.copyRightChngPwd{
+    position: relative;
+    bottom: -13%;
+    margin: 0 0 1em 1.9em;
+}
+.copyRightChngQuestions{
+    position: relative;
+    bottom: -22%;
+    margin: 0 0 1em 1em;
+}
+
+.copyRightChngSign{
+    position: relative;
+    bottom: 1%;
+    margin: 0 0 1em 1.9em;
+}
+.copyRightAccessDenied{
+    position: fixed;
+    bottom: 0px;
+    margin: 0 0 1em 1.9em;
+}
+.copyRightResetPwd{
+    position: relative;
+    bottom: 5%;
+    margin: 0 0 1em 1.9em;
+}
+
+@media screen and (-moz-images-in-menus:0) {
+	.leftPanelBg{
+		display:block;
+		height:100%;
+    }
+	.copyRightSignIn{
+		position: fixed; 
+		bottom: 0px; 
+		margin: 0 0 1em 1.7em;
+	}
+	.copyRightForgotPassword{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.7em;
+	}
+	.copyRightForgotUserName {
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.7em;
+	}
+	.copyRightResetPwd{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.9em;
+	}
+	.copyRightChngSign{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.9em;
+	}
+	.copyRightChngQuestions{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1em;
+	}
+	.copyRightChngPwd{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.9em;
+	}
+	.copyRightOTP{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.9em;
+	}
+	.copyRightAnsChlngQue{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.7em;
+	}
+	.copyRightForgotPassword{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.7em;
+	}
+	.copyRightForgotUserName{
+		position: fixed;
+		bottom: 0px;
+		margin: 0 0 1em 1.7em;
+	}
+	.copyRightSignInChangePass{
+		position: fixed;
+		bottom: 0px;
+		padding-left:2em;
+	}
+	div#leftPanelChalAns {
+	    max-height:114% !important;
+	    height: 114% !important;
+
+	}
+	.chlngQuestionForm{
+	    height: 100% !important;
+	}
+	.rtChallengeAnserPanelForm{
+	    height: 57%;
+	}
+	.chall-ans-buttons-nxt-cancel{
+            padding-top: 14px !important;
+	}
+	.copyRightSignInChalAns{
+		bottom: -5em !important;
+	}
+
+}
+
+@media screen and (min-height: 750px) and (orientation : portrait){
+	.rightPanelForgotPassWidth{
+		width:94%!important;
+	}
+	.rightPanelForgotPassMargin{
+		margin-right:-58px!important;
+	}
+	.signin-msg-summary-heading-recover-pass{
+		margin-left:1.8em;
+		padding-left:0px;
+		width:53%;
+	}
+	.copyRightSignInChangePass{
+		bottom: -22em !important;
+		padding-left: 2em;
+	}
+	.rtPanelSubmitBtnPosition{
+		padding-left:1.9em; 
+		padding-top:1em;
+		width:100%;
+	}
+	.rtPanelUN{
+		width:100%;
+		padding-left:1.9em; 
+		max-height:10%;
+	}
+	div#rightPanel{
+		height: 100%;
+		width: 100%;
+	}
+	
+	.rtPanelSignInForm{
+		height: 100% !important;
+		width: 100% !important;
+	}
+	.copyRightSignIn{
+		position:fixed;
+		bottom: 1em; 
+	}
+	
+	.copyRightForgotPassword{
+		bottom: -65%; 
+	}
+	.copyRightForgotUserName{
+		bottom: -66%; 
+	}
+
+	.copyRightAnsChlngQue{
+		bottom: -47%;
+	}
+
+	.copyRightResetPwd{
+		bottom: -15%;
+	}
+	.copyRightChngSign{
+		bottom: -23%;
+	}
+	.copyRightChngPwd{
+		bottom: -45%;
+	}	
+    .signInHelpFrgtPwdSummaryBox {
+	   width: 58% !important;
+	   margin-left:2em;
+    }
+	.copyRightOTP{
+		bottom: -32em;
+	}	
+}
+
+.rtPanelCopyRightPosition{
+	position: relative; 
+	bottom: -2em; 
+	margin: 0 0 1em 1em;
+}
+.rtPanelCopyRightTextBg{
+	color:#3E3F3F; 
+	font-size:10px;
+}
+
+.rtPanelPolicyLink{
+	font-size:10px;
+}
+
+.nextButtonBg{
+	width: 60%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+}
+.nextButtonAtSignInHelpBg{
+	width: 80%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+	margin-top: 3em;
+}
+
+@media screen and (max-width: 797px) {
+    .nextButtonAtSignInHelpBg {
+       width: 40%;
+	   margin-left: 1.1em;
+	   margin-top: 1em;
+    }
+}
+
+.signInHelpMenu{
+	width:100%; 
+	padding-left:2em;
+}
+.signInHelpMenuItems{
+	padding-bottom: 1em;
+	font-size: 16px;
+}
+.signInHelpCaptcha{
+	vertical-align: middle;
+    padding-top: 1em;
+    width: 42%;
+    height: 45px;
+	margin-bottom: 1em;
+}
+@media screen and (max-width: 797px) {
+    .signInHelpCaptcha {
+		vertical-align: middle;
+		padding-top: 1em;
+		width: 42%;
+		height: 45px;
+		margin-bottom: 0.5em;
+    }
+}
+	
+.signInHelpCaptchaRefresh{
+	color:#FF9400;
+	vertical-align: middle;
+    padding-top: 1em;
+    padding-left: 1em;
+	font-size: 22px;
+    vertical-align: middle;
+    padding-bottom: 0.5em;	
+}
+
+.signInHelpBackButton{
+	width: 80%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+	margin-top: 3em;
+}
+@media screen and (max-width: 797px) {
+    .signInHelpBackButton {
+		width: 40%;
+		margin-right: 20px;
+		background-color: #FF9400;
+		border: 0;
+		color: #FFFFFF;
+		margin-top: 1em;
+		}
+}
+
+.signInHelpCancelButton{
+	width: 80%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+	margin-top: 1em;
+}
+@media screen and (max-width: 797px) {
+    .signInHelpCancelButton {
+		width: 100%;
+		}
+}
+.signInHelpSummaryBox{
+	width:100%;
+	height:4em;
+}
+@media screen and (max-width: 797px) {
+    .signInHelpSummaryBox {
+		height:6em;
+	}
+}
+.frgtUserNameSummaryBox{
+	width:100%;
+	height:3em;
+	margin-left: 1.8em;
+}
+@media screen and (max-width: 797px) {
+    .frgtUserNameSummaryBox {
+		height:3em;
+		width:60%;
+	}
+}
+.signInHelpFrgtPwdForm{
+	padding-top: 15%;
+    max-width: 100%;
+    min-width: 70%;
+    width: 70%;
+	height: 100%;
+	max-height:100%;
+	min-height:50%;
+}
+
+@media screen and (max-width: 797px) {
+    .signInHelpFrgtPwdForm {
+       padding-top: 15%;
+	   max-width: 100%;
+	   min-width: 70%;
+	   width: 98%;
+	   height: 80%;
+	   max-height:100%;
+	   min-height:50%;
+    }
+}
+.challengeQuesForm{
+	width: 65%;
+    padding-top: 15%;
+}
+
+@media screen and (max-width: 797px) {
+    .challengeQuesForm {
+       padding-top: 5%;
+	   width: 95%;
+    }
+}
+
+.signInHelpFrgtPwdSummaryBox{
+	height: 55px;
+    margin-bottom: 7px;
+    padding-right: 13px;
+    padding-bottom: 14px;
+	margin-left:2em;
+}
+
+.welcomeText{
+	text-align:left;
+	padding-left:2.1em;
+	width:80%;
+}
+@media screen and (max-width: 797px) {
+    .welcomeText {
+       width:95%;
+    }
+}
+
+@media screen and (max-width: 797px) {
+    .changePwdRowBg {
+       padding-bottom:1em;
+	   padding-left:1em;
+    }
+}
+.changePwdInputBoxBg{
+	width:60%;
+	padding-bottom:1em;
+}
+@media screen and (max-width: 797px) {
+    .changePwdInputBoxBg {
+       	width:100%;
+		padding-bottom:1em;
+    }
+}
+
+.changePwdSaveSummaryBox{
+	padding: 12px;
+	background-color: #FEFFEB;
+	border: solid 1px #F1F1F1;
+	margin-left: 2.1em;
+	width: 94%;
+	margin-bottom:1em;
+}
+@media screen and (max-width: 797px) {
+    .changePwdSaveSummaryBox {
+       	width:57%;
+    }
+}
+
+
+.changePwdErrorBg{
+	padding-left: 2em;
+	width:100%;
+	padding-bottom: 0.5em;
+}
+.errorTextBg{
+	color:#AB2734;
+	left: 26px;
+    position: absolute;
+}
+.errorTextBgChalAns{
+	color:#AB2734;
+	left: 0px;
+    position: absolute;
+}
+.accessdenied{
+	color:#AB2734;
+	padding-left: 2em;
+	margin-bottom: 3em;
+}
+.changePwdNextButton{
+	width: 100%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+}
+
+@media screen and (max-width: 797px) {
+    .changePwdNextButton {
+	   margin-bottom:5px;
+	   width: 45%;
+    }
+}
+
+
+.changePwdCancelButton{
+	width: 100%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+}
+@media screen and (max-width: 797px) {
+    .changePwdCancelButton {
+	   width: 45%;
+    }
+}
+.changePwdButtonPadng{
+	padding-top:2em;
+	padding-left:30px !important;
+	padding-right:0 !important;
+}
+
+.cancelBtn{
+	padding-left:1em;
+}
+
+.marginBottomEM{
+	margin-bottom: 1em;
+}
+.marginBottom3EM{
+	margin-bottom: 3em;
+}
+
+.width80{
+	width:80%;
+}
+.width70{
+	width:70%;
+}
+.paddingTop3EM{
+	padding-top:3em;
+}
+
+.errorMsgForgotCredential{
+    color: #AB2734;
+	width:100%;
+	margin-bottom: 0;
+	
+}
+.frgtPwdBackBtn{
+	width:10em;
+	margin-right:20px;
+	background-color:#FF9400;
+	border:0;
+	color:#FFFFFF;
+	margin-top:5px;
+}
+
+.changePwdLeftLabels{
+	width: 13em;
+	text-align: left;
+	padding-left: 2em;
+}
+@media screen and (max-width: 797px) {
+    .changePwdLeftLabels {
+	width: 13em;
+	text-align: left;
+	padding-left: 1em;
+    }
+}
+.frgtPwdBtns{
+	margin-top:4em;
+}
+@media screen and (max-width: 797px) {
+    .changePwdLeftLabels {
+	margin-top:2em;
+    }
+}
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+	padding-top:10em;
+}
+.frgtPwdChlngQueAnsHeading{
+    font-size: 24px;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+.chlngQuestionForm{
+    height: 63%;
+	margin-bottom: 0px;
+	margin-top: 3em;
+}
+@media screen and (max-width: 797px) {
+    .chlngQuestionForm {
+		height: 23em;
+		width: 95%;
+    }
+}
+.chlngQuestionBg{
+	padding-left: 0;
+    padding-top: 1em;
+    border-bottom: 1px solid;
+    font-size: 14px;
+	width:80%;
+}
+@media screen and (max-width: 797px) {
+    .chlngQuestionBg {
+		width:93%;
+    }
+}
+.chlngQuestionTextBoxBg{
+	width:80%;
+	font-size:16px;
+	height: 38px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}
+}
+@media screen and (max-width: 797px) {
+    .chlngQuestionTextBoxBg {
+		width:95%;
+    }
+}
+
+.chlngQuestionButtonBg{
+    padding-left:0;
+	padding-top:2em;
+	width:85%
+}
+@media screen and (max-width: 797px) {
+    .chlngQuestionButtonBg {
+		width: 95%;
+    }
+}
+.ansChlngErrorMsgSummary{
+	padding: 12px;
+	background-color: #FEFFEB;
+	border: solid 1px #F1F1F1;
+	margin-bottom: 20px;
+	width:100%;
+    padding-left: 0px !important;	
+	height:40px;
+	margin-left:1.8em;
+}
+.ansChlngQueTextBox{
+	width:84.5%;
+	font-size:16px;
+	display: block;
+	height: 38px;
+	margin-top: 2px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}
+@media screen and (max-width: 797px) {
+    .ansChlngQueTextBox {
+       width: 100%;
+    }
+}
+.nextButtonAtAnsChlngQue{
+	width: 80%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+}
+
+@media screen and (max-width: 797px) {
+    .nextButtonAtAnsChlngQue {
+       width: 43%;
+	   margin-right: 2em;
+    }
+}
+
+.cancelButtonAtAnsChlngQue{
+	width: 80%;
+	font-size: 16px; 
+	background: #ff9400;
+	border: 0;
+	color: #FFFFFF;
+	height:2.5em;
+}
+@media screen and (max-width: 797px) {
+    .cancelButtonAtAnsChlngQue {
+		width: 45%;
+	}
+}
+
+.step-1-active{
+	background: url('../../images/signin/step_1_active.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+.step-2-active{
+	background: url('../../images/signin/step_2_active.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+.step-3-active{
+	background: url('../../images/signin/step_3_active.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+.step-1-in-active{
+	background: url('../../images/signin/step_1_inactive.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+.step-2-in-active{
+	background: url('../../images/signin/step_2_inactive.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+.step-3-in-active{
+	background: url('../../images/signin/step_3_inactive.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+.step-2-next{
+	background: url('../../images/signin/step_2_next.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+.step-3-next{
+	background: url('../../images/signin/step_3_next.png')  no-repeat;
+    height: 4.1em;
+    width: 4.1em;
+    border-radius: 15em;
+}
+
+.otpNotReceiveText{
+	font-size: 13px;
+	padding-top:1em;
+	padding-bottom: 4em;
+}
+.otpTextBox{
+	width:80%;
+	font-size:16px;
+	display: block;
+	height: 38px;
+	margin-top: 2px;
+	font-weight: 500;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}
+@media screen and (max-width: 797px) {
+    .otpTextBox {
+		width: 90%;
+	}
+}
+
+.otpVerifyButton{
+	padding-left: 0em !important;
+    width: 50%;
+}
+@media screen and (max-width: 797px) {
+    .otpVerifyButton {
+		padding-left: 0em !important;
+		width: 90%;
+	}
+}
+/* The Modal (background) */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal1-content {
+	background-color: #133F67;
+	margin-top: 5em;
+}
+.modal1-dialog {
+	position: relative;
+    width: auto;
+}
+
+.modal1-title{
+	font-weight: 600;
+	color: #FFFFFF;
+    padding-left: 1em;
+}
+.modal1-header{
+	padding: 9px 0 0 1em;
+    border-bottom: 1px solid #e5e5e5;
+    height: 4em;
+}
+
+/* The Close Button */
+.close1 {
+	background-color:#133F67;
+    color: #FFFFFF;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	border:0;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fade1{
+	-webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.pdngLeft{
+	padding-left:0;
+}
+.pdngLeftRight{
+	padding-left:0;
+	padding-right:0;
+}
+.pdngRight{
+	padding-right:0;
+}
+.largeHeader{
+	padding-left:0.5em !important; 
+}
+.smallHeader{
+}
+.smLeftHeaderWidth{
+}
+.smRightHeaderWidth{
+}
+.chngPwdBtnWidth{
+	width:70%;
+}
+.chlngQueAnsBtns{
+	width:80% !important;
+}
+
+@media only screen 
+and (max-device-width : 768px) 
+and (orientation : portrait){
+	.rightPanelForgotPassWidth{
+		width:94%!important;
+	}
+	.rightPanelForgotPassMargin{
+		margin-right:-58px!important;
+	}
+	.copyRightSignIn{
+		position: fixed; 
+		bottom: 1em;
+	}
+	.chlngQueAns-msg-summary{
+		width:59%!important;
+	}
+	.ansChlngErrorMsgSummary{
+		width:62%!important;
+	}
+	.copyRightSignInAnsChalQn{
+		bottom: 0 !important;
+		position:fixed;
+		padding-left: 2em;
+	}
+	.copyRightSignInOTP{
+		bottom: -30em!important;
+		position:absolute;
+	}
+	.copyRightSignInRecoverPass{
+		bottom: -30em!important;
+		position: absolute;
+		padding-left:2em;
+	}
+	.signin-msg-summary-heading-recover-pass{
+		margin-left:1.8em;
+		padding-left:0px;
+		width:53%;
+	}
+	.copyRightSignInChalAns{
+		bottom: 0!important;
+		position: fixed;
+	}
+	.chall-ans-buttons-nxt-cancel{
+		padding-left:0px!important;
+		margin-left:0px!important;
+	}
+	.copyRightSignInChangePass{
+		bottom: -22em !important;
+		padding-left: 2em;
+	}
+	.rtPanelSubmitBtnPosition{
+		padding-left:1.9em; 
+		padding-top:1em;
+		width:100%;
+	}
+	.rtPanelUN{
+		width:100%;
+		padding-left:1.9em; 
+		max-height:10%;
+	}
+	.rtPanelBg{
+		width:100% !important;
+	}
+	.largeHeader{
+		display:none;
+	}
+	.smallHeader{
+		width:100% !important;
+	}
+	.login-label-floating-username{
+		top: -29px!important;
+	}
+	.login-label-floating-password{
+		top: -29px!important;
+	}
+	.login-label-floating-password-conf{
+		top: -29px!important;
+	}
+	.login-input-forgot-pass-width{
+		width:94%!important;
+	}
+	.login-label-floating-forgot-pass-uname{
+		top:18px!important;
+	}
+	.login-label-floating-forgot-pass-captcha{
+		top:174px!important;
+	}
+	.login-label-floating-forgot-username{
+		top: -21px!important;
+	}
+	.login-label-floating-forgot-username-captcha{
+		top: -21px!important;
+	}
+	.login-label-float-forgot-user-uname{
+		top: 71px!important;
+	}
+	.login-label-float-forgot-user-captcha{
+		top: 227px!important;
+	}
+	.login-label-floating-change-pass-current{
+		top: 21px!important;
+	}
+	.login-label-floating-change-pass-new{
+		top: 82px!important;
+	}
+	.login-label-floating-change-pass-new-confirm{
+		top: 146px!important;
+	}
+	.login-label-floating-change-esig-old{
+		top: 320px!important;
+	}
+	.login-label-floating-change-esig-new{
+		top: 19px!important;
+	}
+	.login-label-floating-change-esig-new-confirm{
+		top: 113px!important;
+	}
+	.locale-button-top{
+		top:-13px!important;
+	}
+	.change-pass-div-height-mid{
+		height:12%!important;
+	}
+	.login-label-floating-chal-ans-answerText{
+		top:20px!important;
+	}
+	.login-label-floating-change-esig-new-null{
+		top: 114px!important;
+	}
+	.login-label-floating-change-esig-new-confirm-null{
+		top: 208px!important;
+	}
+	.login-label-floating-change-esig-current{
+		top: 18px!important;
+	}
+	.login-label-floating-otp{
+		top:-26px!important;
+	}
+	.login-label-floating-chal-answerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-answerText_1{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_1{
+		top:-25px!important;
+	}
+	.chlngQuestionForm{
+		height:40em!important;
+	}
+	
+}
+
+@media only screen 
+and (max-device-width : 768px) 
+and (orientation : landscape) {
+	.rightPanelForgotPassWidth{
+		width:94%!important;
+	}
+	.rightPanelForgotPassMargin{
+		margin-right:-58px!important;
+	}
+	.copyRightSignIn{
+		position: fixed; 
+		bottom: 1em;
+	}
+	.chlngQueAns-msg-summary{
+		width:59%!important;
+	}
+	.ansChlngErrorMsgSummary{
+		width:62%!important;
+	}
+	.copyRightSignInAnsChalQn{
+		bottom: 0 !important;
+		position:fixed;
+		padding-left: 2em;
+	}
+	.copyRightSignInOTP{
+		bottom: -30em!important;
+		position:absolute;
+	}
+	.copyRightSignInRecoverPass{
+		bottom: -30em!important;
+		position: absolute;
+		padding-left:2em;
+	}
+	.signin-msg-summary-heading-recover-pass{
+		margin-left:1.8em;
+		padding-left:0px;
+		width:53%;
+	}
+	.copyRightSignInChalAns{
+		bottom: -15em!important;
+		position: absolute;
+	}
+	.chall-ans-buttons-nxt-cancel{
+		padding-left:0px!important;
+		margin-left:0px!important;
+	}
+	.copyRightSignInChangePass{
+		bottom: -22em !important;
+		padding-left: 2em;
+	}
+	.rtPanelSubmitBtnPosition{
+		padding-left:1.9em; 
+		padding-top:1em;
+		width:100%;
+	}
+	.rtPanelUN{
+		width:100%;
+		padding-left:1.9em; 
+		max-height:10%;
+	}
+	.login-label-floating-username{
+		top: -29px!important;
+	}
+	.login-label-floating-password{
+		top: -29px!important;
+	}
+	.login-label-floating-password-conf{
+		top: -29px!important;
+	}
+	input[class="login-input-floating"]{
+		width: 61%!important;
+	}
+	.frgtPwdHeading{height: 12%!important;}   
+	.rtPanelSubmitBtnBg{
+		width:61%!important;
+	}
+	.signInHelpFrgtPwdForm{
+		padding-top:0px!important;
+	}
+	.marginBottomEM{
+		margin-bottom: 0em!important;
+	}
+	.login-label-floating-forgot-pass-uname{
+		top:19px!important;
+	}
+	.login-label-floating-forgot-pass-captcha{
+		    top: 179px!important;
+	}
+	.forgot-pass-captcha-div{
+		height: 13%;
+		max-height: 80%;
+	}
+	.locale-button-top{
+		top:-13px!important;
+	}
+	.signInHelpCaptcha {
+		height: 58%!important;
+	}
+	.forgot-pass-captcha-div{
+		height: 22%!important;
+	}
+	.login-label-float-forgot-user-uname{
+		top: 40px!important;
+	}
+	.login-label-float-forgot-user-captcha{
+		top: 199px!important;
+	}
+	.login-label-floating-change-pass-current{
+		top: 7px!important;
+	}
+	.login-label-floating-change-pass-new{
+		top: 60px!important;
+	}
+	.login-label-floating-change-pass-new-confirm{
+		top: 114px!important;
+	}
+	.change-pass-div-height-mid{
+		height:16%!important;
+	}
+	.login-label-floating-chal-ans-answerText{
+		top:20px!important;
+	}
+	.challengeQuesForm{
+		padding-top:0px!important;
+	}
+	.login-label-floating-change-esig-old{
+		top: 320px!important;
+	}
+	.login-label-floating-change-esig-new{
+		top: 19px!important;
+	}
+	.login-label-floating-change-esig-new-confirm{
+		top: 80px!important;
+	}
+	.login-label-floating-change-esig-current{
+		top: 18px!important;
+	}
+	.login-label-floating-change-esig-new-null{
+		top: 79px!important;
+	}
+	.login-label-floating-change-esig-new-confirm-null{
+		top: 139px!important;
+	}
+	.login-label-floating-otp{
+		top:-26px!important;
+	}
+	.marginBottomEM{
+		padding-bottom:15px!important;
+	}
+	.rtPanelSignInForm{
+		padding-top:0px!important;
+	}
+	.login-label-floating-chal-answerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-answerText_1{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_1{
+		top:-25px!important;
+	}
+	.chlngQuestionBg{
+		width:58%!important;
+	}
+	.chlngQuestionForm{
+		height:18em!important;
+	}
+	div#rightPanel{
+		width:100%; 
+		height: 100%;
+	}
+	div#rightPanelNeedHelp{
+		width:100%; 
+		height: 100%;
+	}
+	.smallHeader{
+		width:100% !important;
+	}
+	.rtPanelSignInHeading{
+		padding-left: 1.3em;
+		font-size: 20px;
+		padding-bottom: 10px;
+		font-weight: bold;	
+	}
+	.rtPanelSignInForm{
+		padding-top:0px !important;
+		height: 100% !important;
+		width: 100% !important;
+	}	
+	
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	.rightPanelForgotPassWidth{
+		width:94%!important;
+	}
+	.rightPanelForgotPassMargin{
+		margin-right:-58px!important;
+	}
+	.copyRightSignIn{
+		position: fixed; 
+		bottom: 1em;
+	}
+	.chlngQueAns-msg-summary{
+		width:59%!important;
+		height:50px!important;
+	}
+	.ansChlngErrorMsgSummary{
+		width:62%!important;
+	}
+	.copyRightSignInAnsChalQn{
+		bottom: 0 !important;
+		position:fixed;
+		padding-left: 2em;
+	}
+	.copyRightSignInRecoverPass{
+		bottom: -30em!important;
+		position: absolute;
+		padding-left:2em;
+	}
+	.signin-msg-summary-heading-recover-pass{
+		margin-left:1.8em;
+		padding-left:0px;
+		width:53%;
+	}
+	.copyRightSignInChalAns{
+		bottom: 0!important;
+		position: fixed;
+	}
+	.chall-ans-buttons-nxt-cancel{
+		padding-left:0px!important;
+		margin-left:0px!important;
+	}
+	.copyRightSignInChangePass{
+		bottom: 0 !important;
+		padding-left: 2em;
+		position:fixed;
+	}
+	.rtPanelSubmitBtnPosition{
+		padding-left:1.9em; 
+		padding-top:1em;
+		width:100%;
+	}
+	.rtPanelUN{
+		width:100%;
+		padding-left:1.9em; 
+		max-height:10%;
+	}
+	.login-label-floating-username{
+		top: -29px!important;
+	}	
+	.login-input-forgot-pass-width{
+		width:58%!important;
+	}
+	input[class="login-input-floating"]{
+		width: 58%!important;
+	}
+	.rtPanelSubmitBtnBg{
+		width:58%!important;
+	}
+	.login-label-floating-forgot-pass-uname{
+		top:17px;
+	}
+	.login-label-floating-forgot-pass-captcha{
+		top:174px;
+	}
+	
+	.login-label-floating-chal-ans-answerText_0{
+		top:40px;
+	}
+	.login-label-floating-chal-ans-answerText_1{
+		top:40px;
+	}
+	
+	.login-label-floating-forgot-username{
+		top: 240px!important;
+	}
+	.login-label-floating-forgot-username-captcha{
+		top: 415px!important;
+	}
+	.login-label-float-forgot-user-uname{
+		top: 67px!important;
+	}
+	.login-label-float-forgot-user-captcha{
+		top: 225px!important;
+	}
+	.login-label-floating-change-pass-current{
+		top: 36px!important;
+	}
+	.login-label-floating-change-pass-new{
+		top: 125px!important;
+	}
+	.login-label-floating-change-pass-new-confirm{
+		top: 210px!important;
+	}
+	.login-label-floating-change-esig-new{
+		top: 15px!important;
+	}
+	.login-label-floating-change-esig-new-confirm{
+		top: 116px!important;
+	}
+	.login-label-floating-chal-ans-answerText{
+		top:20px!important;
+	}
+	.login-label-floating-change-esig-current{
+		top:18px!important;
+	}
+	.login-label-floating-change-esig-new-null{
+		top: 100px;
+	}
+	.login-label-floating-change-esig-new-confirm-null{
+		top: 230px;
+	}
+	.login-label-floating-recover-password-new{
+		top:15px!important;
+	}
+	.login-label-floating-recover-password-confirm{
+		top:15px!important;
+	}
+	.login-label-floating-otp{
+		top:-26px!important;
+	}
+	.login-label-floating-chal-answerText_0{
+		top:-26px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_0{
+		top:-25px!important;
+	}	
+	.login-label-floating-chal-confirmAnswerText_1{
+		top:-25px!important;
+	}
+	.chlngQuestionBg{
+		width:58%!important;
+	}
+	.chlngQuestionForm{
+		height:54em!important;
+	}
+	.signin-error-msg-summary{
+		padding: 12px;
+		background-color: #FEFFEB;
+		border: solid 1px #F1F1F1;
+		margin-bottom: 20px;
+		margin-left: 2em;
+		width:56%;
+	}
+}
+
+@media (min-width: 769px){
+	.signin-msg-summary-heading-recover-pass{
+		margin-left:1.8em;
+		padding-left:0px;
+		width:100%;
+	}
+	.copyRightSignInChalAns{
+		bottom: 0!important;
+		position: fixed;
+	}
+	.chall-ans-buttons-nxt-cancel{
+		padding-left:0px!important;
+		margin-left:-14px!important;
+	}
+	.leftPanelBg{
+		display:block;
+		min-height:100%;
+	}
+	.login-label-floating-username{
+		top: -29px!important;
+	}
+	.login-label-floating-password{
+		top: -29px!important;
+	}
+	.login-label-floating-password-conf{
+		top: -29px!important;
+	}
+	.login-input-forgot-pass-width{
+		width:94%!important;
+	}
+	.login-label-floating-forgot-username{
+		top: -21px!important;
+	}
+	.login-label-floating-forgot-username-captcha{
+		top: -21px!important;
+	}
+	.login-label-captcha-text{
+		padding-top:8px;
+	}
+	.login-label-float-forgot-user-uname{
+		top: 25%!important;
+	}
+	.login-label-float-forgot-user-captcha{
+		top: 88%!important;
+	}
+	.login-label-floating-change-pass-current{
+		top: 16%!important;
+	}
+	.login-label-floating-change-pass-new{
+		top: 49%!important;
+	}
+	.login-label-floating-change-pass-new-confirm{
+		top: 80%!important;
+	}
+	.login-label-floating-change-esig-current{
+		top: 15px!important;
+	}
+	.login-label-floating-change-esig-new{
+		top: 9%!important;
+	}
+	.login-label-floating-change-esig-new-confirm{
+		top: 59%!important;
+	}
+	.login-label-floating-forgot-pass-uname{
+		top:9%;
+	}
+	.login-label-floating-forgot-pass-captcha{
+		top:85%;
+	}
+	
+	.login-label-floating-chal-answerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-answerText_1{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_1{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-ans-answerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-ans-answerText_1{
+		top:-25px!important;
+	}
+	.login-label-floating-otp{
+		top:-26px!important;
+	}
+	.login-label-floating-change-esig-new-null{
+		top: 39%!important;
+	}
+	.login-label-floating-change-esig-new-confirm-null{
+		top: 72%!important;
+	}
+	.login-label-floating-recover-password-new{
+		top:17px!important;
+	}
+	.login-label-floating-recover-password-confirm{
+		top:32px!important;
+	}
+	input[id="confirmPasswd"]{
+		padding-top:25px!important;
+	}
+	.signInHelpCaptcha {
+		width: 42%;
+		height: 45px !important;
+    }
+	.forgot-pass-captcha-div{
+		max-height: 80%;
+	}
+	.signInHelpFrgtPwdSummaryBox{
+		margin-bottom:2em !important;
+		margin-left:2em;
+	}
+}
+@media only screen 
+and (min-device-width : 1025px) 
+{
+	.copyRightSignIn{
+		position: fixed; 
+		bottom: 1em;
+	}
+	.copyRightForgotPassword {
+		position: fixed;
+		bottom: 0px;
+	}
+	.copyRightForgotUserName {
+		position: fixed;
+		bottom: 0px;
+	}
+	.copyRightAnsChlngQue{
+		position: fixed;
+		bottom: 0px;
+	}
+	.copyRightOTP{
+		position: fixed;
+		bottom: 0px;
+	}
+	.copyRightChngPwd{
+		position: fixed;
+		bottom: 0px;
+	}
+	.copyRightChngQuestions{
+		position: fixed;
+		bottom: 0px;
+	}
+	.copyRightChngSign{
+		position: fixed;
+		bottom: 0px;
+	}
+	.copyRightResetPwd{
+		position: fixed;
+		bottom: 0px;
+	}	
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	.rtPanelHeaderMenu{
+		padding-right: 7em!important;
+	}
+	.welcomeTextChalAns{
+		width:100%!important;
+		padding-left: 26px!important;
+	}
+	.chal-ans-progress-count{
+		height:5%!important;
+		width:50%!important;
+	}
+	.rightPanelForgotPassWidth{
+		width:94%!important;
+	}
+	.rightPanelForgotPassMargin{
+		margin-right:-58px!important;
+	}
+	.chlngQueAns-msg-summary{
+		width:71%!important;
+		height:50px!important;
+		margin-bottom:-9px!important;
+	}
+	.ansChlngErrorMsgSummary{
+		width:100%!important;
+	}
+	.copyRightSignInRecoverPass{
+		bottom: -30em!important;
+		position: absolute;
+		padding-left:2em;
+	}
+	.signin-msg-summary-heading-recover-pass{
+		margin-left:1.8em;
+		padding-left:0px;
+		width:100%;
+	}
+	.copyRightSignInChalAns{
+		bottom: 0!important;
+		position: fixed!important;
+	}
+	.chall-ans-buttons-nxt-cancel{
+		padding-left:0px!important;
+		margin-left:0px!important;
+	}
+	.copyRightSignInChangePass{
+		bottom: 0 !important;
+		padding-left: 2em;
+		position:fixed!important;
+	}
+	.rtPanelSubmitBtnPosition{
+		padding-left:1.9em; 
+		padding-top:1em;
+		width:100%;
+	}
+	.rtPanelUN{
+		width:100%;
+		padding-left:1.9em; 
+		max-height:10%;
+	}
+
+	.rtPanelBg{
+		max-width: 50% !important;
+		width: 50% !important;
+		height:100%;  
+		padding:0 !important; 
+	}
+	.copyRightSignInAnsChalQn{
+		bottom: 0 !important;
+		padding-left: 2em;
+		position:fixed!important;
+	}
+	.copyRightSignInOTP{
+		bottom: -30em!important;
+		position:absolute;
+	}
+	.login-label-floating-username{
+		top: -29px!important;
+	}	
+	.login-label-floating-forgot-pass-uname{
+		top:19px!important;
+	}
+	.login-label-floating-forgot-pass-captcha{
+		top:184px!important;
+	}
+	.login-label-floating-forgot-username{
+		top: 225px!important;
+	}
+	.login-label-floating-forgot-username-captcha{
+		top: 393px!important;
+	}
+	.login-label-float-forgot-user-uname{
+		top: 72px!important;
+	}
+	.login-label-float-forgot-user-captcha{
+		top: 247px!important;
+	}
+	.login-label-floating-change-pass-current{
+		top: 23px!important;
+	}
+	.login-label-floating-change-pass-new{
+		top: 135px!important;
+	}
+	.login-label-floating-change-pass-new-confirm{
+		top: 220px!important;
+	}
+	.login-label-floating-change-esig-new-confirm{
+		top: 118px!important;
+	}
+	.login-label-floating-change-esig-new{
+		top: 19px!important;
+	}
+	.change-pass-div-height-mid{
+		height:11%!important;
+	}
+	.login-label-floating-chal-ans-answerText{
+		top:20px!important;
+	}
+	.login-label-floating-change-esig-new-null{
+		top: 118px!important;
+	}
+	.login-label-floating-change-esig-new-confirm-null{
+		top: 218px!important;
+	}
+	.login-label-floating-chal-answerText_0{
+		top:-26px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_0{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-answerText_1{
+		top:-25px!important;
+	}
+	.login-label-floating-chal-confirmAnswerText_1{
+		top:-25px!important;
+	}
+	.signin-error-msg-summary{
+		padding: 12px;
+		background-color: #FEFFEB;
+		border: solid 1px #F1F1F1;
+		margin-bottom: 20px;
+		margin-left: 2em;
+		width:86%;
+	}	
+}
+
+@media (min-width: 769px) and  (max-width: 991px){
+	.rightPanelForgotPassWidth{
+		width:94%!important;
+	}
+	.rightPanelForgotPassMargin{
+		margin-right:-58px!important;
+	}
+	.copyRightSignIn{
+		position: fixed; 
+		bottom: 1em;
+	}
+	.chlngQueAns-msg-summary{
+		width:59%!important;
+	}
+	.ansChlngErrorMsgSummary{
+		width:62%!important;
+	}
+	.signin-msg-summary-heading-recover-pass{
+		margin-left:1.8em;
+		padding-left:0px;
+		width:53%;
+	}
+	.copyRightSignInChalAns{
+		bottom: -15em!important;
+		position: absolute;
+	}
+	.chall-ans-buttons-nxt-cancel{
+		padding-left:0px!important;
+		margin-left:0px!important;
+	}
+    .rtPanelSignInForm {
+		padding-top: 15%;
+    }
+	.lftPanelSmallDeviceLogoImage{
+		width: 200px !important;
+		padding: 17px 0 0 12px !important;
+	}
+	.rtPanelBg{
+		width:100% !important;
+	}
+	.largeHeader{
+		display:none;
+	}
+	.smallHeader{
+		width:100% !important;
+	}
+	.frgtPwdHeading{
+		padding-top:0 !important;
+	}
+	.smLeftHeaderWidth{
+		width:90% !important;
+	}
+	.smRightHeaderWidth{
+		width:10% !important;
+	}
+	.chngPwdBtnWidth{
+		width:100% !important;
+	}
+	.login-label-floating-username{
+		top: -29px!important;
+	}
+
+	.login-label-floating-password{
+		top: -29px!important;
+	}
+	.login-label-floating-password-conf{
+		top: -29px!important;
+	}
+	.login-input-forgot-pass-width{
+		width:94%!important;
+	}
+	.login-label-floating-forgot-username{
+		top: -21px!important;
+	}
+	.login-label-floating-forgot-username-captcha{
+		top: -21px!important;
+	}
+	.login-label-floating-change-pass-current{
+		top: -21px!important;
+	}
+	.login-label-floating-change-pass-new{
+		top: -21px!important;
+	}
+	.login-label-floating-change-pass-new-confirm{
+		top: -21px!important;
+	}
+	.login-label-floating-forgot-pass-uname{
+		top:231px!important;
+	}
+	.login-label-floating-forgot-pass-captcha{
+		top:385px!important;
+	}
+	.login-label-floating-chal-ans-answerText{
+		top:20px!important;
+	}
+}
+button:focus{
+    outline: 0px;
+}
+
+input[class="login-input-floating"] {
+ width: 94%;
+ display: block;
+ border: none;
+ padding: 10px 0;
+ border-bottom: solid 1px #1abc9c;
+ -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+ transition: all 0.7s cubic-bezier(0.64, 0.09, 0.08, 1);
+ background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+ background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+ background-position: -690px 0;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+
+.login-input-floating-chal-ans{
+	width:80%;
+}
+.login-float-field-div-recover-pass{
+	width:100%;
+	position: relative;
+	height:15%;
+}
+
+input[class="login-input-floating"]:focus,
+  input[class="login-input-floating"]:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+.login-label-floating{
+	font-weight: normal;
+	position: relative;
+	pointer-events: none;
+	transition: 0.4s ease all;
+	-moz-transition: 0.4s ease all;
+	-webkit-transition: 0.4s ease all;
+	font-weight: 600;
+	font-size:16px;
+	color:#1abc9c;
+	opacity: 0.5;
+}
+input[class="login-input-floating"]:focus ~ label.login-label-floating,
+  input[class="login-input-floating"]:valid ~ label.login-label-floating{
+  font-size: 11px;
+  color:#1abc9c;
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+  visibility: visible !important;
+  outline:none;
+}
+.copyRightSignInChangePass{
+	bottom: 0;
+    position: fixed;
+	padding-left:2em;
+}
+.chal-ans-progress-count{
+	height:5%;
+	width:25%;
+}
+.copyRightSignInAnsChalQn{
+	bottom: 0;
+	position:fixed;
+	padding-left: 2em;
+}
+.copyRightSignInOTP{
+	bottom: 1em;
+	position:fixed;
+}
+.copyRightSignInRecoverPass{
+	bottom: -28em;
+    position: absolute;
+	padding-left:2em;
+}
+.copyRightSignInChalAns{
+	bottom: -6em;
+    position: fixed;
+}
+.captcha-image-uname-pass{
+	max-height: 80px;
+    height: 80px;
+}
+.anschalqnlabelques{
+	padding-left:1.8em;
+}
+.label-captcha-uname-pass{
+	padding-left:1.8em;
+}
+.change-esig-div-input{
+	height:21%;
+}
+.chall-ans-buttons-nxt-cancel{
+	padding-left:0px!important;
+	margin-left:-14px;
+}
+.login-float-label-position-top{
+	top:-21px;
+}
+.login-float-label-position-label-error{
+	top:-21px;
+}
+.login-float-field-div{
+	width:100%;
+	position: absolute;
+}
+.login-float-field-div-chal-ans{
+	width:100%;
+	position: relative;
+	max-height: 19%;
+    height: 16%;
+}
+.login-float-field-div-first-height{
+	width:100%;
+	position: relative;
+	height:30%;
+}
+.change-pass-div-height{
+	height:12%;
+}
+.change-pass-div-height-max{
+	height:14%;
+	max-height:16%;
+}
+.change-chal-ans-div-height-max{
+	height:100%;
+	max-height:100%;
+}
+
+
+@media only screen 
+and (min-device-width : 1100px) 
+and (max-device-width : 2000px){
+	.menuDropdown{
+		display: none;
+	}
+	.copyRightSignInChangePass{
+		bottom: 0px;
+		position: fixed;
+		padding-left:2em;
+	}
+	.copyRightSignInAnsChalQn{
+		bottom: 0px;
+		position:fixed;
+		padding-left: 2em;
+	}
+	div#leftPanelChalAns {
+	    height: 100%;
+	}
+	.rtPanelHeadingChalAns{
+		margin-top:-15px;
+	}
+}
+@media (min-width: 1024px) and  (max-width: 1200px){
+	.menuLinks{
+		display: none;
+	}
+	.menuDropdown{
+		display: block;
+	}	
+}
+
+
+.openLinksBg{
+	color:#133F67;
+	border:0;
+	background-color:#FFFFFF;
+	font-size:2em;
+}
+.linksDropdown{
+    margin: 0% 0 0 48% !important;
+}
+.linkBg{
+	color:#4896cc !important; 
+	text-align: left;
+}
+.signin-input-fields-dimension{
+	width:94%;
+	height:16%;
+}
+.localeItem{
+    margin-left: -70.5px;
+}
+.localeItemDropDownUL{
+    padding: 0 !important;
+}
+@media (max-width: 769px){
+	.login-float-field-div-first-height{
+	height:20%;
+	}
+}
+.rightPanelMDAndroid{
+	min-width: 100% !important;
+}
+.textDecoration{
+	text-decoration:none;
+}
+.zeroPaddingLeftRight{
+	padding-left: 0;
+	padding-right: 0;
+}
+.zeroPaddingLeft{
+	padding-left: 0
+}
+.zeroPaddingRight{
+	padding-right: 0
+}
+.paddingLeft05Em{
+	padding-left: 0.5em;
+}
+.paddingTop5Em{
+	padding-top:5em;
+}
+.homePageContent{
+	text-align:center;
+	padding-top:1em;
+}
+.localeDescBg{
+	color:#FFFFFF;
+	background-color: #133F67;
+}

@@ -7,7 +7,7 @@ $scope.enabledEdit =[];
 $scope.AddContact=function(){
 console.log($scope.firstName);
 
- if($scope.firstName && $scope.Middle_Name && $scope.lastName && $scope.contactNumber && $scope.Contact_Email){
+ if($scope.firstName && $scope.Middle_Name && $scope.lastName && $scope.contactNumber && $scope.Contact_Email && $scope.middleName){
    console.log("scope.firstName");
    //checking for uniqueness
   var retObj=$scope.contactList.filter(function(obj){
@@ -19,7 +19,7 @@ console.log($scope.firstName);
    }
  //pushing into array
 
-   $scope.contactList.push({"firstName":$scope.firstName,"lastName":$scope.lastName,"contactNumber":$scope.contactNumber,"contactEmail":$scope.Contact_Email});
+   $scope.contactList.push({"firstName":$scope.firstName,"middleName":$scope.middleName,"lastName":$scope.lastName,"contactNumber":$scope.contactNumber,"contactEmail":$scope.Contact_Email});
    $scope.firstName='';
    $scope.lastName='';
    $scope.Middle_Name="";   

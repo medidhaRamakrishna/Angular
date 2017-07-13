@@ -1,0 +1,75 @@
+#contacts{
+ background-color:#F2F7F9;
+    width:465px;
+    padding:10px;
+    margin: 80px auto;    
+    border: 0.0px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px 15px;
+    position:relative;
+     border-spacing: 100px 500px;
+
+     
+}
+
+.error{
+color: red;
+}
+    #details{
+      right: 5px;
+      
+    }
+ 
+  input{
+    margin: 1% auto;
+  }
+
+table{
+  border:none !important;
+   }
+ 
+label {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+ 
+th{
+  background: lightgray;
+}
+ 
+ 
+#search{
+  margin:10px auto;
+  border: 3px solid gray;
+  padding: 10px;
+
+}
+#title{
+  text-align: 
+      color:solid gray;
+  }
+ 
+ tr{
+   width:100%;
+ }
+
+.copyRight{
+		bottom: 0px;
+		position:fixed;
+		padding-left: 2em;
+  }
+  
+  body{
+    background-color: #DFE2DB;
+ 
+  }
+
+  
+caption {
+    padding-top: -25px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: red;
+    font-size: 200%;
+}
