@@ -24,3 +24,5 @@ app.listen(PORT,function(){
 
 4)install web pack
 npm i -g webpack webpack-dev-server
+
+npm i -D webpack webpack-dev-server
