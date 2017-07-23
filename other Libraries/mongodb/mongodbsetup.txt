@@ -1,5 +1,8 @@
+start Mongo DB
 G:\Learning\FULLStack\env\MongoDB\bin\mongod.exe --dbpath G:\Learning\FULLStack\env\data\db
 
+//for running commands run it
+G:\Learning\FULLStack\env\MongoDB\bin\mongo.exe
 syntax:
 1)User creation
 db.createUser({

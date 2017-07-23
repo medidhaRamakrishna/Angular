@@ -1,0 +1,13 @@
+npm init -y -->creates package.json
+npm install express --save -->add to dependencies in package.json file
+
+if u don't want to restart server every time after changes install below one
+npm install nodemon --save-dev (search about it)
+
+--for handling data of the request we need parser
+npm install body-parser --save
+
+--install mongoose for easy handling of mongo DB
+npm install mongoose -save
+
+--robo mono for accessing the mongo DB
