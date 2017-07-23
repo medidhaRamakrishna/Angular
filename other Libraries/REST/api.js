@@ -1,5 +1,5 @@
 const express=require('express');
-const router=express.Router();
+const router=express.Router();//here router is middle ware we are going to mount it in index.js file at  /api path
 const Ninja=require('./models/ninjas')
 //get list of ninjas form DB
 router.get('/ninjas',function(req,resp,errHandler){

@@ -8,9 +8,9 @@ const app=express();
 mongoose.connect('mongodb://localhost/ninjago');//ninjago heck for this name in mongo if not exist it will create
 mongoose.Promise=global.Promise;
 //use body parser
-app.use(bodyParser.json());
+app.use(bodyParser.json());//app.use()=> is used in node for Mounting a middleware at a path,
 //initialize routes
-app.use('/api',routes);
+app.use('/api',routes);//here routers is middleware we are going to mount  at  /api path
 //error handlig middleware
 app.use(function(err,req,resp,errHandler){
     //console.log(err);

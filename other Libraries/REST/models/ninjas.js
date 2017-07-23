@@ -30,5 +30,5 @@ available:{
 //add in geo location
 geometry:GeoSchema
 });
-const Ninja=mongoose.model('ninja',NinjaSchema);
+const Ninja=mongoose.model('ninjas',NinjaSchema);//with ninjas name collection will be created if not exist
 module.exports=Ninja; 

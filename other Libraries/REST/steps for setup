@@ -1,13 +1,98 @@
-npm init -y -->creates package.json
-npm install express --save -->add to dependencies in package.json file
+STEPS to Create REST API:
+I)StepUp steps
+1)npm init -y -->creates package.json
+2)npm install express --save -->add to dependencies in package.json file
 
 if u don't want to restart server every time after changes install below one
 npm install nodemon --save-dev (search about it)
-
---for handling data of the request we need parser
+3)--for handling data of the request we need parser
 npm install body-parser --save
-
---install mongoose for easy handling of mongo DB
+4)--install mongoose for easy handling of mongo DB
 npm install mongoose -save
+5)download Robo mongo it acts as a sql developer
+--robo mongo for accessing the mongo DB 
+6)
 
---robo mono for accessing the mongo DB
+II)Coding STEPS
+1)create index.js in the same folder.in that file import express(i.e const express=require('express');)
+2)assign execution of express to any variable (i.e const app=express();)
+3)start listening to the requests at any port(here have used 4000 port)
+//listen for request
+app.listen(process.env.port ||4000,function(){
+console.log('Now listening for request');
+});
+
+4)here only you can write CRUD operations like
+app.get('/',function(){
+
+});
+app.post('/',function(){
+
+}); etc..
+5)but it is better too maintain one separate file for the REST api's.Create new file api.js
+import express into it.
+
+const express=require('express');
+const router=express.Router();
+//CRUD operations as below
+router.get('/ninjas',function(req,resp,errHandler){});
+router.post('/ninjas',function(req,resp,errHandler){});
+router.put('/ninjas/:id',function(req,resp,errHandler){});
+router.delete('/ninjas/:id',function(req,resp,errHandler){});
+
+each method will take 3 parameters 1.Request from client  2.Response to client 3.middleware for handling the exceptions.
+
+
+//here router is a middleware ,here we will prepare the REST api's and mounted to the index.js file.
+ at the end export this middleware(module.exports=router;)
+6)import it into the index.js 
+    const routes=require('./api');
+    app.use('/api',routes);//mounting middleware at path api(for all the requests it will be prepended)
+7)using postman you can fire the ajax calls
+8)for the handling the errors we have to introduced 3rd parameter for each method and mount the function in index.js like this    
+//error handlig middleware
+app.use(function(err,req,resp,errHandler){
+    //console.log(err);
+    resp.status(401).send({Error:err.message});
+});
+
+III)Now connect with the MongoDB:
+1)install mongoDB and start it using
+start Mongo DB
+G:\Learning\FULLStack\env\MongoDB\bin\mongod.exe --dbpath G:\Learning\FULLStack\env\data\db
+
+//for running commands run it
+G:\Learning\FULLStack\env\MongoDB\bin\mongo.exe
+2)import mongoose into idex.js
+const mongoose=require('mongoose');
+//connect to mongodb
+mongoose.connect('mongodb://localhost/ninjago');//db name ninjago check for this name in mongo if not exist it will create
+mongoose.Promise=global.Promise;//mongoose Promise is depricated so assigning node Promise
+
+3)create a js for creating module( here ninjas.js)
+import mongoose.schema
+i.e const mongoose=require('mongoose');
+const Schema=mongoose.Schema;
+4)create schema like table creation
+const NinjaSchema=new Schema({
+name:{
+    type:String,
+    required:[true,"Name field is mandatory"]
+    
+},
+rank:{
+    type:String
+},
+available:{
+    type:Boolean,
+    default:false
+},
+//add in geo location
+geometry:GeoSchema //GeoSchema is one schema
+});
+
+
+const Ninja=mongoose.model('ninjas',NinjaSchema);//with ninjas name collection will be created if not exist
+module.exports=Ninja; //for using it in other files export it
+
+5)for geo location I have used GEO JSON(read about it).
