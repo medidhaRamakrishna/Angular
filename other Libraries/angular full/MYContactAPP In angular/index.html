@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+   <script src="app.js"></script>
+   <script  src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="contact_App.css">
+   <body ng-app="myApp" >
+   <center>
+    <div ng-controller="contactController" id="contact-form">
+         <div class="container-fluid" >
+          <div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div >   
+            <form name="contact">
+                  <table id="contacts">
+                    <caption><b>My Contact App</b></caption>
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+				  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+				  </tr>
+				  <tr>
+                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name </td>
+                     <td> <input type="text"  name="fname" ng-model="firstName" placeholder="First Name" ng-pattern="/^[a-zA-Z ]*$/">
+                        <span class="error" ng-show="contact.fname.$error.pattern">
+                        invalid First Name!
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Middle Name</td>
+                     <td><input type="text" name="mname" ng-model="middleName" placeholder="Middle Name" ng-pattern="/^[a-zA-Z ]*$/" >
+                        <span class="error" ng-show="contact.mname.$error.pattern">
+                        invalid Middle Name!
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name  </td>
+                     <td><input type="text" name="lname" ng-model="lastName" placeholder="Last Name" ng-pattern="/^[a-zA-Z ]*$/" >
+                        <span class="error" ng-show="contact.lname.$error.pattern">
+                        invalid Last Name!
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Number</td>
+                     <td> <input type="text" ng-model="contactNumber" onblur="" name="Number" placeholder="Contact Number" ng-pattern="/^[0-9]{10}$/" maxlength="10" >
+                        <span class="error" ng-show="contact.Number.$error.pattern">
+                        invalid Contact Number!
+                        </span>
+                     </td>
+                  <tr>
+                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Email</td>
+                     <td> <input type="text" name="email"  ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"   ng-model="Contact_Email" placeholder="Contact Email" >
+                        <span class="error" ng-show="contact.email.$error.pattern">
+                        invalid email!
+                        </span>
+                     </td>
+                  </tr>
+                    <tr><center><td colspan="2"><button ng-click="AddContact()" class="btn btn-success" id="ADDbtn">Add New Contact </button> </td></center></tr>
+                  
+                   
+                  
+               </form>
+          </div>
+            </div>
+         </div>
+        
+         <div class="table-responsive">
+           
+            <table class="table table-responsive container" id="details" width="100%" align="center" >
+			<caption></caption>
+               <thead>
+                  <tr >
+                     <th>First Name</th>
+                     <th>middle Name</th>
+                     <th>Last Name</th>
+                     <th>Contact Number</th>
+                     <th>Email</th>
+                     <th><input type="text" ng-model="search" placeholder="Search for Contacts" id="search" ></th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr ng-repeat="contact in contactList  | filter :search " >
+                     <td><input type="text" ng-model="contact.firstName"  ng-readonly="!enabledEdit[{{$index}}]"></td>
+                     <td><input type="text" ng-model="contact.middleName" ng-readonly="!enabledEdit[{{$index}}]"></td>
+                     <td><input type="text" ng-model="contact.lastName" ng-readonly="!enabledEdit[{{$index}}]"></td>
+                     <td><input type="text" ng-model="contact.contactNumber" maxlength="12" ng-readonly="!enabledEdit[{{$index}}]"></td>
+                     <td><input type="text" ng-model="contact.contactEmail" ng-readonly="!enabledEdit[{{$index}}]"></td>
+                     <td><button class="btn btn-primary" ng-click="editContact($index)" ng-show="!enabledEdit[{{$index}}]">Edit</button>
+                      <button class="btn btn-primary" ng-click="editContact($index)" ng-show="enabledEdit[{{$index}}]">Done</button>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+	  </center>
+   </body>
+</html>

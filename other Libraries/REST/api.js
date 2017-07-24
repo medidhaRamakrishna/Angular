@@ -1,56 +1,45 @@
 const express=require('express');
-const router=express.Router();//here router is middle ware we are going to mount it in index.js file at  /api path
-const Ninja=require('./models/ninjas')
-//get list of ninjas form DB
-router.get('/ninjas',function(req,resp,errHandler){
-    console.log(req.query)
-Ninja.geoNear(
-    {type:"Point",coordinates:[parseFloat(req.query.lng),parseFloat(req.query.lat)]
-    },{maxDistance:100000,spherical:true }
-).then(function(nearNijas){
-resp.send(nearNijas);
+const router=express.Router();
+const contactsCollection=require('./models/contactsModel');
+
+
+router.get('/contacts',function(req,resp,errMiddleWare){
+//resp.send("GET Request faired");
+contactsCollection.find({}).then(function(data){
+resp.send(data);
+}).catch(errMiddleWare);
+
+
 });
 
 
+router.post('/contacts',function(req,resp,errMiddleWare){
+//resp.send('postedData');
+console.log('req.body'+req.body);
 
-//resp.send({type:'GET'});
-/*Ninja.find({}).then(function(ninjasFound){
-resp.send(ninjasFound);
-});*/
+contactsCollection.create(req.body).then(function(postedData){
+    resp.send(postedData);
+}).catch(errMiddleWare);
 });
 
-//add a new ninja to the  DB
-router.post('/ninjas',function(req,resp,errHandler){
-/*var ninja=new Ninja(req.body);
-ninja.save();*/
-Ninja.create(req.body).then(function(ninja){
-resp.send(ninja);
-
-}).catch(errHandler);
-
+router.put('/contacts/:id',function(req,resp,errMiddleWare){
+//resp.send("PUT Request faired");
+console.log('req.params.id'+req.params.id);
+contactsCollection.findByIdAndUpdate({Contact_Email:req.params.id},req.body).then(function(data){
+   contactsCollection.findOne({Contact_Email:req.params.id}).then(function(data){
+        resp.send(data);
+    });
+}).catch(errMiddleWare);
 });
 //update a ninja to the DB
-router.put('/ninjas/:id',function(req,resp,errHandler){
-Ninja.findByIdAndUpdate({_id:req.params.id},req.body).then(function(){
-Ninja.findOne({_id:req.params.id}).then(function(updatedVal){
-resp.send(updatedVal);
+
+
+
+router.delete('/contacts/:id',function(req,resp,errMiddleWare){
+//resp.send("DELETE Request faired");
+contactsCollection.findByIdAndRemove({Contact_Email:req.params.id}).then(function(data){
+resp.send(data);
 });
-
-});
-
-
-
-
-});
-
-//delete a ninja form DB
-router.delete('/ninjas/:id',function(req,resp,errHandler){
-    Ninja.findByIdAndRemove({_id:req.params.id}).then(function(deleted){
-resp.send(deleted);
-    })
-//console.log(req.params.id);
-//resp.send({type:'DELETE'});
-
 });
 
 module.exports=router;
