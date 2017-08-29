@@ -1,0 +1,46 @@
+<h1>Template Driven Form</h1>   
+ <div class="container">
+<form [formGroup]="contactForm" (ngSubmit)="modelDriven()">
+    <div class="form-group">
+    <label>Name</label>
+    <input type="text" #nameRef    class="form-control" formControlName="Name">
+    <div *ngIf="contactForm.controls['Name'].hasError('required')">
+Please enter name
+    </div>
+        <div *ngIf="contactForm.controls['Name'].hasError('minlength')">
+Please enter name min 4 characters
+    </div>
+        <div *ngIf="contactForm.controls['Name'].hasError('maxlength')">
+Please enter name max of 10 characters
+    </div>
+     {{nameRef.className}}
+      <div class="form-group">
+    <label>Email</label>
+    <input type="text"  #emailRef minlength="4" class="form-control"  formControlName="Email" >
+        <div *ngIf="contactForm.controls['Email'].hasError('minlength')">
+Please enter atleast 4 characters
+        </div>
+    </div>
+    <div formGroupName="address">
+      <div class="form-group">
+    <label>Street</label>
+    <input type="text" class="form-control"  formControlName="Street" >
+    </div>
+      <div class="form-group">
+    <label>City</label> 
+    <input type="text" class="form-control"  formControlName="City" >
+    </div>
+      <div class="form-group">
+    <label>Postal code</label>
+    <input type="text" class="form-control"  formControlName="postalcode" >
+
+  </div>
+        <div *ngIf="contactForm.controls['address'].controls['postalcode'].hasError('pattern')">
+Please enter 5 digit pin
+    </div>
+    </div>
+    </div>Vaild{{contactForm.valid}}
+<button  type="submit" class="btn-primary" [disabled]="!contactForm.valid">Submit</button>
+    
+    </form>
+</div>

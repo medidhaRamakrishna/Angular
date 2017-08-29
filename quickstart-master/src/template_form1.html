@@ -1,0 +1,40 @@
+<h1>Template Driven Form</h1>
+ <div class="container">
+<form #contactForm="ngForm"  (ngSubmit)="onSubmitfun(contactForm.value)" novalidate>
+    <div class="form-group">
+    <label>Name</label>
+    <input type="text"  required #nameRef='ngModel' class="form-control" name="Name" [(ngModel)]="myName">
+    <div [hidden]="nameRef.valid ">Please Enter Name</div>
+    </div>
+      <div class="form-group">
+    <label>Email</label>
+    <input type="text"  #emailRef="ngModel" required minlength="4" class="form-control" name="Email" ngModel>
+        <!--div [hidden]="emailRef.valid ||emailRef.pristine" class="alert alert-danger">Please Enter mail</div-->
+    <div *ngIf="emailRef.errors && (emailRef.touched || emailRef.dirty)" class="alert alert-danger">
+    <div [hidden]="!emailRef.errors.required">Please enter Email </div>
+    <div [hidden]="!emailRef.errors.minlength">enter atleast 4 characters </div>
+    </div>
+    </div>
+    <div ngModelGroup="address">
+      <div class="form-group">
+    <label>Street</label>
+    <input type="text" class="form-control" name="Street" ngModel>
+    </div>
+      <div class="form-group">
+    <label>City</label> 
+    <input type="text" class="form-control" name="City" ngModel>
+    </div>
+      <div class="form-group">
+    <label>Postal code</label>
+    <input type="text" class="form-control" #pinRef="ngModel" pattern="^[1-9][0-9]{4}$" name="postalcode" ngModel>
+  <div *ngIf="pinRef.errors && (pinRef.touched || pinRef.dirty)">
+    <div *ngIf="pinRef.errors.pattern" class="alert alert-danger">
+Please enter 5 digit pin
+    </div>
+  </div>
+    </div>
+    </div>Vaild{{contactForm.valid}}
+<button  type="submit" class="btn-primary" [disabled]="!contactForm.valid">Submit</button>
+    
+    </form>
+</div>

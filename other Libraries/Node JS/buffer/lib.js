@@ -1,5 +1,5 @@
 var events=require("events");
-var util=require("util");
+var util=require("util");//for inheriting
 LIBClient=function(stream){
 	events.EventEmitter.call(this);
 	var self=this;

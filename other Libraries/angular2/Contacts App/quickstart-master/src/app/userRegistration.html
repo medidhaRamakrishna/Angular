@@ -1,0 +1,46 @@
+
+    <diV class="container">
+    <form #ContactForm="ngForm" (ngSubmit)="onSubmit(ContactForm.value,fname)" novalidate>
+        <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" #fname="ngModel" name="firstName" pattern="[a-zA-Z]*" required ngModel>
+        <div *ngIf="fname.errors">
+            <div *ngIf="fname.errors.pattern" class="alert alert-danger">
+                Please Enter only characters
+            </div>
+            <div *ngIf="fname.errors.required && !fname.pristine" class="alert alert-danger">
+                Please Enter the Value
+            </div>
+        </div>
+        </div>
+        <div class="form-group">
+        <label>Middle Name</label>
+        <input type="text" class="form-control" name="middleName"  ngModel>
+        </div>        
+        <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="lastName" required ngModel>
+        </div>
+        <div class="form-group">
+        <label>Contact Number</label>
+        <input type="text" class="form-control" #number="ngModel" name="number"required ngModel pattern="[0-9]{10}">
+        <div *ngIf="number.errors">
+<div *ngIf="number.errors.pattern" class="alert alert-danger">Please Enter 10 Digit contact number</div>
+   <div *ngIf="number.errors.required && !number.pristine" class="alert alert-danger">
+                Please Enter the Value
+            </div>
+        </div>
+        </div>                
+        <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" #email="ngModel" required name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" ngModel>
+        <div *ngIf="email.errors">
+        <div  *ngIf="email.errors.pattern" class="alert alert-danger">Please Enter Valid mailID</div>
+         <div *ngIf="email.errors.required && !email.pristine" class="alert alert-danger">
+                Please Enter the Value
+            </div>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!ContactForm.valid">Add Contact</button>
+    </form>
+    </diV>
