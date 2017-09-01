@@ -1,28 +1,7 @@
 import {Component} from '@angular/core';
 @Component({
 selector:'shopping-list',
-template:`<div>
-<div class="form-group contacts1">
-
-<input type="text" [hidden]="!toggle"   #itemRef maxlength="100" >
-<button (click)="addItem(itemRef)" [hidden]="!toggle">Add Item</button>
-<input type="text" [hidden]="toggle"  [(ngModel)]="selectedItem.name" maxlength="100" Placeholder="edit">
-<button  [hidden]="toggle" (click)="toggleShow()" >Edit Done</button>
-<div class="card">
-<table  border="1" class="container" class="contacts">
-  <colgroup>
-       <col span="1" style="width: 90%;">
-       <col span="1" style="width: 10%">
-       </colgroup>
-<tr *ngFor="let item of Items_List" (click)="editItem(item)" class="list-group">
-<td  title="Click to edit" class="list-group-item"><span >{{item.name}}</span></td>
-<td > 
-<button (click)="deleteItem(item)" class="glyphicon glyphicon-trash" ></button></td>
-</tr>
-</table>
-</div>
-</div>
-`
+templateUrl:'./Groceries_Template.html'
 })
 
 export class shopingList{
