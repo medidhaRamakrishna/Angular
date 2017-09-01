@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {contactService} from './Contacts_services.component';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
  </nav>
  <router-outlet></router-outlet>
  `,
- providers:[]
+ providers:[contactService] 
  /*templateUrl:'./userRegistration.html'*/
 })
 export class AppComponent  { name = 'Angular'; 
