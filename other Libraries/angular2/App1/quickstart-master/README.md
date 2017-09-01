@@ -5,6 +5,7 @@ The following operations possible using this application,
 3)Delete the Existing Items.
 
 # Starting Application
-install nodejs
+install nodejs and 
 run the below command
-npm install
+# npm install
+# npm start
