@@ -6,6 +6,7 @@ The following operations possible using this application,
 
 # Starting Application
 install nodejs and 
-run the below command
+run the below command to install all the dependencies
 # npm install
+to start the angular2 Application run below command
 # npm start
