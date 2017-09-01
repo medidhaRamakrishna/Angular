@@ -1,6 +1,5 @@
 import {Component,OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {contactService} from './contact.service';
 import {Response} from '@angular/http';
 
 @Component({
@@ -18,19 +17,20 @@ template:`
 export class showContact implements OnInit{
    public  contactList:any=[];
    
-constructor(private _route:Router,private _contactService:contactService){}
+constructor(private _route:Router){}
 onSelect(contact:any){
 this._route.navigate(['/showContact',contact.firstName])
 }   
 ngOnInit(){
-this._contactService.getContacts()
-.subscribe((respData:Response)=>this.contactList=respData);
+/*this._contactService.getContacts()
+.subscribe((respData:Response)=>this.contactList=respData);*/
+this.contactList=this.AllContacts;
 }
    
    
    
    
-    /*:any = [
+public AllContacts:any = [
 {
 "firstName": "Joe",
 "lastName": "Perry",
@@ -61,6 +61,6 @@ this._contactService.getContacts()
 "contactNumber": "111-177-1231",
 "contactEmail": "roger@cordis.us"
 }
-];*/
+];
 
 }
