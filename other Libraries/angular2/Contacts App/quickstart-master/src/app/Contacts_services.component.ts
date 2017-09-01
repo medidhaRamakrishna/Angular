@@ -6,13 +6,20 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class contactService{
  //_url:any='./app/contact.Details.json';
+duplicateVal :any;
 constructor(){}
 public getContacts(){
-
 return    this.AllContacts;
 }
 public addContacts(data:any){
-    this.AllContacts.push(data);
+    this.duplicateVal=this.AllContacts.filter(function(obj:any){
+return data==obj;
+    });
+    if(this.duplicateVal.length==0){
+    this.AllContacts.push(data);}
+    else{
+        alert("Contact already exist");
+    }
 }
 
 public AllContacts:any = [

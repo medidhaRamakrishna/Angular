@@ -5,8 +5,8 @@ import {contactService} from './Contacts_services.component';
 @Component({
 selector:'show-contact',
 template:`
-<ul class="items">
-<li (click)="onSelect(contact)" *ngFor="let contact of contactList">
+<ul class="items" class="list-group">
+<li class="list-group-item" (click)="onSelect(contact)" *ngFor="let contact of contactList">
 <span>{{contact.firstName}}
 {{contact.lastName}}</span></li>
 </ul>
