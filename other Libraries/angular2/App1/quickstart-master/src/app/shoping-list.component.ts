@@ -20,7 +20,7 @@ toggleShow(){
     this.toggle=!this.toggle;
 }
 addItem(itemRef:any){
-    this.duplicateVal=this.Items_List.filter(function(obj){
+    this.duplicateVal=this.Items_List.filter(function(obj:any){
 return obj.name==itemRef.value;
     });
     if(itemRef.value!='' && this.duplicateVal.length==0){
