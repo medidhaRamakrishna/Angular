@@ -1,0 +1,142 @@
+/*h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.contacts{
+ background-color:#F2F7F9;
+    width:600px;
+    padding:10px;
+    margin: 1px  0px 80px 2px;    
+    border: 0.0px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px 15px;
+    position:relative;
+     border-spacing: 100px 500px;
+
+     
+
+	 }
+	 
+.contacts1{
+     width:465px;
+    padding:10px;
+    margin: 15px  0px -84px 416px;    
+    border: 0.0px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px 15px;
+    position:relative;
+     border-spacing: 100px 500px;
+
+     
+}
+
+
+.error{
+color: red;
+}
+    #details{
+      right: 5px;
+	  margin: 0 auto;
+  width: 100%;
+  
+     }
+ 
+  input{
+    margin: 1% auto;
+  }
+span{
+	width:500px;
+}
+table{
+  border:none !important;
+   }
+ 
+label {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+ 
+th{
+  background: lightgray;
+}
+ 
+ 
+#search{
+  margin:10px auto;
+  border: 3px solid gray;
+  padding: 10px;
+
+}
+#title{
+  text-align: 
+      color:solid gray;
+  }
+ 
+ tr{
+   width:100%;
+ }
+
+.copyRight{
+		bottom: 0px;
+		position:fixed;
+		padding-left: 2em;
+  }
+  
+  body{
+    background-color: lightblue;
+ 
+  }
+
+  
+caption {
+    padding-top: -25px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: red;
+    font-size: 200%;
+	height:100px;	
+}
+
+
+input{
+	border:none;
+	background-color: #f1f1f1;
+	
+}
+
+
+input:focus { 
+    background-color:white;
+;
+}
+*/
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

@@ -1,0 +1,25 @@
+
+<form class="well" (submit)="addTask(txt1.value)"> 
+    <div class="form-group ">
+        <input type="text" class="form-control col-md-12" [(ngModel)]="title" name="title" #txt1 placeholder="Add Task">
+        <!--button type="submit" (click)="addTask(txt1.value)" >Search</button-->
+    </div>
+    
+</form>
+
+<div class="list-group">
+    <div >
+<div *ngFor="let tsk of _task">
+    
+<div class="col-md-1 col-lg-1">
+    <input type="checkbox" [checked]="tsk.isDone" (click)="updateStatus(tsk)">  
+</div>
+<div class="col-md-7 col-lg-7">
+{{tsk.title}}
+</div>
+<div class="col-md-4 col-lg-4">
+    <button class="btn btn-danger" (click)="deleteTask(tsk._id)">Delete</button>
+</div>
+</div>
+    </div>
+</div>
