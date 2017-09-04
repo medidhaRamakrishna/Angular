@@ -35,7 +35,7 @@ resp.send(data);
 });
 });
 
-router.put('/item',function(req,resp,next){
+router.put('/item/:id',function(req,resp,next){
 var body=req.body;
 var updateItem={};
 if(updateItem.name){
