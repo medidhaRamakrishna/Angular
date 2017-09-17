@@ -3,8 +3,6 @@ var path=require('path');
 var parser=require('body-parser');
 var port=8888;
 
-
-
 index=require('./routes/index');
 task=require('./routes/task');
 	

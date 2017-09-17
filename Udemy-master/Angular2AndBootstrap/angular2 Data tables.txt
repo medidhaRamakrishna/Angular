@@ -1,0 +1,3 @@
+Angular2 Data tables
+
+npm install angular2-datatable --save

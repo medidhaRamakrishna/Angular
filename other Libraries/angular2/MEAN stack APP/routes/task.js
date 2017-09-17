@@ -57,7 +57,9 @@ router.delete('/task/:id', function (req, resp, next) {
 		if (err) {
 			resp.send(err);
 		}
+		resp.setHeader('content-type', 'text/json');
 		resp.send(tasks);
+		
 
 	});
 

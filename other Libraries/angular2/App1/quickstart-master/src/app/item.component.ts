@@ -10,13 +10,14 @@ template:`Hello`
 export class ItemComponet{
     public Items:PropertiesCls[];
 
-constructor(private _service:itemClass){}
-
-useGetItems(){
-    this.Items=this._service.getItems()
-    .
-    
+constructor(private _service:itemClass){
+ this._service.getItems();
 }
+
+
+   
+    
+
 useAddItem(){
 
 }

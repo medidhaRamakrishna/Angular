@@ -31,17 +31,20 @@ this.tskService.addTasks1(newTask)
 })
 }
 deleteTask(id:any){
-    var tasks=this._task;
+   var  tasks :any=this._task;
 console.log(tasks);
     this.tskService.deleteTasks(id)
     .subscribe(data=>{
-        
+        debugger;
             for(var i=0;i<tasks.length;i++){
                 if(tasks[i]._id==id){
                     tasks.splice(i,1);
                 }
             }
-        
+     /*       tasks=tasks.filter(function(obj,index){
+return obj._id!=id;
+});*/
+
 
     });
 }
@@ -65,3 +68,5 @@ export class task{
     title:String;
     isDone:boolean;
 }
+
+
