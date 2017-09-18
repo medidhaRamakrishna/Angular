@@ -19,7 +19,8 @@ import {RedirectComponent} from './externalLink.component';
     RouterModule.forRoot([
       {path:'One',component:OneComponent},
       {path:'two',component:twoComponent},
-      {path:'g',component:RedirectComponent}
+      {path:'g',component:RedirectComponent},
+      {path:'Repos',component:OneComponent}
       
       ])
   ],

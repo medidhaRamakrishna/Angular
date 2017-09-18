@@ -24,15 +24,15 @@
 </div>
 <div class="panel-body">
 <div class="row">
-    <div class="col-md-4">
-<img [src]=resp.avatar_url class="img-thumbnail">
+    <div class="col-md-2">
+<img [src]=resp.avatar_url class="img-thumbnail" >
     </div>
     <div class="col-md-8">
         <div class="status">
-            <span class="label label-primary">{{resp.public_repos}} Public Repos</span>
-            <span class="label label-success">{{resp.public_gists}} Public gists</span>
-            <span class="label label-info">{{resp.followers}} Followers</span>
-            <span class="label label-warning">{{resp.following}} Following</span>
+            <span class="label label-primary" routerLink='/Repos' >{{resp.public_repos}} Public Repos</span>
+            <span class="label label-success"routerLink='/One'>{{resp.public_gists}} Public gists</span>
+            <span class="label label-info" routerLink='/One'>{{resp.followers}} Followers</span>
+            <span class="label label-warning" routerLink='/One'>{{resp.following}} Following</span>
         </div>
         <ul class="list-group">
             <li class="list-group-item"><strong>Username:</strong>{{resp.name}}</li>
@@ -40,27 +40,30 @@
             <li class="list-group-item"><strong>Email:</strong>{{resp.email}}</li>   
             <li class="list-group-item"><strong>Blog:</strong>{{resp.blog}}</li>
             <li class="list-group-item"><strong>Member Since:</strong>{{resp.created_at|| date}}</li>
-            </ul>
+            </ul>   
     </div>
 </div>
 </div>
 <hr>
-<div class="container">
+<!--commented for moving to separate component-->
+<!--div class="container">
     <ul class="list-group" *ngFor="let data of reposData">
             <li class="list-group-item active"><strong>Project Name:</strong>{{data.name}}</li>
             <li class="list-group-item"><strong>Description:</strong>{{data.description}}</li>   
             <li class="list-group-item"><strong>Created:</strong>{{data.created_at|date}}</li>
             <li class="list-group-item"><strong>Pushed at:</strong>{{data.pushed_at|| date}}</li>
+            
             </ul>
-</div>
+</div-->
 
 <br>
 
-<h2>View port</h2>
+
 <router-outlet></router-outlet>
 
-
-
+<hr>
+<!--Data passed from parent to Child component-->
+<!--one [_reposData]="reposData" ></one-->
 <!--
 
 
@@ -95,7 +98,7 @@
 </div>
 -->
 
-
+<h2><b>Commits History</b></h2>
 
 <table id="example"  class="row-border hover" *ngIf="commitsHis">
     <thead>

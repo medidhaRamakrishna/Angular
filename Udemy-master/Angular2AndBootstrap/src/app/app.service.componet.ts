@@ -21,7 +21,7 @@ getReposData(userName:any){
 }
 
 getCommits(userName:any){
-    return this._http.get('https://api.github.com/users/RamakrishnaMedidha/events')
+    return this._http.get("https://api.github.com/users/"+userName+"/events")
     .map(resp=>resp.json());
 }
 

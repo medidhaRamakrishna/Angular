@@ -1,5 +1,6 @@
 import { Component,ElementRef,OnInit } from '@angular/core';
 import {ServiceClass} from './app.service.componet';
+import {OneComponent} from './one.component';
 import {Http,Headers} from '@angular/http';
 import 'rxjs/add/operator/map';
 import * as $ from 'jquery';
@@ -24,9 +25,9 @@ export class AppComponent implements OnInit {
    reposData:any;
    inputVal:any;
    public Cliked=false;
- 
+   
 root:any;
-commitsHis:any;
+commitsHis:any='';
  constructor(private _Service:ServiceClass,private rootNode:ElementRef){
 this.root=rootNode;
    console.log('response'+this.resp);
@@ -38,6 +39,11 @@ this.root=rootNode;
  }
 
 onClk(userInfo:any){
+  alert();
+  /*for Every User Click the previous data should be cleared*/
+  this.resp='';
+  this.reposData='';
+  this.commitsHis="";
 this.inputVal=userInfo;
 this._Service.getData(this.inputVal)
 .subscribe(res=>this.resp=res);
@@ -57,13 +63,13 @@ this._Service.getCommits(data)
 console.dir(this.commitsHis);
 setTimeout(function(){
 fun();
-},2000);
+},3000);
 
 }
 
 fun(){
   
-$('#example').dataTable(); 
+  (<any>$('#example')).dataTable(); 
 }
 
 }
