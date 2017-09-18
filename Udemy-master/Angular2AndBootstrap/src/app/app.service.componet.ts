@@ -45,5 +45,14 @@ getFollowers(){
     return this._http.get("https://api.github.com/users/"+localStorage.getItem('userName1')+"/followers")
     .map(resp=>resp.json());
 }
-
+//getting Gists
+getGists(){
+    return this._http.get("https://api.github.com/users/"+localStorage.getItem('userName1')+"/gists")
+    .map(resp=>resp.json());
+}
+//getting Following
+getFollowing(){
+    return this._http.get("https://api.github.com/users/"+localStorage.getItem('userName1')+"/following")
+    .map(resp=>resp.json());
+}
 }
