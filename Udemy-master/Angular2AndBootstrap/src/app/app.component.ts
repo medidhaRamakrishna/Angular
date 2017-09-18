@@ -39,13 +39,14 @@ this.root=rootNode;
  }
 
 onClk(userInfo:any){
-  alert();
+  
   /*for Every User Click the previous data should be cleared*/
   this.resp='';
   this.reposData='';
   this.commitsHis="";
 this.inputVal=userInfo;
-this._Service.getData(this.inputVal)
+this._Service.setName(this.inputVal);
+this._Service.getData()
 .subscribe(res=>this.resp=res);
 console.log(this.resp);  
 if(userInfo){
@@ -56,9 +57,9 @@ this.renderReposdata(this.inputVal,this.fun);
 }
 debugger;
 renderReposdata(data:any,fun){
-  this._Service.getReposData(data)
-  .subscribe(res=>this.reposData=res);
-this._Service.getCommits(data)
+/*this._Service.getReposData()
+  .subscribe(res=>this.reposData=res);*/
+this._Service.getCommits()
 .subscribe(res=>this.commitsHis=res);
 console.dir(this.commitsHis);
 setTimeout(function(){

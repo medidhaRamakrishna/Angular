@@ -9,18 +9,20 @@ import { AppComponent } from './app.component';
 import {OneComponent} from './one.component';
 import {twoComponent} from './two.component';
 import {RedirectComponent} from './externalLink.component';
+import {FollowersComponet} from './followers.component';
 
 @NgModule({
   declarations: [
-    AppComponent,OneComponent,twoComponent,RedirectComponent
+    AppComponent,OneComponent,twoComponent,RedirectComponent,FollowersComponet
   ],
   imports: [
     BrowserModule,FormsModule,HttpModule,DataTableModule,
-    RouterModule.forRoot([
+    RouterModule.forRoot([  
       {path:'One',component:OneComponent},
       {path:'two',component:twoComponent},
       {path:'g',component:RedirectComponent},
-      {path:'Repos',component:OneComponent}
+      {path:'Repos',component:OneComponent},
+      {path:'followers',component:FollowersComponet}
       
       ])
   ],

@@ -5,9 +5,9 @@ import {ServiceClass} from './app.service.componet';
 
 @Component({
 selector:'one',
-template:`<h1>ONE COmponent</h1>
+template:`
 <div class="container">
-<ul class="list-group" *ngFor="let data of _reposData">
+<ul class="list-group" *ngFor="let data of reposData">
         <li class="list-group-item active"><strong>Project Name:</strong>{{data.name}}</li>
         <li class="list-group-item"><strong>Description:</strong>{{data.description}}</li>   
         <li class="list-group-item"><strong>Created:</strong>{{data.created_at|date}}</li>
@@ -18,20 +18,19 @@ template:`<h1>ONE COmponent</h1>
 `,
 providers:[ServiceClass]
 })
-export class OneComponent implements OnInit{
-@Input() _reposData:any;
+export class OneComponent /*implements OnInit*/{
+//@Input() _reposData:any;
 
  arr1:any=[];
- reposData:any;
+ public reposData:any;
  commitsHis:any;
   constructor(private _Service:ServiceClass){
-    this._Service.getReposData(data)
-    .subscribe(res=>this.reposData=res);
-  this._Service.getCommits(data)
-  .subscribe(res=>this.commitsHis=res);
-  console.dir(this.commitsHis);
+  this._Service.getReposData()
+  .subscribe(resp=>this.reposData=resp);  
+  console.log(this.reposData);  
   }
-  ngOnInit(){}
+  
+  //ngOnInit(){}
   
 
   
