@@ -6,6 +6,7 @@ import {ServiceClass} from './app.service.componet';
 @Component({
 selector:'one',
 template:`
+<h2>Repositries Information</h2>
 <div class="container">
 <ul class="list-group" *ngFor="let data of reposData">
         <li class="list-group-item active"><strong>Project Name:</strong>{{data.name}}</li>

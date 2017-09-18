@@ -17,13 +17,13 @@ setName(userName:any){
  localStorage.setItem('userName1',this.userName);
   }
         
-         alert('Variable set'+ this.userName);
+         
 }
 gwt
 //User Information
 getData(){
     
-alert('Variable getData'+ this.userName);
+
 return this._http.get("https://api.github.com/users/"+this.userName)
 .map(response=>response.json());
 }
@@ -54,5 +54,8 @@ getGists(){
 getFollowing(){
     return this._http.get("https://api.github.com/users/"+localStorage.getItem('userName1')+"/following")
     .map(resp=>resp.json());
+}
+getDataforUrl(_url:any){
+ return this._http.get(_url);
 }
 }
