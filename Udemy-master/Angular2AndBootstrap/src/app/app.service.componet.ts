@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
 import * as global from './globalValue';
+import 'rxjs/add/Operator/map';
 
 @Injectable()
 export class ServiceClass{
