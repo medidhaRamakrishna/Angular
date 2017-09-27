@@ -1,8 +1,13 @@
 #p1{
 color:blue;
 font-family:arial;
+
 }
 
+#goto{
+/*+position:fixed;*/
+background:yellow;
+}
 #p4{
 background:green;
 
