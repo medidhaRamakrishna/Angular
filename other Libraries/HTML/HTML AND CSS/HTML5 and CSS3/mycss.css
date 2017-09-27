@@ -1,0 +1,14 @@
+#p1{
+color:blue;
+font-family:arial;
+}
+
+#p4{
+background:green;
+
+}
+
+p:hover{
+color:blue;
+background:pink;
+}
