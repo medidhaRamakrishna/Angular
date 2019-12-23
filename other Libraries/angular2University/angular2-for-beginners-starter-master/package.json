@@ -30,7 +30,7 @@
     "@angular/router": "4.0.0",
     "body-parser": "1.15.1",
     "express": "4.13.4",
-    "lodash": "4.13.1",
+    "lodash": "4.17.13",
     "rxjs": "5.1.0",
     "systemjs": "0.19.27",
     "ts-node": "3.0.2",

@@ -268,9 +268,9 @@ ipaddr.js@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.0.5.tgz#5fa78cf301b825c78abc3042d812723049ea23c7"
 
-lodash@4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.13.1.tgz#83e4b10913f48496d4d16fec4a560af2ee744b68"
+lodash@4.17.13:
+  version "4.17.13"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
 
 make-error@^1.1.1:
   version "1.2.3"
